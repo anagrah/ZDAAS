@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+/* Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr {
+	vertical-align: baseline;
+}
+.table {
+	margin-bottom: 0px;
+}
+
+.clearfix {
+	clear: both;
+}
+body {
+ 
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+  font-weight: 400;
+  background: #ECECEC;
+}
+
+// Menu bar css
+.topheader_bg{ background: #ECECEC; padding: 15px;}
+
+
+ul.header_ullist {
+    list-style-type: none;
+    text-align: right;;
+   
+  }
+  
+  ul.header_ullist li {
+      display: inline-block; margin-left: 15px;
+     
+  }
+  
+  ul.header_ullist li a {
+      display: inline-block; margin-left: 10px; font-size: 14px; font-weight: 700; color: #000;
+
+     
+  }
+
+
+  .logo_zbizlink{ display: inline-block; width: 130px; float: left;}
+.account_btnbox{ color: #000; font-weight: 700;}
+.mat-menu-content{ background: #000 !important;}
+
+
+
+//   button.mat-focus-indicator.mat-menu-trigger.mat-button.mat-button-base {
+    
+// }
+  /* Change the link color to #111 (black) on hover */
+//   li a:hover {
+//     background-color: #111;
+//   }
+
+//  end of menu bar css

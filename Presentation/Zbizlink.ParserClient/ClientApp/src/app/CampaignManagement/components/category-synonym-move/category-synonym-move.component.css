@@ -1,0 +1,22 @@
+.category_mainwrap_box{ max-width: 96%; margin: auto; background: #fff; padding: 30px; margin-top: 30px;
+    border: solid 1px #ebebeb; border-radius: 4px;}
+
+    .align_row{ align-items: center;}
+    .category_dropbox{ margin-top: 30px;}
+    .category_text{ font-size: 14px; font-weight: 600;}
+
+    .selectbox_category{ margin-top: 10px; width: 100%; height: 40px; background: #f6f6f6; border: solid 1px #ebebeb; border-radius: 4px;;
+    }
+
+    .category_wrapbox{ margin-top: 20px; background: #f6f6f6; border: solid 1px #ebebeb; border-radius: 4px;
+      height: 300px; overflow-y: scroll}
+    .category_star{ color: red;}
+
+    .category_btn{ box-shadow: none; text-shadow: none; transition: none !important; margin-top: 5px; margin-bottom: 5px; padding-left: 30px; padding-right: 30px; height: 40px; color: #fff; border: 0px; border-radius: 4px;
+      background: #ed3305; font-size: 12px;   }
+    .category_btncol{ text-align: center;}
+    .category_arrow{ font-size: 20px;}
+
+    .mat-pseudo-checkbox{ border-radius: 0px !important; border: solid 1px #007bff !important;}
+
+    .cat_savebtn{ margin-top: 30px; text-align: center;}

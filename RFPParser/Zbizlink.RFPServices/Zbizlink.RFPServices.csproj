@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.32.0" />
+    <PackageReference Include="Grpc.Net.Client.Web" Version="2.35.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.34.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.35.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.24" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.6.0" />
+    <PackageReference Include="Polly" Version="7.2.1" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Polly\Zbizlink.PollyResilience.csproj" />
+    <ProjectReference Include="..\Zbizlink.BusinessModel\Zbizlink.RFPBusinessModel.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPManipulation\Zbizlink.RFPManipulation.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPSummary\Zbizlink.RFPSummary.csproj" />
+    <ProjectReference Include="..\Zbizlink.StoreProcedureModel\Zbizlink.RFPStoreProcedureModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\..\Campaign-Management\Zbizlink.MicroCampaignManagement.WebServiceAPI\Grpc\GrpcProto\CampaignCreationProto.proto" GrpcServices="Client">
+      <Link>Protos\CampaignCreationProto.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+</Project>

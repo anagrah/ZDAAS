@@ -1,0 +1,92 @@
+/* @import "~bootstrap/dist/css/bootstrap.css";  */
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+    .row.no-gutter [class*='col-']:not(:first-child),
+    .row.no-gutter [class*='col-']:not(:last-child) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    .maxHeightForOppertuity{
+      height:500px
+    }
+  
+  
+  cdk-virtual-scroll-viewport {
+    height: 500px;
+ }
+  body {
+    overflow : hidden !important;
+  }
+  .list_active{
+    background: #f8f9fa !important;
+  }
+  .rfpDocument-viewport {
+    height: 525px;
+    width: 568px;
+    
+  }
+  
+  .rfpDocument-card {
+    height: 700px;
+    width: 700px;
+  }
+  
+  .rfpDocumentHeader-card{
+    background-color: lightblue;
+  }
+  mat-grid-tile {
+    background: lightblue;
+  }
+  
+  
+  /* .loading-indicator {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  } */
+  
+  /* Transparent Overlay */
+  .loading-indicator:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  
+  /* [data-draggable="true"] {
+    background-color: yellow;
+  } */
+  
+  
+  
+  .mat-dialog-container{
+    padding:0px !important;
+  }
+  .fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  div button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}

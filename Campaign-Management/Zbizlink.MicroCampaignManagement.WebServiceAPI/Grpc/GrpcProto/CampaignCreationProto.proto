@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "Zbizlink.MicroCampaignManagement.WebServiceAPI.Grpc.GrpcProto";
+
+
+
+package CampaignCreationProto;
+
+service CampaignOpportunityCreationService{
+rpc  CreateCampaignOpportunityService(Opportunity) returns (CampaignCreationResponse);
+rpc  UpdateCampaignOpportunityService(Opportunity) returns (CampaignCreationResponse);
+}
+
+message Opportunity{
+string transactionId =1;
+string UserId = 2;
+string OpportunityId = 3;
+string OpportunityName = 4;
+
+}
+
+message CampaignCreationResponse
+{
+	bool Code = 1;	
+}

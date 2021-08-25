@@ -1,0 +1,115 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+<div class="category_mainwrap_box">
+
+  <h2>Move Summary Field Synonym</h2>
+
+
+  <div class='row align_row'>
+
+    <div class='col-sm-5'>
+
+      <div class="category_dropbox">
+        <div class="category_text">Summary field <span class="category_star">*</span> </div>
+        <select class="selectbox_category" (change)="onSelectionChangeSummaryFieldLeft($event.target.value)">
+          <option *ngFor="let summaryField of summaryFieldAndSynonymLeft" [value]="summaryField.SummaryFieldId">
+            {{summaryField.FieldName}}</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="category_wrapbox">
+        <!-- <mat-selection-list #shoes [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)">
+    <mat-list-option checkboxPosition="before" *ngFor="let summaryField of summaryFieldSynonymLeft" [value]='summaryField.SummarySynonymId'>
+        {{summaryField.Synonym}}
+    </mat-list-option>
+</mat-selection-list> -->
+
+        <mat-selection-list #shoes [(ngModel)]="selectedOptionsLeft">
+          <mat-list-option checkboxPosition="before" *ngFor="let summaryField of summaryFieldSynonymLeft"
+            [value]='summaryField.SummarySynonymId'>
+            {{summaryField.Synonym}}
+          </mat-list-option>
+        </mat-selection-list>
+
+      </div>
+
+
+
+
+    </div>
+    <div class="col-sm-2 category_btncol">
+
+<div>
+
+  <button mat-raised-button class="category_btn" (click)="onMoveLeftToRight()">
+    <mat-icon class="category_arrow">arrow_forward</mat-icon> Move
+  </button>
+
+</div>
+
+<div>
+
+      <button mat-raised-button class="category_btn" (click)="onMoveRightToLeft()">
+        <mat-icon class="category_arrow">arrow_back</mat-icon> Move
+      </button>
+    </div>
+
+    </div>
+    <div class='col-sm-5'>
+
+      <div class="category_dropbox">
+        <div class="category_text">Summary Field <span class="category_star">*</span> </div>
+        <select class="selectbox_category" (change)="onSelectionChangeSummaryFieldRight($event.target.value)">
+          <option *ngFor="let summaryField of summaryFieldAndSynonymRight" [value]="summaryField.SummaryFieldId">
+            {{summaryField.FieldName}}</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="category_wrapbox">
+        <mat-selection-list #shoes [(ngModel)]="selectedOptionsRight">
+          <mat-list-option checkboxPosition="before" *ngFor="let summaryField of summaryFieldSynonymRight"
+            [value]='summaryField.SummarySynonymId'>
+            {{summaryField.Synonym}}
+          </mat-list-option>
+        </mat-selection-list>
+
+
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-12 cat_savebtn">
+      <button mat-raised-button class="category_btn" (click)="save()">
+        Save
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+
+</div>
+
+
+
+
+<p>
+  Options selected: {{shoes.selectedOptions.selected.length}}
+</p>

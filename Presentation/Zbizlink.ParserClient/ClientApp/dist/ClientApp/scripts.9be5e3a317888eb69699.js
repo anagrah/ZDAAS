@@ -1,0 +1,1 @@
+function transfertoZbizlink(){return window.parent.postMessage("close","*"),!1}function transfertoZbizlinkData(n){return window.parent.postMessage(n,"*"),!1}

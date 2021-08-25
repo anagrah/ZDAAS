@@ -1,0 +1,79 @@
+
+ <div class="">
+    <mat-toolbar style="background-color: #f44336;"> 
+        <div style="float:left; width:95%;color: #ffffff;">Send Email</div> 
+        <span class="fill-remaining-space"></span> 
+        <div>
+            <button mat-icon-button (click)="closeDialogOpp()">
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </div>
+      
+      </mat-toolbar>
+      <mat-card> 
+             <!-- in app.component.html -->
+             <!-- <ngx-dropzone (change)="onSelect($event)">
+              <ngx-dropzone-label>Drop it, kashif!</ngx-dropzone-label>
+              <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                  <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+              </ngx-dropzone-preview>
+          </ngx-dropzone> -->
+          <div style="font-size: small"> 
+          </div>
+          
+          <div  style="color: crimson; font-size:  small;"></div>
+          <div >
+               
+                  <!-- <button mat-mini-fab color="primary" (click)="fileInput.click()" title="attach file"
+          
+                  matBadgePosition="before" matBadgeColor="accent">
+                  
+                  <span class="material-icons">
+                      cloud_upload
+                      </span>   <input #fileInput type="file" name="upload" multiple="multiple"
+                    (change)="onAttachedFile($event)" style="display:none;" />
+                </button>  -->
+              <br>
+              <input type="file" style="display: none" #file (change)="fileChange($event)"/>
+  <button type="button" class="btn" (click)="file.click()" mat-raised-button color="warn"> Browse Files</button>
+           
+          </div>
+      </mat-card>
+   <br>
+   <mat-card class="sendEmailCard">kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+    kashif@zd-techsolutions.com <br>
+   </mat-card>
+   <br>
+   <br>
+   <button mat-flat-button color="warn" style="float: right;">Send Email</button>
+ </div> 
+    
+  
+ 

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style>
+    <![CDATA[
+    < !-- @font-face {
+      font-family: Wingdings;
+      panose-1: 5 0 0 0 0 0 0 0 0 0;
+    }
+
+    @font-face {
+      font-family: "Cambria Math";
+      panose-1: 2 4 5 3 5 4 6 3 2 4;
+    }
+
+    @font-face {
+      font-family: Calibri;
+      panose-1: 2 15 5 2 2 2 4 3 2 4;
+    }
+
+    @font-face {
+      font-family: "Segoe UI Symbol";
+      panose-1: 2 11 5 2 4 2 4 2 2 3;
+    }
+
+    p.MsoNormal,
+    li.MsoNormal,
+    div.MsoNormal {
+      margin-top: 0in;
+      margin-right: .2pt;
+      margin-bottom: .25pt;
+      margin-left: .65pt;
+      text-align: justify;
+      text-justify: inter-ideograph;
+      text-indent: -.5pt;
+      line-height: 103%;
+      font-size: 10.0pt;
+      font-family: "Times New Roman", serif;
+      color: black;
+    }
+
+    h1 {
+      mso-style-link: "Heading 1 Char";
+      margin-top: 0in;
+      margin-right: 0in;
+      margin-bottom: 0in;
+      margin-left: .1pt;
+      margin-bottom: .0001pt;
+      text-align: right;
+      line-height: 107%;
+      page-break-after: avoid;
+      font-size: 20.0pt;
+      font-family: "Times New Roman", serif;
+      color: black;
+      font-weight: normal;
+    }
+
+    h2 {
+      mso-style-link: "Heading 2 Char";
+      margin-top: 0in;
+      margin-right: .35pt;
+      margin-bottom: 6.45pt;
+      margin-left: .5pt;
+      text-align: center;
+      text-indent: -.5pt;
+      line-height: 107%;
+      page-break-after: avoid;
+      background: #D9D9D9;
+      border: none;
+      padding: 0in;
+      font-size: 10.0pt;
+      font-family: "Times New Roman", serif;
+      color: black;
+      text-decoration: underline;
+    }
+
+    h3 {
+      mso-style-link: "Heading 3 Char";
+      margin-top: 0in;
+      margin-right: 0in;
+      margin-bottom: 0in;
+      margin-left: .65pt;
+      margin-bottom: .0001pt;
+      text-indent: -.5pt;
+      line-height: 107%;
+      page-break-after: avoid;
+      font-size: 10.0pt;
+      font-family: "Times New Roman", serif;
+      color: black;
+    }
+
+    @page WordSection1 {
+      size: 8.5in 11.0in;
+      margin: 38.45pt 35.75pt 38.35pt 35.85pt;
+    }
+
+    div.WordSection1 {
+      page: WordSection1;
+    }
+
+    -->
+    ]]>
+  </style>
+
+  <title></title>
+</head>
+
+<body lang="EN-US" xml:lang="EN-US">
+  <div class="WordSection1">
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:200.95pt; margin-bottom:0in;margin-left:36.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      <span style='font-size:20.0pt;line-height: 107%'>&nbsp;</span></p>
+
+    <p class="MsoNormal" align="center"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:6.35pt;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+      <img
+        src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAB1AAQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6D/4JSfF7xl8af2d/EWt+OPEN54l1a38U3FlFd3zAukK2lm4QYA4DSOf+BGiuQ/4Iqf8AJrPin/sc7r/0hsaKAD/gip/yaz4p/wCxzuv/AEhsaKP+CKn/ACaz4p/7HO6/9IbGigA/4Iqf8ms+Kf8Asc7r/wBIbGij/gip/wAms+Kf+xzuv/SGxooAP+CKn/JrPin/ALHO6/8ASGxoo/4Iqf8AJrPin/sc7r/0hsaKAD/gip/yaz4p/wCxzuv/AEhsaKP+CKn/ACaz4p/7HO6/9IbGigA/4Iqf8ms+Kf8Asc7r/wBIbGij/gip/wAms+Kf+xzuv/SGxooAP+CKn/JrPin/ALHO6/8ASGxoo/4Iqf8AJrPin/sc7r/0hsaKAO//AOCX/wAKf+FP/ALX9G/tT+1/P8TXF5532fydu61tE27dzZ+5nOe9FFFAH//Z"
+        alt="" style="float: left;margin: 0px 12px;" /><img id="Picture53"
+        src="data:image/jpg;base64,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"
+        alt="" /><span style='font-size:20.0pt; line-height:107%'>&nbsp;</span></p>
+
+    <p class="MsoNormal" align="center"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+      <span style='font-size:20.0pt;line-height: 107%'>COLLIER COUNTY</span></p>
+
+    <h1 style='margin-top:0in;margin-right:95.2pt;margin-bottom:0in;margin-left: 0in;margin-bottom:.0001pt'>BOARD OF
+      COUNTY COMMISSIONERS</h1>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:36.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <table class="TableGrid" border="0" cellspacing="0" cellpadding="0" width="715"
+      style='width:7.45in;margin-left:-14.25pt;border-collapse:collapse'>
+      <tr style='height:488.85pt'>
+        <td width="58" valign="top"
+          style='width:.6in;border-top:solid black 3.0pt; border-left:none;border-bottom:solid black 3.0pt;border-right:solid black 2.25pt; padding:5.6pt 5.75pt 0in .1in;height:488.85pt'>
+          <p class="MsoNormal" align="left"
+            style='margin-top:0in;margin-right:0in; margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in; line-height:107%'>
+            &nbsp;</p>
+        </td>
+
+        <td width="658" valign="bottom"
+          style='width:6.85in;border-top:solid black 3.0pt; border-left:none;border-bottom:solid black 3.0pt;border-right:none; padding:5.6pt 5.75pt 0in .1in;height:488.85pt'>
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+          <p class="MsoNormal" align="left"
+            style='margin-top:0in;margin-right:0in; margin-bottom:8.3pt;margin-left:0in;text-align:left;text-indent:0in; line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.15pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:20.0pt;line-height: 107%'>INVITATION TO BID (ITB)</span></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><span
+              style='font-size: 12.0pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin-top:0in;margin-right:0in; margin-bottom:2.0pt;margin-left:0in;text-align:left;text-indent:0in; line-height:107%'>
+            <span style='font-size:12.0pt;line-height:107%;font-family: "Courier New"'>&nbsp;</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.1pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:14.0pt;line-height: 107%'>FOR</span></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><span
+              style='font-size: 12.0pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin-top:0in;margin-right:0in; margin-bottom:3.9pt;margin-left:0in;text-align:left;text-indent:0in; line-height:107%'>
+            <span style='font-size:12.0pt;line-height:107%;font-family: "Courier New"'>&nbsp;</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.3pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <b><span style='font-size:16.0pt; line-height:107%'>CONTRACT LABORERS</span></b></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:6.5pt;margin-left:0in;text-align:center;text-indent:0in; line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.15pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <b><span style='font-size:18.0pt; line-height:107%'>SOLICITATION NO.: 19-7521</span></b></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <b><span style='color:#2E74B5'>&nbsp;</span></b></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:3.1pt;margin-left:0in;text-align:center;text-indent:0in; line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.1pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:14.5pt;line-height: 107%'>VIVIANA GIARIMOUSTAS, PROCUREMENT STRATEGIST</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.1pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:14.5pt;line-height: 107%'>PROCUREMENT SERVICES DIVISION</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.05pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:14.5pt;line-height: 107%'>3295 TAMIAMI TRAIL EAST, BLDG C-2</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.2pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:14.0pt;line-height: 107%'>NAPLES, FLORIDA 34112</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.05pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:14.5pt;line-height: 107%'>TELEPHONE: (239) 252-8375</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:12.25pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:14.5pt;line-height: 107%'>Viviana.Giarimoustas@colliercountyfl.gov
+              (Email)&nbsp;</span></p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.75pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'>&nbsp;</p>
+        </td>
+      </tr>
+
+      <tr style='height:105.2pt'>
+        <td width="58" valign="top"
+          style='width:.6in;border:none;border-right:solid black 2.25pt; padding:5.6pt 5.75pt 0in .1in;height:105.2pt'>
+          <p class="MsoNormal" align="left"
+            style='margin-top:0in;margin-right:0in; margin-bottom:8.0pt;margin-left:0in;text-align:left;text-indent:0in; line-height:107%'>
+            &nbsp;</p>
+        </td>
+
+        <td width="658" valign="top" style='width:6.85in;border:none;padding:5.6pt 5.75pt 0in .1in; height:105.2pt'>
+          <p class="MsoNormal" align="left"
+            style='margin-top:0in;margin-right:0in; margin-bottom:.85pt;margin-left:0in;text-align:left;text-indent:0in; line-height:107%'>
+            &nbsp;</p>
+
+          <p class="MsoNormal" align="center"
+            style='margin-top:0in;margin-right:9.25pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+            <span style='font-size:12.0pt;line-height: 107%'>&nbsp;</span></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15in;margin-bottom:.0001pt;text-align:left; text-indent:12.1pt;line-height:107%'>
+            <span style='font-size:12.0pt; line-height:107%'>This solicitation document is prepared in a Microsoft Word
+              format.&nbsp; Any alterations to this document made by the Consultant may be grounds for rejection of
+              proposal, cancellation of any subsequent award, or any other legal remedies available to the Collier
+              County Government.</span></p>
+        </td>
+      </tr>
+    </table>
+
+    <p class="MsoNormal" align="center"
+      style='margin-top:0in;margin-right:.05pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center; text-indent:0in;line-height:107%'>
+      <b><u>SOLICITATION PUBLIC NOTICE</u></b></p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      <span style='font-size:12.0pt;line-height: 107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+    <table class="TableGrid" border="0" cellspacing="0" cellpadding="0" width="712"
+      style='width:533.9pt;margin-left:5.8pt;border-collapse:collapse'>
+      <tr style='height:23.5pt'>
+        <td width="258" valign="top"
+          style='width:193.55pt;border:solid black 1.0pt; padding:2.85pt 3.05pt 0in 5.4pt;height:23.5pt'>
+          <p class="MsoNormal" align="right"
+            style='margin-top:0in;margin-right:2.3pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:right; text-indent:0in;line-height:107%'>
+            <b>INVITATION TO BID (ITB) NUMBER:</b></p>
+        </td>
+
+        <td width="454" valign="top"
+          style='width:340.3pt;border:solid black 1.0pt; border-left:none;padding:2.85pt 3.05pt 0in 5.4pt;height:23.5pt'>
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>19-7521</b>
+          </p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>&nbsp;</b></p>
+        </td>
+      </tr>
+
+      <tr style='height:23.5pt'>
+        <td width="258" valign="top"
+          style='width:193.55pt;border:solid black 1.0pt; border-top:none;padding:2.85pt 3.05pt 0in 5.4pt;height:23.5pt'>
+          <p class="MsoNormal" align="right"
+            style='margin-top:0in;margin-right:2.35pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:right; text-indent:0in;line-height:107%'>
+            <b>PROJECT TITLE</b>:</p>
+        </td>
+
+        <td width="454" valign="top"
+          style='width:340.3pt;border-top:none;border-left: none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt; padding:2.85pt 3.05pt 0in 5.4pt;height:23.5pt'>
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>Contract
+              Laborers</b></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>&nbsp;</b></p>
+        </td>
+      </tr>
+
+      <tr style='height:12.0pt'>
+        <td width="258" valign="top"
+          style='width:193.55pt;border:solid black 1.0pt; border-top:none;padding:2.85pt 3.05pt 0in 5.4pt;height:12.0pt'>
+          <p class="MsoNormal" align="right"
+            style='margin-top:0in;margin-right:2.35pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:right; text-indent:0in;line-height:107%'>
+            <b>DUE DATE</b>:</p>
+        </td>
+
+        <td width="454" valign="top"
+          style='width:340.3pt;border-top:none;border-left: none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt; padding:2.85pt 3.05pt 0in 5.4pt;height:12.0pt'>
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>Monday, March
+              4, 2019 10:00 AM EST</b></p>
+        </td>
+      </tr>
+
+      <tr style='height:46.45pt'>
+        <td width="258" valign="top"
+          style='width:193.55pt;border:solid black 1.0pt; border-top:none;padding:2.85pt 3.05pt 0in 5.4pt;height:46.45pt'>
+          <p class="MsoNormal" align="right"
+            style='margin-top:0in;margin-right:2.35pt; margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:right; text-indent:0in;line-height:107%'>
+            <b>PLACE OF BID OPENING</b>:</p>
+        </td>
+
+        <td width="454" valign="top"
+          style='width:340.3pt;border-top:none;border-left: none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt; padding:2.85pt 3.05pt 0in 5.4pt;height:46.45pt'>
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>PROCUREMENT
+              SERVICES DIVISION</b></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>3295 TAMIAMI
+              TRAIL EAST, BLDG C-2</b></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>NAPLES, FL
+              34112</b></p>
+
+          <p class="MsoNormal" align="left"
+            style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'><b>&nbsp;</b></p>
+        </td>
+      </tr>
+    </table>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:6.4pt;margin-left:-.1pt;text-align:left;line-height:107%'>
+      <b>All proposals shall be submitted online via the Collier County Procurement Services Division Online Bidding
+        System:</b> <a href="https://www.bidsync.com/bidsync-cas/"><span
+          style='color:blue'>https://www.bidsync.com/bidsync-cas/</span></a> <a
+        href="https://www.bidsync.com/bidsync-cas/"></a></p>
+
+    <div
+      style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#D9D9D9; margin-left:0in;margin-right:.35pt'>
+      <h2>INTRODUCTION</h2>
+    </div>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>As requested by
+      the Facilities Management Division (hereinafter, the “Division or Department”), the Collier County Board of County
+      Commissioners Procurement Services Division (hereinafter, “County”) has issued this Invitation to Bid
+      (hereinafter, “ITB”) with the intent of obtaining bid submittals from interested and qualified vendors in
+      accordance with the terms, conditions and specifications stated or attached.&nbsp; The vendor, at a minimum, must
+      achieve the requirements of the Specifications or Scope of Work stated.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>The results of
+      this solicitation may be used by other County departments once awarded according to the Board of County
+      Commissioners Procurement Ordinance.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt; margin-left:-.1pt'>Historically,
+      County departments have spent approximately $1.5 million annually; however, this may not be indicative of future
+      buying patterns.</p>
+
+    <div
+      style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#D9D9D9; margin-left:0in;margin-right:.35pt'>
+      <p class="MsoNormal" align="center"
+        style='margin-top:0in;margin-right:0in; margin-bottom:6.45pt;margin-left:.5pt;text-align:center;line-height:107%; background:#D9D9D9;border:none;padding:0in'>
+        <b><u>BACKGROUND</u></b></p>
+    </div>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Collier County
+      is seeking contractors to provide temporary contract laborers for various Divisions within Collier County
+      Government.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:6.6pt;margin-left:.15pt;text-align:left;text-indent:0in; line-height:107%'>
+      &nbsp;</p>
+
+    <div style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#D9D9D9; margin-left:0in;margin-right:.2pt'>
+      <h2 style='margin-right:0in;background:#D9D9D9'>TERM OF CONTRACT</h2>
+    </div>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>The contract
+      term, if an award(s) is/are made is intended to be for three (3) years with two (2) one (1) year renewals.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Prices shall
+      remain firm for the initial three (3) year term after contract has been awarded. Requests for consideration of a
+      percentage adjustment must be made prior to the contract renewal date thereafter and submitted in writing to the
+      Division Director – Procurement Services. Pricing adjustments are dependent upon the most recent 12-month Consumer
+      Price Index for all Urban Consumers (CPI-U) for the Miami-Ft. Lauderdale area, budget availability, and program
+      manager approval and cannot exceed 3% annually, whichever is less.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Surcharges will
+      not be accepted in conjunction with this contract, and such charges should be incorporated into the pricing
+      structure.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>The County
+      Manager, or designee, may, at his discretion, extend the Agreement under all of the terms and conditions contained
+      in this Agreement for up to one hundred eighty (180) days.&nbsp; The County Manager, or designee, shall give the
+      Contractor written notice of the County's intention to extend the Agreement term not less than ten (10) days prior
+      to the end of the Agreement term then in effect.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:.2pt;margin-bottom:.05pt; margin-left:.15pt;text-indent:0in;line-height:99%'>
+      <b><u>All goods are FOB destination and must be suitably packed and prepared to secure the lowest transportation
+          rates and to comply</u> <u>with all carrier regulations.&nbsp; Risk of loss of any goods sold hereunder shall
+          transfer to the COUNTY at the time and place of</u> <u>delivery; provided that risk of loss prior to actual
+          receipt of the goods by the COUNTY nonetheless remain with VENDOR.</u></b></p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:6.6pt;margin-left:.15pt;text-align:left;text-indent:0in; line-height:107%'>
+      <b>&nbsp;</b></p>
+
+    <div
+      style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#D9D9D9; margin-left:0in;margin-right:.25pt'>
+      <h2 style='margin-right:0in;background:#D9D9D9'>AWARD CRITERIA</h2>
+    </div>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:6.25pt; margin-left:-.1pt'>ITB award
+      criteria are as follows:</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:6.3pt; margin-left:36.15pt;text-indent:-.25in'><span
+        style='line-height:103%; font-family:Wingdings'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;</span></span>
+      The County’s Procurement Services Division reserves the right to clarify a vendor’s submittal prior to the award
+      of the solicitation.</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:6.4pt; margin-left:36.15pt;text-indent:-.25in'><span
+        style='line-height:103%; font-family:Wingdings'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;</span></span>
+      It is the intent of Collier County to award to the lowest, responsive and responsible vendor(s) that represents
+      the best value to the County.</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:7.15pt; margin-left:36.15pt;text-indent:-.25in;line-height:107%'>
+      <span style='line-height:107%;font-family:Wingdings'>Ø<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;</span></span> For the purposes of determining the winning bidder,
+      the County will select the vendor with the lowest percentage as outlined below:</p>
+
+    <h3 style='margin-top:0in;margin-right:0in;margin-bottom:4.1pt;margin-left: 0in;text-indent:0in'><span
+        style='font-size:11.0pt;line-height:107%;font-family: "Calibri",sans-serif;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style='font-family:"Segoe UI Symbol",sans-serif;font-weight:normal'>•</span> <span
+        style='font-family:"Arial",sans-serif;font-weight:normal'>&nbsp;&nbsp;&nbsp;</span> Award per lowest average
+      percent markup</h3>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:7.75pt; margin-left:36.15pt;text-indent:-.25in'><span
+        style='font-family:Wingdings'>Ø</span> Collier County reserves the right to select one, or more than one
+      suppliers, award on a line item basis, establish a pool for quoting, or other options that represents the best
+      value to the County; however, it is the intent to:</p>
+
+    <h3 style='margin-top:0in;margin-right:0in;margin-bottom:4.25pt;margin-left: 0in;text-indent:0in'><span
+        style='font-size:11.0pt;line-height:107%;font-family: "Calibri",sans-serif;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span style='font-family:"Segoe UI Symbol",sans-serif;font-weight:normal'>•</span> <span
+        style='font-family:"Arial",sans-serif;font-weight:normal'>&nbsp;&nbsp;&nbsp;</span> Award to a Primary and
+      Secondary&nbsp;</h3>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:6.4pt; margin-left:36.15pt;text-indent:-.25in'><span
+        style='line-height:103%; font-family:Wingdings'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;</span></span>
+      The County reserves the right to issue a formal contract, standard County Purchase Order, or utilize the County
+      Purchasing Card for the award of this solicitation.</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:6.3pt; margin-left:36.15pt;text-indent:-.25in'><span
+        style='line-height:103%; font-family:Wingdings'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;</span></span>
+      The Primary vendor must identify/provide suitable candidate within two (2) weeks from day of request. If the
+      Primary cannot provide requested candidates, the County shall proceed with the Secondary vendor.</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:0in; margin-left:36.15pt;margin-bottom:.0001pt;text-indent:-.25in;line-height:normal'>
+      <span style='font-family:Wingdings'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp;</span></span> Submittals
+      should include five (5) references from current clients regarding its past performance in the delivery of the
+      services set forth in this bid invitation. In addition to reviewing the information submitted and contacting the
+      references listed in the bid offer, the County reserves to right to investigate and consider any complaints or
+      other concerns raised pertaining to the past performance or conduct of the bidder(s) or employee(s).</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:.6pt;margin-left:36.15pt;text-align:left;text-indent:0in; line-height:107%'>
+      &nbsp;</p>
+
+    <div style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#D9D9D9; margin-left:0in;margin-right:.3pt'>
+      <h2 style='margin-top:0in;margin-right:0in;margin-bottom:.4pt;margin-left:.5pt; background:#D9D9D9'>DETAILED SCOPE
+        OF WORK</h2>
+    </div>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      <b>&nbsp;</b></p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Contractor shall
+      provide temporary laborers within two (2) weeks from contact with the County’s project manager. The County may ask
+      for as many interviewees from the contractor as it takes to satisfy management. Laborers shall be according to the
+      following categories and employees hourly pay rates described below:</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <h3 style='margin-left:-.1pt'>Category 1: Unskilled Laborers (Employee Hourly Pay Rate: $8 – $12 per hour)</h3>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      <b>&nbsp;</b></p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Defined as a
+      segment of the work force associated with a low skill level or a limited economic value for the work performed.
+      Unskilled labor is generally characterized by low education levels and small wages. Work that requires no specific
+      education or experience is often available to workers who fall into the unskilled labor force.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Anticipated
+      duties include menial or repetitive tasks and may include but not be limited to: landscaping work, digging,
+      shoveling, spading, raking, excavation, furniture and/or equipment moving, pressure washing, and other various
+      duties as assigned by the County.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <h3 style='margin-left:-.1pt'>Category 2: Semi-Skilled Laborers (Employee Hourly Pay Rate: $10 – $15 per hour)</h3>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      <b>&nbsp;</b></p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Defined as a
+      segment of the work force that has, or requires, less training than a skilled laborer and more training than that
+      of the unskilled laborers.</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Semi-Skilled
+      Laborers are typically used for jobs of a strenuous nature, and/or may require using power tools but not to the
+      degree of a skilled laborer.</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Additionally,
+      this may include, but not limited to: office positions such as data entry, file scanning, Tram Services, and basic
+      clerical work.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <h3 style='margin-left:-.1pt'>Category 3: Skilled Laborers (Employee Hourly Pay Rate: $14 – $22 per hour)</h3>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      <b>&nbsp;</b></p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Defined as a
+      segment of the workforce that has some special skill / expertise, knowledge, acquired ability in their work and
+      who may be able to diagnose and correct a problem.</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>For example:</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:2.55pt;margin-left:.1pt;text-align:left;text-indent:0in; line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:3.2pt; margin-left:101.8pt;text-indent:-17.4pt'><span
+        style='font-size:12.0pt; line-height:103%'>•<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Manual
+      Skilled Laborers (including, but not limited to:&nbsp; Carpenters, Electricians, Painters, Plumbers, Trainee,
+      Licensed Distribution Operators, etc.).</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:101.8pt;text-indent:-17.4pt'><span
+        style='font-size:12.0pt; line-height:103%'>•<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Operations
+      Skilled Laborers (including, but not limited to: Building Automation Technicians, County Interns, Service Writers,
+      Operations Support Staff, etc.).</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <h3 style='margin-left:-.1pt'>Category 4: Specialty Skilled Personnel (Employee Hourly Pay Rate: $20 – $32 per hour)
+    </h3>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      <b>&nbsp;</b></p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Defined as a
+      segment of the workforce that has specialized training, education or licensure, and has the ability to
+      independently work in specialized areas, including, but not limited to: CAD Technicians or Drafters, Project
+      Managers, General Building Surveying, Building/Field Inspectors, other Management Services, or any other skill or
+      skilled position the County deems appropriate under this category.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>In addition,
+      Contractor is expected to provide the following:</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>1.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Fixed contractor
+      mark-up for each category for the duration of the contract.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>2.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> All-inclusive pricing
+      including, but not limited to: employees’ hourly rate, overhead, benefits, insurance, employee travel, etc. No
+      additional surcharges or fees will be allowed except as noted at the annual rate adjustment period.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>3.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> A quote shall be
+      provided for each laborer assigned that includes a resume, brief description of assignment, the category selected,
+      the employee hourly rate and the contractor’s mark-up.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>4.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Supply competent
+      laborers who are capable of performing their employment duties. Laborers shall be neat, clean, well-groomed and
+      courteous, and shall be fully dressed including shirt and shoes. Laborers must conform with CMA 5309, “Appearance
+      and Personal Hygiene”. The County may, at their discretion, provide uniforms to the laborers at no cost to the
+      Contractor or laborers.&nbsp;</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>5.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Laborers shall be
+      capable of verbally receiving and understanding instructions in English.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>6.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Ensure that all
+      contract laborers provided to the County have fully executed and complete fingerprint background checks and drug
+      screening prior to starting work at the County, in accordance to County Ordinance. The vendor will be responsible
+      to pay the Collier County fingerprint background check fee regardless if laborer is contracted or fails the
+      background screening.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>7.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> For contract laborers
+      working in Sheriff’s facilities, the laborer must pass the Collier County Sheriff’s Office background screening
+      prior to being contracted. All applicable fees, if any, will be the responsibility of the contractor.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.1pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>8.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Comply, both the
+      vendor and contract workers, with all applicable regulations of the County, the State and the Federal government;
+      full cooperation is expected and required. Should the minimum employee pay rate fall below the Federal or State
+      minimum wage, the contractor shall notify the County so that compensation is commensurate with all wage practices.
+    </p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>9.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Overtime: Must receive
+      pre-approval from County designee and shall only apply when worked in excess of forty (40) hours per week by the
+      same employee at the request of the County. Hours worked on weekends will be treated as straight time unless they
+      are in excess of a forty (40) hour work week. All overtime will be paid at one and one-half (1.5) times the agreed
+      upon employee’s hourly rate of pay.&nbsp;</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;</span></span> Submit
+      invoices on all contract workers, including, but not limited to:</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:1.0in;text-indent:-.25in'><span
+        style='line-height:103%'>a.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> The Division
+      that the worker is assigned and the purchase order number</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:1.0in;text-indent:-.25in'><span
+        style='line-height:103%'>b.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> The name of the worker
+      and the employee hourly rate</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:1.0in;text-indent:-.25in'><span
+        style='line-height:103%'>c.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Signed and
+      approved time sheet/card with number of hours worked by the employee during a date range (i.e. week, month,
+      etc.)&nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:1.0in;text-indent:-.25in'><span
+        style='line-height:103%'>d.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Approval from County
+      of overtime</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:1.0in;text-indent:-.25in'><span
+        style='line-height:103%'>e.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> The contractor
+      mark-up</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:1.0in;text-indent:-.25in'><span
+        style='line-height:103%'>f.<span
+          style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span> Total cost
+      assessed to the County</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;</span></span>
+      Contracted labor, with the County, is at will unless otherwise stated in a written agreement signed by the Board
+      of County Commissioners. This means that either the County or the contracted laborer can terminate the employment
+      of the contracted laborer at any time and for any reason, with or without notice.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin:0in;margin-bottom:.0001pt; text-align:left;text-indent:0in;line-height:107%'>&nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;</span></span>
+      <u>Contract Transition Plan</u>: As the County currently has existing temporary labor services under contract with
+      existing laborers, new potential contractors shall be required to accommodate a transfer of those laborers which
+      the County deems necessary at an hourly rate (to the laborer) equal to or above their current hourly rate. This
+      shall NOT affect incoming or new laborers, only existing, transition laborers previously working under contract
+      16-6545. Transfer of existing staff must be conducted prior to the official start of the awarded contract to
+      ensure seamless County operations.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>13.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;</span></span> <u>Buy
+        Out / Purchase:</u> If the contract laborer is offered and accepts a position with the County, there shall be no
+      requirement of the County to “buy out” or purchase any remaining contractual term between the contract laborer and
+      the employing agency.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal"
+      style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:36.1pt;text-indent:-.25in'><span
+        style='line-height:103%'>14.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;</span></span> Upon
+      award/activation of this contract Collier County requires a project manager be assigned and on-site within an
+      agreed upon response time and for this individual to be dedicated to this project until completion. It is the
+      expectation of Collier County that all vendors conduct business compliant with applicable local, state and federal
+      codes and regulations.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:.6pt;margin-left:.15pt;text-align:left;text-indent:0in; line-height:107%'>
+      &nbsp;</p>
+
+    <div style='border:solid black 1.0pt;padding:0in 0in 0in 0in;background:#D9D9D9; margin-left:0in;margin-right:.2pt'>
+      <h2 style='margin-top:0in;margin-right:0in;margin-bottom:.5pt;margin-left:.5pt; background:#D9D9D9'>VENDOR
+        CHECKLIST</h2>
+    </div>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>***Vendor should
+      check off each of the following items as the necessary action is completed (please see, Form 2: Vendor Check
+      List):</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>The Solicitation
+      Submittal has been signed.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>The Solicitation
+      Pricing Document (Bid Schedule/Quote Schedule/Proposal Pricing/etc.) has been completed and attached.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>All applicable
+      forms have been signed and included, along with licenses to complete the requirements of the project.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Any addenda have
+      been signed and included.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Affidavit for
+      Claiming Status as a Local Business, <b><u>if applicable</u></b>.</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>Division of
+      Corporations - Florida Department of State – <a href="http://dos.myflorida.com/sunbiz/"><span
+          style='color:blue'>http://dos.myflorida.com/sunbiz/</span></a> <a
+        href="http://dos.myflorida.com/sunbiz/"></a>(If work performed in the State).&nbsp;</p>
+
+    <p class="MsoNormal" align="left"
+      style='margin-top:0in;margin-right:0in; margin-bottom:0in;margin-left:.15pt;margin-bottom:.0001pt;text-align:left; text-indent:0in;line-height:107%'>
+      &nbsp;</p>
+
+    <p class="MsoNormal" style='margin-top:0in;margin-right:0in;margin-bottom:.25pt; margin-left:-.1pt'>
+      E-Verify/Immigration Affidavit (Memorandum of Understanding).</p>
+  </div>
+</body>
+
+</html>

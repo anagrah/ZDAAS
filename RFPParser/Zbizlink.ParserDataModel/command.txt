@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=.;Database=ZRFPParser_Test;user id=sa;password=Admin12345;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -contextdir DBContext -Context ZRFPParserContext -Force

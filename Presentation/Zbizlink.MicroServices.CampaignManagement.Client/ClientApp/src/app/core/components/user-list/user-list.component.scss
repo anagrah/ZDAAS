@@ -1,0 +1,49 @@
+ 
+  .mat-elevation-z8-width {
+    width: 80%;
+  }
+  tr.mat-header-row {
+    height: 56px;
+    background-color:#58ae16;
+}
+.main-div{ 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mat-card-cvr{
+  width: 100%;
+  height: 500px;
+  line-height: 500px;
+  text-align: center;
+}
+.example-card{
+  margin: 0 auto;
+  width: 65%;
+}
+.mat-table
+{
+  background-color:transparent!important;  
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5em;
+}
+
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+  background-color: rgba(0,0,0,.87);
+}
+
+.maindivbox{ margin-top: 50px; margin-bottom: 50px;}
+
+.mat-card-header-text{display: none;}
+
+.table_th{ font-size: 13px; font-weight: 700; color: #fff;
+  padding-top: 15px;
+}
+.btn{
+  margin-top: 5px ;
+}

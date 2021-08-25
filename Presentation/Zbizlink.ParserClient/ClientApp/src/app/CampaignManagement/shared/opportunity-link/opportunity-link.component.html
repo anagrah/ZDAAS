@@ -1,0 +1,36 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div> 
+   <div class="main-div"style="margin-top: 0%;">
+      <form [formGroup]="groupForm" class="authentication-form" >
+      <mat-toolbar style="background-color: #ed3305;"> 
+          <div style="float:left; width:95%;color: #ffffff;">View URL</div> 
+          <span class="fill-remaining-space"></span> 
+          <div>
+              <button mat-icon-button (click)="closeDialogOpp()">
+                  <mat-icon>cancel</mat-icon>
+              </button>
+          </div>
+        
+        </mat-toolbar> 
+     
+     <mat-card class="sendEmailCard popupbox_form">  
+        
+          
+       {{opportunityURL}}
+          <!-- <input matInput #inputName maxlength={{lblLength}} style="font-size: small;" matInput placeholder="Enter name"
+          [formControl]="groupForm.get('Name')" required [(ngModel)]="Name"  (focus)="onFocus()"
+          >  -->
+         
+        
+        <!-- <mat-error *ngIf='errorMessage'>{{errorMessage}}</mat-error> -->
+     <!-- <button mat-flat-button class="authentication-button-view zbizlink_btn " color="warn"  >Add</button> -->
+       
+  
+     </mat-card>
+    
+  </form>
+   </div> 
+      
+    
+   

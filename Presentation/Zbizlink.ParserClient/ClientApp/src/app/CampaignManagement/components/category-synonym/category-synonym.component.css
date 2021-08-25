@@ -1,0 +1,119 @@
+.form-margin{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.authentication-form{ min-width: 70%; max-width: 70%; width: 70%;}
+
+
+.synonym_selectbox {
+  width: 100%;
+  border: solid 1px #ebebeb;
+  padding: 8px;
+  font-size: 14px;
+  font-family: 'Open Sans';
+  color: #000;
+  cursor: pointer;
+  background: #f6f6f6;
+  border-radius: 4px;
+}
+
+
+
+
+.mat-select-arrow{ color: red !important;}
+
+.mat-select-placeholder{ color: #000 !important;}
+
+.synonym_iconplus {
+  position: relative !important;
+  float: right;
+   color: #007bff;
+  margin-right: 0px !important;
+  top: 10px !important;
+  cursor: pointer;
+  font-size: 30px !important;
+
+}
+
+.synonym_iconplus2 {
+  position: relative !important;
+  float: right;
+   color: #007bff;
+  margin-right: 0px !important;
+  top: 10px !important;
+  cursor: pointer;
+  font-size: 30px !important;
+}
+
+
+.synonym_lable{ margin-bottom: 15px;}
+
+.synonym_checkbox{ margin-right: 10px;;}
+
+
+ .dropdown-btn{ background-color: red !important;}
+
+
+
+.material-icons{ color: #007bff; font-size: 18px; position: relative; top: -7px; margin-right: 10px;}
+
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+color:#000 !important;
+font-size: 14px;
+font-family: 'Open Sans';
+}
+
+.mat-form-field-label{  color:#000 !important;}
+
+.mat-add-popup-button{
+  margin: 15px 0px 0px -25px;
+}
+.mat-columns-margin{
+  margin-top: 20px;
+}
+
+.CategorySynonym_lable{ font-family: 'Open Sans'; font-weight: 600; color: #000; margin-bottom: 10px;}
+
+
+
+
+.state_divbox{ position: relative;}
+
+
+
+.spanboxowerlay{ position: absolute;
+top: 0px;
+width: 100%;
+height: 100%;
+background: #fff;
+opacity: 0.8;
+left: 0px;
+}
+
+
+
+.Synonym_typesection{ background: #fffa90; padding: 20px; margin-top: 20px; border-radius: 4px;}
+
+
+.synonym_selectbox2 {
+width: 95%;
+border: solid 1px #ebebeb;
+padding: 8px;
+font-size: 14px;
+font-family: 'Open Sans';
+color: #000;
+cursor: pointer;
+background: #fff;
+border-radius: 4px;
+}
+
+.error_box{color: red;
+margin-top: 10px;
+font-size: 13px;
+display: block;}
+
+.btn_section{ margin-top: 30px;}
+.btn_summarysave{ margin-right: 10px;}
+

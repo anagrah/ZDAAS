@@ -1,0 +1,258 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+
+<div>
+    <mat-toolbar style="height: 50px;">
+        <div style="float:left; width:95%; font-size:medium;">Opportunity</div>
+        <span class="fill-remaining-space"></span>
+
+    </mat-toolbar>
+</div>
+
+
+    <mat-card>
+        <form [formGroup]="sourceGroupForm" >
+            <mat-form-field class="formFieldWidth">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="opportunityName" required cdkFocusInitial>
+                <mat-error *ngIf="!sourceGroupForm.controls['opportunityName'].valid">Opportunity name is required</mat-error>
+            </mat-form-field>
+
+
+
+           <div>
+            <label class="topMargin" id="sourceProposal-radio-group-label"
+             >Please Select Source Of Proposal.</label>
+            <mat-radio-group aria-labelledby="sourceProposal-radio-group-label" class="sourceProposal-radio-group"
+                formControlName="selectedSourceName">
+                <mat-radio-button class="sourceProposal-radio-button" *ngFor="let source of sourcesOfProposal"
+                    [value]="source">
+                    {{source}}
+                </mat-radio-button>
+            </mat-radio-group>
+
+            <div *ngIf="sourceGroupForm.controls['selectedSourceName'].value=='Federal'">
+                <div formGroupName="selectedSourceDetails">
+                    <mat-form-field class="formFieldWidth">
+                            <mat-select #Agency placeholder="Select agency" formControlName="agencyId" required>
+                                    <mat-select-filter *ngIf="Agency.focused" [placeholder]="'Search...'" [displayMember]="'AgencyName'" [array]="agencyList" (filteredReturn)="tempAgencyList =$event"></mat-select-filter>
+                                          <mat-option> --- Select agency --- </mat-option>
+                                      <mat-option style="width:300px; font-size: small;" *ngFor="let option of tempAgencyList"
+                                          [value]="option.AgencyID">
+                                          {{option.AgencyName}}</mat-option>
+                                  </mat-select>
+                        <!-- <mat-select placeholder="Select agency" formControlName="agencyId" required>
+                                <mat-option>  Select agency  </mat-option>
+                            <mat-option style="width:300px; font-size: small;" *ngFor="let option of agencyList"
+                                [value]="option.AgencyID">
+                                {{option.AgencyName}}</mat-option>
+                        </mat-select> -->
+                        <mat-error *ngIf="sourceGroupForm.get('selectedSourceDetails.agencyId').hasError('required')">Agency is required</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="formFieldWidth">
+                            <mat-select #State placeholder="Select state" formControlName="stateId">
+                                    <mat-select-filter *ngIf="State.focused" [placeholder]="'Search...'" [displayMember]="'StateName'" [array]="stateList" (filteredReturn)="tempStateList =$event"></mat-select-filter>
+                                                       <mat-option> --- Select state --- </mat-option>
+                                                   <mat-option style="width:300px; font-size: small;" *ngFor="let option of tempStateList"
+                                                       [value]="option.StateId">
+                                                       {{option.StateName}}</mat-option>
+                                               </mat-select>
+                        <!-- <mat-select placeholder="Select state" formControlName="stateId">
+                                <mat-option>   Select state   </mat-option>
+                            <mat-option style="width:300px; font-size: small;" *ngFor="let option of stateList"
+                                [value]="option.StateId">
+                                {{option.StateName}}</mat-option>
+                        </mat-select> -->
+                    </mat-form-field>
+                    <mat-form-field class="formFieldWidth">
+                            <mat-select #Contract placeholder="Select contract vehicle" formControlName="contractVehicleId">
+                                    <mat-select-filter *ngIf="Contract.focused" [placeholder]="'Search...'" [displayMember]="'ContractVehicleName'" [array]="contractVehicleList" (filteredReturn)="tempContractVehicleList =$event"></mat-select-filter>
+                                          <mat-option> --- Select contract vehicle --- </mat-option>
+                                      <mat-option style="width:300px; font-size: small;"
+                                          *ngFor="let option of tempContractVehicleList" [value]="option.ContractVehicleId">
+                                          {{option.ContractVehicleName}}</mat-option>
+                                  </mat-select>
+                        <!-- <mat-select placeholder="Select contract vehicle" formControlName="contractVehicleId">
+                                <mat-option>  Select contract vehicle  </mat-option>
+                            <mat-option style="width:300px; font-size: small;"
+                                *ngFor="let option of contractVehicleList" [value]="option.ContractVehicleId">
+                                {{option.ContractVehicleName}}</mat-option>
+                        </mat-select> -->
+
+                    </mat-form-field>
+                    <mat-form-field class="formFieldWidth">
+                            <mat-select #Industry placeholder="Select industry/proposal classification" formControlName="industryId">
+                                <mat-select-filter *ngIf="Industry.focused" [placeholder]="'Search...'" [displayMember]="'IndustryName'" [array]="industryList" (filteredReturn)="tempIndustryList =$event"></mat-select-filter>
+                               <mat-option> --- Select industry --- </mat-option>
+                                   <mat-option *ngFor="let option of tempIndustryList" [value]="option.IndustryID">
+                                       {{option.IndustryName}}</mat-option>
+                               </mat-select>
+                        <!-- <mat-select placeholder="Select industry/proposal classification" formControlName="industryId"
+                        >
+                        <mat-option>  Select industry  </mat-option>
+                            <mat-option *ngFor="let option of industryList" [value]="option.IndustryID">
+                                {{option.IndustryName}}</mat-option>
+                        </mat-select> -->
+                        <!-- <mat-error *ngIf="sourceGroupForm.get('selectedSourceDetails.industryId').hasError('required')">Industry is required</mat-error> -->
+
+                    </mat-form-field>
+                </div>
+            </div>
+            <div *ngIf="sourceGroupForm.controls['selectedSourceName'].value=='State'">
+                <div formGroupName="selectedSourceDetails">
+                    <mat-form-field class="formFieldWidth">
+                            <mat-select #State placeholder="Select state" formControlName="stateId" required>
+                                    <mat-select-filter *ngIf="State.focused" [placeholder]="'Search...'" [displayMember]="'StateName'" [array]="stateList" (filteredReturn)="tempStateList =$event"></mat-select-filter>
+                                                       <mat-option> --- Select state --- </mat-option>
+                                                        <mat-option style="width:300px; font-size: small;" *ngFor="let option of tempStateList"
+                                                       [value]="option.StateId">
+                                                       {{option.StateName}}</mat-option>
+                                               </mat-select>
+                        <!-- <mat-select placeholder="Select state" formControlName="stateId" required>
+                                <mat-option>   Select state  </mat-option>
+                            <mat-option style="width:300px; font-size: small;" *ngFor="let option of stateList"
+                                [value]="option.StateId">
+                                {{option.StateName}}</mat-option>
+                        </mat-select> -->
+                        <mat-error *ngIf="sourceGroupForm.get('selectedSourceDetails.stateId').hasError('required')">State is required</mat-error>
+
+                    </mat-form-field>
+
+                    <mat-form-field class="formFieldWidth">
+                            <mat-select #Contract placeholder="Select contract vehicle" formControlName="contractVehicleId">
+                                    <mat-select-filter *ngIf="Contract.focused" [placeholder]="'Search...'" [displayMember]="'ContractVehicleName'" [array]="contractVehicleList" (filteredReturn)="tempContractVehicleList =$event"></mat-select-filter>
+                                          <mat-option> --- Select contract vehicle --- </mat-option>
+                                      <mat-option style="width:300px; font-size: small;"
+                                          *ngFor="let option of tempContractVehicleList" [value]="option.ContractVehicleId">
+                                          {{option.ContractVehicleName}}</mat-option>
+                                  </mat-select>
+                        <!-- <mat-select placeholder="Select contract vehicle" formControlName="contractVehicleId">
+                                <mat-option>  Select contract vehicle  </mat-option>
+                            <mat-option style="width:300px; font-size: small;"
+                                *ngFor="let option of contractVehicleList" [value]="option.ContractVehicleId">
+                                {{option.ContractVehicleName}}</mat-option>
+                        </mat-select> -->
+
+                    </mat-form-field>
+
+                    <mat-form-field class="formFieldWidth">
+                            <mat-select #Industry placeholder="Select industry/proposal classification" formControlName="industryId">
+                                <mat-select-filter *ngIf="Industry.focused" [placeholder]="'Search...'" [displayMember]="'IndustryName'" [array]="industryList" (filteredReturn)="tempIndustryList =$event"></mat-select-filter>
+                               <mat-option> --- Select industry --- </mat-option>
+                                   <mat-option *ngFor="let option of tempIndustryList" [value]="option.IndustryID">
+                                       {{option.IndustryName}}</mat-option>
+                               </mat-select>
+                        <!-- <mat-select placeholder="Select industry/proposal classification" formControlName="industryId"
+                            >
+                            <mat-option>  Select industry  </mat-option>
+                            <mat-option style="width:300px; font-size: small;" *ngFor="let option of industryList"
+                                [value]="option.IndustryID">
+                                {{option.IndustryName}}</mat-option>
+                        </mat-select> -->
+
+                        <!-- <mat-error *ngIf="sourceGroupForm.get('selectedSourceDetails.industryId').hasError('required')">Industry is required</mat-error> -->
+
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div *ngIf="sourceGroupForm.controls['selectedSourceName'].value=='Commercial'">
+                <div formGroupName="selectedSourceDetails">
+
+                </div>
+            </div>
+           </div>
+            <div class="confirm-dialog-container">
+                <div class="row">
+                    <div class="col-sm-6"> <button mat-raised-button color="primary" id="no-button" (click)="closeDialogOpp()">Cancel</button></div>
+                    <div class="col-sm-6"><button mat-raised-button color="primary" id="yes-button" (click)="submitForm(sourceGroupForm.value)">Ok</button></div>
+
+                </div>
+
+
+
+
+            </div>
+        </form>
+    </mat-card>
+
+
+<!--
+
+<div style="display:none;">
+    <label class="topMargin" id="sourceProposal-radio-group-label"
+     [ngClass]="{'invalid': sourceGroupForm.get('selectedSourceName').invalid}">Please Select Source Of Proposal.</label>
+    <mat-radio-group aria-labelledby="sourceProposal-radio-group-label" class="sourceProposal-radio-group"
+        formControlName="selectedSourceName" required>
+        <mat-radio-button class="sourceProposal-radio-button" *ngFor="let source of sourcesOfProposal"
+            [value]="source">
+            {{source}}
+        </mat-radio-button>
+    </mat-radio-group>
+    <div *ngIf="sourceGroupForm.controls['selectedSourceName'].value=='Federal'">
+        <div formGroupName="selectedSourceDetails">
+            <mat-form-field class="formFieldWidth">
+                <mat-select placeholder="Select agency" formControlName="AgencyID" required>
+                    <mat-option style="width:300px; font-size: small;" *ngFor="let option of agencyList"
+                        [value]="option.AgencyID">
+                        {{option.AgencyShortDesc}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="formFieldWidth">
+                <mat-select placeholder="Select state" formControlName="stateId">
+                    <mat-option style="width:300px; font-size: small;" *ngFor="let option of stateList"
+                        [value]="option.StateId">
+                        {{option.StateName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="formFieldWidth">
+                <mat-select placeholder="Select contract vehicle" formControlName="ContractVehicleId">
+                    <mat-option style="width:300px; font-size: small;"
+                        *ngFor="let option of contractVehicleList" [value]="option.ContractVehicleId">
+                        {{option.ContractVehicleShortDesc}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="formFieldWidth">
+                <mat-select placeholder="Select industry/proposal classification" formControlName="IndustryID"
+                    required>
+                    <mat-option *ngFor="let option of industryList" [value]="option.IndustryID">
+                        {{option.IndustryName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div *ngIf="sourceGroupForm.controls['selectedSourceName'].value=='State'">
+        <div formGroupName="selectedSourceDetails">
+            <mat-form-field>
+                <mat-select placeholder="Select state" formControlName="stateId" required>
+                    <mat-option style="width:300px; font-size: small;" *ngFor="let option of stateList"
+                        [value]="option.StateId">
+                        {{option.StateName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Select contract vehicle" formControlName="ContractVehicleId">
+                    <mat-option style="width:300px; font-size: small;"
+                        *ngFor="let option of contractVehicleList" [value]="option.ContractVehicleId">
+                        {{option.ContractVehicleShortDesc}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-select placeholder="Select industry/proposal classification" formControlName="IndustryID"
+                    required>
+                    <mat-option style="width:300px; font-size: small;" *ngFor="let option of industryList"
+                        [value]="option.IndustryID">
+                        {{option.IndustryName}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+    </div>
+    <div *ngIf="sourceGroupForm.controls['selectedSourceName'].value=='Commercial'">
+        <div formGroupName="selectedSourceDetails">
+
+        </div>
+    </div>
+   </div> -->

@@ -1,0 +1,71 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #zohoForm="ngForm">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main_sectionbox">
+                    <div class="row align_item">
+                        <div class="col-sm-12">
+                            <h1 class="heading_text">ZOHO CRM</h1>
+                        </div>
+                        <div class="col-sm-4">
+                            InitiateOAuth <span class="asterisk_span">*</span>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="input_text" id="initiateOAuth" name="initiateOAuth" [(ngModel)]="model
+.initiateOAuth" required #initiateOAuth="ngModel">
+                            <div *ngIf="(initiateOAuth.invalid && (initiateOAuth.dirty || initiateOAuth.touched))||(initiateOAuth.invalid && submitted)"
+                                class="alert alert-danger">
+
+                                <div *ngIf="initiateOAuth.errors.required">
+                                    InitiateOAuth is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            OAuthClientId <span class="asterisk_span">*</span>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="oAuthClientId
+" class="input_text" id="oAuthClientId
+" name="oAuthClientId
+" [(ngModel)]="model
+.oAuthClientId" required #oAuthClientId="ngModel">
+                            <div *ngIf="(oAuthClientId
+.invalid && (oAuthClientId
+.dirty || oAuthClientId
+.touched)) ||(oAuthClientId
+.invalid && submitted)" class="alert alert-danger">
+                                <div *ngIf="oAuthClientId
+.errors.required">
+                                    OAuthClientId is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            OAuthClientSecret <span class="asterisk_span">*</span>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="input_text" id="oAuthClientSecret" name="oAuthClientSecret"
+                                [(ngModel)]="model
+.oAuthClientSecret" required #oAuthClientSecret="ngModel">
+                            <div *ngIf="(oAuthClientSecret
+.invalid && (oAuthClientSecret
+.dirty || oAuthClientSecret
+.touched)) ||(oAuthClientSecret
+.invalid && submitted)" class="alert alert-danger">
+                                <div *ngIf="oAuthClientSecret
+.errors.required">
+                                    OAuthClientSecret is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nextbtn_box">
+                    <input type="submit" value="Next" class="next_btn">
+                    <input type="button" value="Cancel" class="cancel_btn" (click)="onCancel($event)">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

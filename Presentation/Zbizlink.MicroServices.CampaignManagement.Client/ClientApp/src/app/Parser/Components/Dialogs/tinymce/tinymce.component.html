@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>{{description}}</h2>
+    <!-- uwd77g8k52g8t7ov2a3z88gdd9woo8oawkwzidhmb87pbzck -->
+    <!-- a1xlkn4jds1f41tp58txym2pceltj63f1qfecj8iavsyth9e -->
+       <mat-dialog-content>
+        <editor apiKey="n8trjkankxflr6d8m87r9cb5x34yak4ofq25hq05b0skama3"  [(ngModel)]="tinyData"
+        [init]="{
+            height:'600px',
+            width:'650px',
+            plugins: 'link table | fullscreen | lists',
+            toolbar: 'formatselect | bold italic strikethrough forecolor backcolor permanentpen formatpainter | link image media pageembed | alignleft aligncenter alignright alignjustify  | outdent indent | removeformat | addcomment | fullscreen | fontsizeselect | numlist bullist'
+                }"></editor> 
+        </mat-dialog-content>    
+       <mat-dialog-actions>
+           <button class="mat-raised-button"(click)="Cancel()">Cancel</button>
+           <button class="mat-raised-button mat-primary"(click)="ok()">Save</button>
+</mat-dialog-actions>

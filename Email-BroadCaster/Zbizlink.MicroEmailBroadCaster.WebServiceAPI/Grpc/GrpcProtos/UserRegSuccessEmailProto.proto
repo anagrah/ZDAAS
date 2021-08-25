@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Zbizlink.MicroEmailBroadCaster.WebServiceAPI.Grpc.Protos";
+
+package UserRegSuccessEmailProto;
+
+service UserRegistrationEmailService{
+	rpc SendUserRegistrationSuccessEmail(UserRegistrationSuccessEmailRequest) returns (UserRegistrationSuccessEmailResponse);
+}
+	
+message UserRegistrationSuccessEmailRequest{
+	string FirstName=1;
+	string LastName=2;
+	string Email=3;
+	string Message=4;
+}
+
+message UserRegistrationSuccessEmailResponse
+{
+	bool Success =1;
+	string Error =2;
+}

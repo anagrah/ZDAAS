@@ -1,0 +1,293 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+
+
+
+body{ background: #F6F6F6; font-size: 13px; color: #000; font-family: 'Open Sans', sans-serif;}
+
+header{ background: #FFFFFF; padding-left: 30px; padding-top: 10px; padding-bottom: 10px; padding-right: 30px;}
+
+.zbizlink_logo{ width: 130px; display: inline-block;}
+
+
+
+.mainwrap_section{ max-width: 940px; margin: auto; padding: 30px;  margin-top: 30px; background: #fff; border: solid 1px #EBEBEB; border-radius: 8px;}
+.mainwrap_section2{ max-width: 580px; margin: auto; padding: 30px;  margin-top: 30px; background: #fff; border: solid 1px #EBEBEB; border-radius: 8px;}
+
+.mainwrap_section_fullwidth{max-width: 96%; margin: auto; padding: 30px;  margin-top: 30px; background: #fff; border: solid 1px #EBEBEB; border-radius: 8px;}
+
+.maincontent_section{ margin-top: 30px;}
+
+.form_input_section{ margin-bottom: 20px;}
+.form_inputlabel{ margin-bottom: 5px; display: block; font-weight: 600; }
+.form_inputlabel span{ color: red;}
+.form_input{ width: 100%; background: #F6F6F6; border-radius: 4px; border: solid 1px #EBEBEB; height: 40px; padding: 0;
+  padding-left: 10px; padding-right: 10px;}
+
+  .form_textarea{ width: 100%; height: 82px; background: #F6F6F6; border-radius: 4px; border: solid 1px #EBEBEB;  padding: 0;
+    padding-left: 10px; padding-right: 10px; resize: none; padding-top: 5px;}
+
+
+
+
+h2{ font-size: 22px; font-weight: 600;}
+
+
+
+.reload_captcha{ background: url(assets/images/reload-captcha.svg) no-repeat; width: 18px; height: 18px;
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+  cursor: pointer; display: inline-block;}
+
+ :focus{outline: none !important;}
+
+ .form_input_btn{ height: 40px; background: #ED3305; border-radius: 4px; border: 0px; color: #fff; font-size: 13px;
+  font-weight: 600; padding-left: 30px !important; padding-right: 30px !important; font-family: 'Open Sans', sans-serif !important; }
+
+
+  .form_input_btn_black{ height: 40px; background: #5b5b5b; border-radius: 4px; border: 0px; color: #fff; font-size: 13px;
+    font-weight: 600; padding-left: 30px !important; padding-right: 30px !important; font-family: 'Open Sans', sans-serif !important; }
+
+
+  .termsofservices_text{ margin-top: 7px;}
+
+  a{color: #007BFF;}
+  a:hover{color: #007BFF; text-decoration: none;}
+
+  ::placeholder {
+    color:#A2A2A2;
+    opacity: 1;
+
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#A2A2A2;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:#A2A2A2;
+  }
+
+  .captcha_wrapbox{ padding: 0px;}
+
+.loader_box{    width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #ffffffdb;
+  z-index: 99;
+  text-align: center;
+}
+.clearboth{ clear: both;}
+.loader_box img{ width: 50px; position: relative; top: 40%;}
+
+
+.mat_table{ border: 0px;}
+.mat_table thead tr th:first-child{ background: #555555; border-top-left-radius: 4px;}
+.mat_table thead tr th:last-child{ background: #555555; border-top-right-radius: 4px;}
+.mat_table thead tr th{ background: #555555; color: #fff; font-size: 14px;}
+.mat_table thead tr{ height: 40px;}
+
+.mat_table tbody tr{ height: 40px;  border: solid 1px #e8e8e8; border-top: 0px;}
+.mat_table tbody tr td{ border: 0px; font-size: 13px; position: relative;}
+
+
+.mat_table tbody tr:nth-child(even) {background-color: #f6f6f6;}
+.mat_table tbody tr:hover{ background: #f3ffcf;}
+
+
+
+
+
+.table_editbtn {
+
+  font-size: 12px;
+  height: 25px;
+  line-height: 12px !important;
+  padding: 5px 5px !important;
+  border-radius: 4px !important;
+  background: #f6f6f6;
+  border: solid 1px #dbdbdb !important;
+  box-shadow: none !important;
+  min-width: 50px !important;
+}
+.table_deletebtn {
+  color: #fff;
+  margin-left: 10px !important;
+  font-size: 12px;
+  height: 25px;
+  line-height: 12px !important;
+  padding: 5px 5px !important;
+  border-radius: 4px !important;
+  background: #ED3305;
+  border: solid 1px #ED3305 !important;
+  box-shadow: none !important;
+  min-width: 50px !important;
+}
+
+.table_btnspan{ position: absolute; right: 0; top: 7px; margin-right: 10px;  visibility: hidden;}
+
+
+.mat_table tbody tr:hover .table_btnspan{  visibility: visible;}
+
+
+
+.dialog_heading{ background:#ED3305; color: #fff; padding: 13px; font-size: 18px; font-weight: 700;  }
+
+.mat-dialog-container{ padding: 0px !important; box-shadow: none !important;}
+
+.dialog_contentbox{ padding: 20px; background: #fff; min-width: 475px;}
+
+.select_box{ width: 100% !important; background: #f6f6f6; border-radius: 4px; border: solid 1px #EBEBEB;}
+
+.mat-form-field-infix{border: 0px;}
+
+.mat-form-field-appearance-fill .mat-form-field-flex{ background: none;}
+.mat-form-field-wrapper{padding: 0px;}
+.mat-form-field-underline {
+  display: none;
+}
+
+.mat-select-arrow{ color: #007BFF; position: relative; top: 7px;}
+
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate{background: #007BFF}
+
+.mat-pseudo-checkbox{ width: 20px !important; height: 20px !important; border-radius: 0px !important ; border: solid 1px #007BFF !important;}
+
+
+.mat-pseudo-checkbox-checked::after{
+  width:12px !important ;
+  height: 5px !important;
+  left: 2px !important;
+  top: 3px !important;
+}
+
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled){ color: #007BFF !important;}
+
+
+
+
+/* ============= menu css start ================ */
+
+ul.header_rightmenu{ list-style: none; padding: 0px; margin: 0px; text-align: right; float: right;}
+ul.header_rightmenu li{ display: inline-block; margin-left: 30px;}
+
+ul.header_menulink{ list-style: none; padding: 0px; margin: 0px; text-align: right; float: right; margin-top: 7px;}
+ul.header_menulink li{ display: inline-block; margin-left: 30px;}
+ul.header_menulink li a{ color: #000; font-weight: 600;}
+
+
+
+.task_icon{ position: relative; width: 30px; height: 30px; display: inline-block; background: url(assets/images/tasks_icon.svg) no-repeat; cursor: pointer; }
+.notifications_icon{ position: relative; width: 30px; height: 30px; display: inline-block; background: url(assets/images/notifications_icon.svg) no-repeat; cursor: pointer; }
+.messages_icon{ position: relative; width: 30px; height: 30px; display: inline-block; background: url(assets/images/messages_icon.svg) no-repeat; cursor: pointer; }
+.partner_icon{ position: relative; width: 30px; height: 30px; display: inline-block; background: url(assets/images/partner_icon.svg) no-repeat; cursor: pointer; }
+.user_imgbox{ cursor: pointer; width: 30px; height: 30px; background: royalblue; border-radius: 100%; background-position: 50% 50% !important; background-size: cover !important;}
+
+.menu_badge{ position: absolute; width: 16px; height: 16px; background: #ED3305; color: #fff; border-radius: 100%; font-size: 11px;
+ text-align: center; line-height: 15px; top: 0; }
+
+.menupopup_btn{ width: 17px; height: 17px; display: inline-block;background: url(assets/images/menubtn.svg) no-repeat; margin-right: 30px;
+position: relative; top: 10px; cursor: pointer; }
+
+
+/* ============= main menu css start ================ */
+
+ul.nav_menu{ list-style: none; padding: 0px; margin: 0px;}
+ul.nav_menu li{ display: inline-block; margin: 15px;}
+
+ul.nav_menu li a{ font-size: 14px; color: #000; text-align: center; display: block; background: #fff; padding: 10px 20px; }
+ul.nav_menu li a:hover{box-shadow: 0px 0px 7px 0px rgba(137,137,137,0.50);}
+
+
+
+.campaigns_icon{ background: url(assets/images/menu-icon/campaigns_icon.svg) no-repeat; display: inline-block;  width: 75px; height: 75px; }
+.rfpparser_icon{ background: url(assets/images/menu-icon/rfpparser_icon.svg) no-repeat; display: inline-block;  width: 75px; height: 75px; }
+.crm_icon{ background: url(assets/images/menu-icon/crm_icon.svg) no-repeat; display: inline-block;  width: 75px; height: 75px; }
+.resumeparser_icon{ background: url(assets/images/menu-icon/resumeparser_icon.svg) no-repeat; display: inline-block;  width: 75px; height: 75px; }
+.consultant_icon{ background: url(assets/images/menu-icon/consultant_icon.svg) no-repeat; display: inline-block;  width: 75px; height: 75px; }
+
+
+.navmenu_poup{ position: relative !important;}
+.navmenu_poup .mat-dialog-container{ overflow: hidden; border-radius: 10px; padding: 15px !important;}
+
+.nav_menuclose_btn{ background: url(assets/images/menu-icon/mainmenu_close.svg) no-repeat; width: 40px; height: 40px; display: inline-block;
+position: absolute; right: -50px; top: -10px; overflow: hidden; }
+
+
+
+.sidenav_bodybg{     background: rgba(0,0,0,.32); width: 100%; height: 100%; position: absolute; z-index: 9; }
+.sidenav_closebtn {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  z-index: 9999;
+  border: 0;
+}
+
+/* Snackbar Error and Success messages for call from web-api*/
+.success-snackbar {
+  background: green;
+  color: #F6F6F6;
+}
+.error-snackbar {
+  background: red;
+  color: #F6F6F6;
+}
+.warn-snackbar {
+  background: yellow;
+  color: black;
+}
+
+.snackBarCcontainer {
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  margin: 24px;
+  max-width: 33vw;
+  min-width: inherit !important;
+  padding: 14px 16px;
+  min-height: 48px;
+  transform-origin: center;
+}
+
+.country-selector{
+  opacity:1 !important;
+  bottom:8px !important;
+  top: 9px !important;
+  left: -16px !important;
+}
+
+.regis_phoneinput{ width: 100%; background: #F6F6F6;border-radius: 4px;
+      border: solid 1px #EBEBEB;}
+
+.mat-form-field-outline-start{ border: 1px;}
+
+input[_ngcontent-ng-cli-universal-c210]:not(.country-search){ height: 40px !important; }
+.mat-form-field-appearance-legacy .mat-form-field-wrapper{padding: 0px !important; line-height: 0px !important;}
+.mat-form-field-appearance-legacy .mat-form-field-infix{padding: 0px !important;}
+
+input[_ngcontent-ng-cli-universal-c216]:not(.country-search){
+   height: 40px !important;
+}
+
+
+  @media only screen and (max-width: 600px) {
+
+    .dialog_contentbox{ min-width: auto; padding: 15px;}
+
+  .fxLayout_padding{  padding-top: 0px !important; padding-bottom: 0px !important;}
+  .signup_box{ margin-top: 15px; margin-bottom: 15px;}
+.form_input_btn{ width: 100%;}
+
+.mainwrap_section{margin: 30px;}
+.mainwrap_section2{margin: 30px;}
+.termsofservices_text{ margin-bottom: 20px;}
+
+
+
+
+  }

@@ -1,0 +1,71 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+        <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+      </div> 
+       <div class="main-div"style="margin-top: 0%;">
+          <form [formGroup]="groupForm" style="width: 100%;" >
+          <mat-toolbar style="background-color: #ed3305;"> 
+              <div style="float:left; width:95%;color: #ffffff;">{{BtnAddEdit}} Summary Field</div> 
+              <span class="fill-remaining-space"></span> 
+              <div>
+                  <button mat-icon-button (click)="closeDialogOpp($event)">
+                      <mat-icon>cancel</mat-icon>
+                  </button>
+              </div>
+            
+            </mat-toolbar> 
+         
+         <mat-card class=""> 
+                <mat-form-field class="example-full-width" style="display:none;">
+                        <mat-label>Id</mat-label>
+                        <input matInput formControlName="SummaryFieldId" [(ngModel)]="SummaryFieldId">
+                      </mat-form-field>
+
+                <mat-form-field class="example-full-width"> 
+                        <mat-label>Summary Field<span style="color: red;">*</span></mat-label>
+                        <input matInput #inputFieldName maxlength="100" style="font-size: small;"  placeholder="Enter Summary Field"
+                        formControlName="FieldName" (focus)="onClearErrorMessage()"  [(ngModel)]="FieldName">
+                       
+                        <mat-error *ngIf="groupForm.get('FieldName').invalid">{{getFieldName()}}</mat-error>
+                        <mat-hint align="end">{{inputFieldName.value?.length || 0}}/100</mat-hint>
+
+                      </mat-form-field> 
+                      <mat-error *ngIf='emptyFieldName'>{{emptyFieldName}}</mat-error>
+
+                      <mat-form-field class="example-full-width">
+                            <mat-label>Display Order Number <span style="color: red;">*</span></mat-label>
+                            <input type="number" matInput #inputDisplayOrder 
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            maxlength="3" style="font-size: small;" placeholder="Enter Display Order Number"
+                            (focus)="onFocus()"
+                            formControlName="DisplayOrder"  [(ngModel)]="DisplayOrder">
+                            <mat-error *ngIf="groupForm.get('DisplayOrder').invalid">{{getDisplayOrder()}}</mat-error>
+                            <mat-hint align="end">{{inputDisplayOrder.value?.length || 0}}/3</mat-hint>
+                          </mat-form-field>
+                         
+                          <mat-error *ngIf='errorMessage'>{{errorMessage}}</mat-error>
+                          <section class="checkbox-section">
+                                <mat-checkbox (change)="onCheckboxChange($event)" 
+                                class="checkbox-margin"  
+                                formControlName="Mandatory" [(ngModel)]="Mandatory"
+                                >Mandatory
+                            </mat-checkbox>
+                          </section> 
+
+                      <mat-form-field class="description-full-width-height">
+                            <mat-label>Description</mat-label>
+                            <textarea class="addEditCard addEditpopuptextarea" 
+                             matInput   #inputDescription
+                            formControlName="Description" maxlength="200"
+                            [(ngModel)]="Description"
+                            placeholder="Add your description...">
+                        </textarea> 
+                        <mat-hint align="end">{{inputDescription.value?.length || 0}}/200</mat-hint>
+                     </mat-form-field> 
+         <button mat-flat-button class="authentication-button-view zbizlink_btn " color="warn"  (click)="SaveSummary(groupForm)">{{BtnSave}}</button> 
+         </mat-card>
+        
+      </form>
+       </div> 
+          
+        
+       

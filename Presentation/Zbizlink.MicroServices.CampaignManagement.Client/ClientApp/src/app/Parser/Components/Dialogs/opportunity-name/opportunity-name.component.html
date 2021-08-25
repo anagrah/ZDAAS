@@ -1,0 +1,30 @@
+
+    <div>
+        <mat-toolbar style="height: 50px;">
+            <div style="float:left; width:95%; font-size:medium;">Opportunity</div>
+            <span class="fill-remaining-space"></span>
+            <div>
+                <button mat-icon-button (click)="closeDialogOpp()">
+                    <mat-icon>cancel</mat-icon>
+                </button>
+            </div>
+        </mat-toolbar>
+    </div>
+
+    <div mat-dialog-content>
+        <mat-card>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput [formControl]="name" required cdkFocusInitial>
+                <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>           
+        </mat-card>
+    </div>
+ 
+    <div class="confirm-dialog-container">
+        <button mat-raised-button color="primary" id="no-button"   (click)="closeDialogOpp()">Cancel</button>
+        
+        <button mat-raised-button color="primary" id="yes-button" (click)="onSubmit()"  [disabled]="!name.valid">Ok</button>
+    </div>
+
+    

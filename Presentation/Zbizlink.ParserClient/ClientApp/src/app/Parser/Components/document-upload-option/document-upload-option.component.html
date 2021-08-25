@@ -1,0 +1,45 @@
+<div>
+    <mat-toolbar>
+        <div style="float:left;  font-size: small;">Parsing Options</div>
+        <span class="fill-remaining-space"></span>
+    </mat-toolbar>
+</div>
+
+<div>
+    <mat-card>
+        <div style="font-size: small">
+            <mat-radio-group [(ngModel)]="parsingTypeRadioSelectedVaule">
+                <mat-radio-button style="padding-right: 20px;" value="auto">Auto parsing</mat-radio-button>
+                <mat-radio-button value="manual">Manual parsing</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <mat-divider></mat-divider>
+        &nbsp;
+        &nbsp;
+        <div style="font-size: small"> Do you move whole document content?
+            <mat-radio-group [(ngModel)]="RadioSelectedVaule">
+                <mat-radio-button style="padding-right: 20px;" value="auto">Yes</mat-radio-button>
+                <mat-radio-button value="manual">No</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <mat-divider></mat-divider>
+        &nbsp;
+        &nbsp;
+        <div>
+            <mat-form-field>
+                <mat-select  placeholder="Select category" [(value)]="categoryDropdownSelectedValue" multiple>
+                    <mat-option *ngFor="let category of categories" [value]="category.value">
+                        {{category.viewValue}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </mat-card>
+</div>
+
+
+&nbsp;
+<div>
+    <button mat-stroked-button color="primary" (click)="closeDialogOpp()">Cancel</button>
+    &nbsp;
+    <button mat-stroked-button color="primary" (click)="ok()" cdkFocusInitial>Ok</button>
+</div>

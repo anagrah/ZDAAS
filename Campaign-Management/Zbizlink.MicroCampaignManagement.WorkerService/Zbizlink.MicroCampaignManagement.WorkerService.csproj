@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bus\Zbizlink.MicroService.Bus\Zbizlink.Micro.RabbitMessageQueueBus.csproj" />
+    <ProjectReference Include="..\Zbizlink.CMCommon\Zbizlink.CMCommon.csproj" />
+    <ProjectReference Include="..\Zbizlink.MicroCampaignManagement.DataModel\Zbizlink.MicroCampaignManagement.DataModel.csproj" />
+    <ProjectReference Include="..\Zbizlink.MicroCampaignManagement.LoggerService\Zbizlink.MicroCampaignManagement.LoggerService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

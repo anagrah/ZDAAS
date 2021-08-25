@@ -1,0 +1,60 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #salesforceForm="ngForm">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main_sectionbox">
+                    <div class="row align_item">
+                        <div class="col-sm-12">
+                            <h1 class="heading_text">Salesforce CRM</h1>
+                        </div>
+                        <div class="col-sm-4">
+                            User <span class="asterisk_span">*</span>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="input_text" id="userName" name="userName" [(ngModel)]="model
+.userName" required #name="ngModel">
+                            <div *ngIf="(name.invalid && (name.dirty || name.touched))||(name.invalid && submitted)"
+                                class="alert alert-danger">
+
+                                <div *ngIf="name.errors.required">
+                                    User name is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            Password <span class="asterisk_span">*</span>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="password" class="input_text" id="password" name="password" [(ngModel)]="model
+.password" required #password="ngModel">
+                            <div *ngIf="(password.invalid && (password.dirty || password.touched)) ||(password.invalid && submitted)"
+                                class="alert alert-danger">
+                                <div *ngIf="password.errors.required">
+                                    Password is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            Security Token <span class="asterisk_span">*</span>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" class="input_text" id="securityToken" name="securityToken" [(ngModel)]="model
+.securityToken" required #securityToken="ngModel">
+                            <div *ngIf="(securityToken.invalid && (securityToken.dirty || securityToken.touched)) ||(securityToken.invalid && submitted)"
+                                class="alert alert-danger">
+                                <div *ngIf="securityToken.errors.required">
+                                    Security Token is required.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nextbtn_box">
+                    <input type="submit" value="Save And Login" class="next_btn">
+                    <input type="button" value="Cancel" class="cancel_btn" (click)="onCancel($event)">
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>

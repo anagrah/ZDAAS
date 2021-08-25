@@ -1,0 +1,31 @@
+<div>
+  <mat-toolbar style="height: 50px;">
+      <div style="float:left; width:95%; font-size:medium;">{{description}}</div>
+      <span class="fill-remaining-space"></span>
+
+  </mat-toolbar>
+</div>
+
+<mat-card>
+  <editor apiKey="n8trjkankxflr6d8m87r9cb5x34yak4ofq25hq05b0skama3"  [(ngModel)]="tinyData"
+  [init]="{
+      height:'300px',
+
+      plugins: 'link table | fullscreen | lists',
+      toolbar: 'formatselect | bold italic strikethrough forecolor backcolor permanentpen formatpainter | link image media pageembed | alignleft aligncenter alignright alignjustify  | outdent indent | removeformat | addcomment | fullscreen | fontsizeselect | numlist bullist'
+          }"></editor>
+
+
+          <div class="confirm-dialog-container" style="margin-top: 15px;">
+            <div class="row">
+                <div class="col-sm-6"> <button mat-raised-button color="primary" id="no-button"(click)="Cancel()">Cancel</button></div>
+                <div class="col-sm-6"><button mat-raised-button color="primary" id="yes-button" (click)="ok()">Save</button></div>
+
+            </div>
+        </div>
+
+
+
+</mat-card>
+
+

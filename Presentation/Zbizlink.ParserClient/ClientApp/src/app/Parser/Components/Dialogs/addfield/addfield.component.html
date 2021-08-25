@@ -1,0 +1,72 @@
+<div>
+  <mat-toolbar style="height: 50px;">
+      <div style="float:left; width:95%; font-size:medium;">Add Custom Field</div>
+      <span class="fill-remaining-space"></span>
+
+  </mat-toolbar>
+</div>
+
+
+<mat-card>
+
+
+  <div>	&nbsp;</div>
+     <form [formGroup]="groupForm" style="font-size: small;">
+
+        <div>
+
+          <mat-form-field hintLabel="Max 15 characters" class="formFieldWidth">
+            <mat-label>Enter label name</mat-label>
+            <input matInput  #input maxlength="15" style="font-size: small;" matInput placeholder="Label name"
+            [formControl]="groupForm.get('labelfield')" required [(ngModel)]="fieldLabel">
+            <mat-error *ngIf="groupForm.get('labelfield').invalid">{{getErrorMessage()}}</mat-error>
+            <mat-hint align="end">{{input.value?.length || 0}}/15</mat-hint>
+          </mat-form-field>
+
+
+        </div>
+
+     <!-- <input class="dialog_inputbox"  formControlName= "labelfield" type="text" [(ngModel)]="fieldLabel"
+     placeholder="Please enter the label name" /> -->
+
+<div>
+  <mat-form-field class="formFieldWidth">
+    <mat-label>Choose field name</mat-label>
+    <mat-select #fieldtype  [formControl]="groupForm.get('typefield')" (selectionChange)="ChangeFieldType($event)" required>
+      <mat-option>--</mat-option>
+      <mat-option  *ngFor="let fields of fieldtypes" [value]="fields" >
+        {{fields}}
+      </mat-option>
+    </mat-select>
+    <mat-error *ngIf="groupForm.get('typefield').hasError('required')">Please choose a field name</mat-error>
+  </mat-form-field>
+
+</div>
+
+
+     <!-- <select  formControlName= "typefield" class="custom-select dialog_selectbox" (change)="ChangeFieldType($event)" >
+         <option value="" disabled>Choose Field name</option>
+         <option *ngFor="let fields of fieldtypes" [ngValue]="fields">{{fields}}</option>
+      </select> -->
+
+
+
+      <div class="confirm-dialog-container">
+
+        <div class="row">
+          <div class="col-sm-6"> <button mat-raised-button color="primary" id="no-button" (click)="Cancel()">Cancel</button></div>
+          <div class="col-sm-6"><button mat-raised-button color="primary" id="yes-button"  (click)="Done()">Done</button></div>
+
+      </div>
+
+
+
+ </div>
+
+     </form>
+
+
+     </mat-card>
+
+
+

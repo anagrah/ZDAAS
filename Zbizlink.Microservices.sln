@@ -1,0 +1,1147 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServices", "{1427E694-C4B8-4351-BC37-11D72236F74E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{71FB89C7-AD96-4DEA-8EF5-27570D9A1AC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserManagement", "UserManagement", "{70BDEFD2-6F19-4B85-931C-8B3F872C5791}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enum", "Enum", "{3257CB4A-2AA1-4BBF-B378-210AE914B98F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoggerService", "LoggerService", "{262159B1-F019-4B66-8B9E-E7E9B4FB14D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resolver", "Resolver", "{DB9D6233-3BE2-443C-9929-6D12FB721FEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{48032FF6-524A-44B2-B347-EFCD7E0B2839}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{94E6C8E9-E4B1-4668-A41E-E89AA7DE9167}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CampaignManagementSystem", "CampaignManagementSystem", "{8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{44EA61D5-122E-478B-ADD1-8C862B66FBAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{92A0383C-0B49-4645-9842-07975B8B2848}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoggerService", "LoggerService", "{DC13083E-67AE-44A8-8E17-B7F6033D9282}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resolver", "Resolver", "{5C8C7490-3A2A-4FB7-9BED-382CDA7B52F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{5B3D44A2-4A12-43DB-8DB1-9A280EC53E4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bus", "Bus", "{27C02CA8-70FF-4CC7-9D4C-8EBEE8E02893}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.CampaignMangement.Client", "Zbizlink.CampaignMangement.Client", "{49CFF42A-CEB4-4056-8496-F0A9D3BA9A98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{CE1FE1D6-1470-4451-A81D-97BD68616105}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RFPParser", "RFPParser", "{5969A3D1-F215-45D6-87FF-8AB73F6B5766}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{20C38C93-85E3-4C43-9F0D-7AC56CA5D22B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B80D9E9D-BA56-4E2A-BDE6-EE3682B28434}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resolver", "Resolver", "{AD35E210-F98B-409C-A231-D0775D739A24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{71D8ABB0-72F7-42DD-A85C-D035935E02A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailBroadCaster", "EmailBroadCaster", "{98A56F85-ADEB-44F3-9884-CD87A22CEE76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{207547F0-0116-4B36-BE82-A531F8EE2EAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{BDDEECBA-6B78-4FFB-9348-F8CB8D37CE89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resolver", "Resolver", "{A3E0B701-A767-48BE-BEE5-DA42C502A4AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{6BA1C2F1-A5E2-458C-BFE2-E5EE0B61C140}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoggerService", "LoggerService", "{095B973E-BF42-4431-B4EC-EA1652B464CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enum", "Enum", "{6EB5464C-836B-4B81-AA33-CF891DF889B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{331CD763-36B0-4863-9630-499AA4EC03B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{77367912-83E6-4EB4-913C-08E6B98B8868}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulation", "Simulation", "{2557C096-DCF3-4226-84D8-402E2298A2C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.HttpClientSimulation", "RFPParser\Zbizlink.HttpClientSimulation\Zbizlink.HttpClientSimulation.csproj", "{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPWebAPI.IntegrationTest", "RFPParser\Zbizlink.RFPWebAPI.IntegrationTest\Zbizlink.RFPWebAPI.IntegrationTest.csproj", "{262FDAD6-45F1-404A-8730-B9E891905DFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPDataModel", "RFPParser\Zbizlink.ParserDataModel\Zbizlink.RFPDataModel.csproj", "{5619EC43-B843-484B-8D6B-1447E4641464}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPStoreProcedureModel", "RFPParser\Zbizlink.StoreProcedureModel\Zbizlink.RFPStoreProcedureModel.csproj", "{8C386084-BF20-4A7F-B80A-D64D03F621B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportingProject", "SupportingProject", "{5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPBusinessModel", "RFPParser\Zbizlink.BusinessModel\Zbizlink.RFPBusinessModel.csproj", "{6723B950-CA7D-469C-B321-9DB52FD692A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPOpportunityRFPNodeTree", "RFPParser\Zbizlink.OpportunityRFPNodeTree\Zbizlink.RFPOpportunityRFPNodeTree.csproj", "{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPCommon", "RFPParser\Zbizlink.RFPCommon\Zbizlink.RFPCommon.csproj", "{DA8BD134-F7B0-467B-A173-37AC7E112713}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPConversion", "RFPParser\Zbizlink.RFPConversion\Zbizlink.RFPConversion.csproj", "{CE3A698D-C9FA-4059-9955-64743D463968}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPLaborCategory", "RFPParser\Zbizlink.RFPLaborCategory\Zbizlink.RFPLaborCategory.csproj", "{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPManipulation", "RFPParser\Zbizlink.RFPManipulation\Zbizlink.RFPManipulation.csproj", "{27C3967A-305D-4186-B164-13530F1C7BD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPNodeTree", "RFPParser\Zbizlink.RFPNodeTree\Zbizlink.RFPNodeTree.csproj", "{789C085C-DB5F-461A-80E2-D526EE5361F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPSummary", "RFPParser\Zbizlink.RFPSummary\Zbizlink.RFPSummary.csproj", "{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPDIResolver", "RFPParser\Zbizlink.DIResolver\Zbizlink.RFPDIResolver.csproj", "{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{203947BC-52F7-48E1-A018-C7565727C219}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.Zdaas.RFPNodeTree.UnitTest", "RFPParser\Zbizlink.Zdaas.RFPNodeTree.UnitTest\Zbizlink.Zdaas.RFPNodeTree.UnitTest.csproj", "{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logger", "Logger", "{9383B4B5-DC8A-4117-A16C-7453205558BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPLoggerService", "RFPParser\Zbizlink.LoggerService\Zbizlink.RFPLoggerService.csproj", "{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPLoggerContracts", "RFPParser\Zbizlink.LoggerContracts\Zbizlink.RFPLoggerContracts.csproj", "{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{18C281BD-9F0F-4E9A-BC79-09B3D309CC85}"
+	ProjectSection(SolutionItems) = preProject
+		RFPParser\NuGet.Config = RFPParser\NuGet.Config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCampaignManagement.WebServiceAPI", "Campaign-Management\Zbizlink.MicroCampaignManagement.WebServiceAPI\Zbizlink.MicroCampaignManagement.WebServiceAPI.csproj", "{0AF75AA1-E452-4442-B20B-67741C27B493}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCampaignManagement.DataModel", "Campaign-Management\Zbizlink.MicroCampaignManagement.DataModel\Zbizlink.MicroCampaignManagement.DataModel.csproj", "{C9831CFF-9899-4C3C-8A7D-F20A774F523E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCampaignManagement.LoggerService", "Campaign-Management\Zbizlink.MicroCampaignManagement.LoggerService\Zbizlink.MicroCampaignManagement.LoggerService.csproj", "{B27A469E-E8AB-48F9-A97F-843B4202369D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCampaignManagement.Resolver", "Campaign-Management\Zbizlink.MicroCampaignManagement.Resolver\Zbizlink.MicroCampaignManagement.Resolver.csproj", "{EF650AA1-726E-4B6C-AED6-69DFE4130616}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCampaignManagement.WorkerService", "Campaign-Management\Zbizlink.MicroCampaignManagement.WorkerService\Zbizlink.MicroCampaignManagement.WorkerService.csproj", "{B062ECDF-3228-4802-9E3C-22622834D159}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroEmailBroadCaster.WebServiceAPI", "Email-BroadCaster\Zbizlink.MicroEmailBroadCaster.WebServiceAPI\Zbizlink.MicroEmailBroadCaster.WebServiceAPI.csproj", "{D9C5FAD7-DC11-4547-AA28-E1A059594B28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroEmailBroadCaster.DataModel", "Email-BroadCaster\Zbizlink.MicroEmailBroadCaster.DataModel\Zbizlink.MicroEmailBroadCaster.DataModel.csproj", "{6D05E59E-2352-4FA5-A917-6FA21F626820}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroEmailBroadCaster.LoggerService", "Email-BroadCaster\Zbizlink.MicroEmailBroadCaster.LoggerService\Zbizlink.MicroEmailBroadCaster.LoggerService.csproj", "{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroEmailBroadCaster.Resolver", "Email-BroadCaster\Zbizlink.MicroEmailBroadCaster.Resolver\Zbizlink.MicroEmailBroadCaster.Resolver.csproj", "{BB12801A-4B67-4286-9C15-69300EC52DC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroEmailBroadCaster.WorkerService", "Email-BroadCaster\Zbizlink.MicroEmailBroadCaster.WorkerService\Zbizlink.MicroEmailBroadCaster.WorkerService.csproj", "{9E963C14-BCBE-4B16-94EF-8A55816326B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserManagement.WebServiceAPI", "User-Management\Zbizlink.MicroUserManagement.WebServiceAPI\Zbizlink.MicroUserManagement.WebServiceAPI.csproj", "{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserManagement.DataModel", "User-Management\Zbizlink.MicroUserManagement.DataModel\Zbizlink.MicroUserManagement.DataModel.csproj", "{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserManagement.Enum", "User-Management\Zbizlink.MicroUserManagement.Enum\Zbizlink.MicroUserManagement.Enum.csproj", "{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserManagement.LoggerService", "User-Management\Zbizlink.MicroUserManagement.LoggerService\Zbizlink.MicroUserManagement.LoggerService.csproj", "{498CE432-7915-41B2-AC56-19A5CFBFEC7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserManagement.Resolver", "User-Management\Zbizlink.MicroUserManagement.Resolver\Zbizlink.MicroUserManagement.Resolver.csproj", "{891EFFE8-9DE2-4647-B88C-374B58D2F899}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserManagement.WorkerService", "User-Management\Zbizlink.MicroUserManagement.WorkerService\Zbizlink.MicroUserManagement.WorkerService.csproj", "{D51B782B-E26D-410D-BC65-DEB420E5401C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.Micro.RabbitMessageQueueBus", "Bus\Zbizlink.MicroService.Bus\Zbizlink.Micro.RabbitMessageQueueBus.csproj", "{347EDF5E-B307-4EEC-BEED-7C5359947A9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroServices.CampaignManagement.Client", "Presentation\Zbizlink.MicroServices.CampaignManagement.Client\Zbizlink.MicroServices.CampaignManagement.Client.csproj", "{847671BF-C2A6-4522-87F5-A2B64C810AD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.Micro.Enum", "Enum\Zbizlink.Micro.Enum\Zbizlink.Micro.Enum.csproj", "{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroOcelotAPI.Gateway", "APIGateway\Zbizlink.MicroOcelotAPI.Gateway\Zbizlink.MicroOcelotAPI.Gateway.csproj", "{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.ParserWebClient", "Zbizlink.ParserWebClient", "{E04B478A-1EBA-4EE7-8D8D-70D1696CE9A7}"
+	ProjectSection(SolutionItems) = preProject
+		User-Management\Zbizlink.MicroUserManagement.WebServiceAPI\Program.cs = User-Management\Zbizlink.MicroUserManagement.WebServiceAPI\Program.cs
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.ParserClient", "Presentation\Zbizlink.ParserClient\Zbizlink.ParserClient.csproj", "{16BD5601-2750-4E52-B43E-E6FDB9C21385}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resilience", "Resilience", "{1EE7DA0B-3D28-4709-9EE0-48D7F75F8AF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.PollyResilience", "Polly\Zbizlink.PollyResilience.csproj", "{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportingProject", "SupportingProject", "{344B8184-EE0F-4B33-8750-965098F73E42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.CMCommon", "Campaign-Management\Zbizlink.CMCommon\Zbizlink.CMCommon.csproj", "{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.CampaignManagementStoreProcedureModel", "Campaign-Management\Zbizlink.CampaignManagementStoreProcedureModel\Zbizlink.CampaignManagementStoreProcedureModel.csproj", "{AC8DA407-5050-4FD5-AE5C-CD932823EE89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPWebAPI", "RFPParser\Zbizlink.RFPWebAPI\Zbizlink.RFPWebAPI.csproj", "{08A017A9-9D2B-406A-8972-64CA5746C1B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.RFPServices", "RFPParser\Zbizlink.RFPServices\Zbizlink.RFPServices.csproj", "{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SagaOrchestration", "SagaOrchestration", "{E7FFA76A-7D6F-4C60-9FCB-3B5970CFC932}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrmDataImportUtility", "CrmDataImportUtility", "{34573478-BB09-491B-BA86-5C137B4E6FFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportingProject", "SupportingProject", "{960C294F-A243-44FD-A941-0416A27220A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CRMToolkitApi", "CRMToolkitApi", "{3706AF35-3F56-45A1-83B8-C9A8059B9CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRMToolkitApi", "CrmDataImportUtility\SupportingProject\CRMToolkitApi\CRMToolkitApi.csproj", "{56DF2863-147B-4C07-B57D-334B70289D7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SalesforceToolkit", "SalesforceToolkit", "{C110938A-EB6F-471C-8797-2DACB3F0F938}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.MicroCRMDataImport.DataModel", "Zbizlink.MicroCRMDataImport.DataModel", "{0B4BC629-B58D-498B-A02B-18EC968CFB24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.MicroCRMDataImport.LoggerService", "Zbizlink.MicroCRMDataImport.LoggerService", "{D93C70E3-26C7-4408-852B-74E2D64357BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.MicroCRMDataImport.Resolver", "Zbizlink.MicroCRMDataImport.Resolver", "{CE4DA9B2-B46B-4BC3-9981-AA0A23466548}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.MicroCRMDataImport.WebServiceAPI", "Zbizlink.MicroCRMDataImport.WebServiceAPI", "{BC23E3EC-17AA-46CE-B309-46C773A8BD5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.MicroCRMDataImport.WorkerService", "Zbizlink.MicroCRMDataImport.WorkerService", "{C5AA9A39-9E16-444E-BD99-F5A96D45B621}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCRMDataImport.DataModel", "CrmDataImportUtility\Zbizlink.MicroCRMDataImport.DataModel\Zbizlink.MicroCRMDataImport.DataModel.csproj", "{87D09BB5-3573-40F6-8E57-81FD85C52343}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCRMDataImport.LoggerService", "CrmDataImportUtility\Zbizlink.MicroCRMDataImport.LoggerService\Zbizlink.MicroCRMDataImport.LoggerService.csproj", "{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCRMDataImport.Resolver", "CrmDataImportUtility\Zbizlink.MicroCRMDataImport.Resolver\Zbizlink.MicroCRMDataImport.Resolver.csproj", "{CFB08076-B71B-4260-BAD2-7F5AD9871570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCRMDataImport.WebServiceAPI", "CrmDataImportUtility\Zbizlink.MicroCRMDataImport.WebServiceAPI\Zbizlink.MicroCRMDataImport.WebServiceAPI.csproj", "{0B10823D-4D4C-43F1-B56B-A955E708989C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCRMDataImport.WorkerService", "CrmDataImportUtility\Zbizlink.MicroCRMDataImport.WorkerService\Zbizlink.MicroCRMDataImport.WorkerService.csproj", "{DE78AE5B-A1ED-49DC-9029-38D159100F53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesforceToolkit", "CrmDataImportUtility\SupportingProject\SalesforceToolkit\SalesforceToolkit.csproj", "{F0FFE546-84AF-44A7-B95B-8970FA3F2768}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.Micro.SagaOrchestration", "SagaOrchestration\Zbizlink.Micro.SagaOrchestration\Zbizlink.Micro.SagaOrchestration.csproj", "{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserAuthenticationAndRolesManagement", "UserAuthenticationAndRolesManagement", "{BD9D0A9B-3FF5-4184-9657-0386D0C50E92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C30C1BC6-0F88-4358-8540-F2B4CE5848DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7A93C98D-A783-4C74-9243-08FDC58666F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoggerService", "LoggerService", "{2E9EE36C-4C5E-49E1-A8FC-DB01EC9EEB42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resolver", "Resolver", "{6A4DA2E2-3EB6-4BCA-8B54-CB3E66682698}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{55C0D23C-E134-4708-A7BC-EE53C3950CD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserAuthAndRolesManagement.WorkerService", "UserAuthenticationAndRolesManagement\Zbizlink.MicroUserAuthAndRolesManagement.WorkerService\Zbizlink.MicroUserAuthAndRolesManagement.WorkerService.csproj", "{5F039477-F304-45AD-8DA4-D6CB2B043719}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserAuthAndRolesManagement.Resolver", "UserAuthenticationAndRolesManagement\Zbizlink.MicroUserAuthAndRolesManagement.Resolver\Zbizlink.MicroUserAuthAndRolesManagement.Resolver.csproj", "{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserAuthAndRolesManagement.LoggerService", "UserAuthenticationAndRolesManagement\Zbizlink.MicroUserAuthAndRolesManagement.LoggerService\Zbizlink.MicroUserAuthAndRolesManagement.LoggerService.csproj", "{163757F8-E2FE-46B9-81CA-E252D356E219}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserAuthAndRolesManagement.DataModel", "UserAuthenticationAndRolesManagement\Zbizlink.MicroUserAuthAndRolesManagement.DataModel\Zbizlink.MicroUserAuthAndRolesManagement.DataModel.csproj", "{9403FB2D-0E97-42C2-94F4-3C7620131536}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserAuthAndRolesManagement.WebServiceApi", "UserAuthenticationAndRolesManagement\Zbizlink.MicroUserAuthAndRolesManagement.WebServiceApi\Zbizlink.MicroUserAuthAndRolesManagement.WebServiceApi.csproj", "{EB3F144F-04CB-4958-8C30-69740275DE8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Zbizlink.Client", "Zbizlink.Client", "{6294767E-4C52-41BA-9E83-83574F1E05A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.Client", "Presentation\Zbizlink.Client\Zbizlink.Client\Zbizlink.Client.csproj", "{17E338EF-D2FC-432B-A3CF-6D52426166A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Company", "Company", "{DDDF6E62-7E04-490B-AC09-78AD2C1CD93E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CA1959E2-FA60-47B8-AA00-EA91787C02AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{CEBF9040-2F8A-43F1-B46D-E334A44FE1E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoggerService", "LoggerService", "{C592D385-3BE2-439F-8453-5269D8DE759E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{EC51E92D-1EBA-4A33-92A1-39A54AD7B8C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resolver", "Resolver", "{175B7736-8ACC-46B3-BFE2-7F81AB30BD59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCompany.WebServiceAPI", "Company\Zbizlink.MicroCompany.API\Zbizlink.MicroCompany.WebServiceAPI.csproj", "{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCompany.DataModel", "Company\Zbizlink.MicroCompany.DataModel\Zbizlink.MicroCompany.DataModel.csproj", "{11A04BE9-DC54-4FF4-90C6-41C7907B2983}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCompany.LoggerService", "Company\Zbizlink.MicroCompany.LoggerService\Zbizlink.MicroCompany.LoggerService.csproj", "{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCompany.Resolver", "Company\Zbizlink.MicroCompany.Resolver\Zbizlink.MicroCompany.Resolver.csproj", "{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroCompany.WorkerService", "Company\Zbizlink.MicroCompany.WorkerService\Zbizlink.MicroCompany.WorkerService.csproj", "{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{3D312996-2D19-4538-8062-EBFE4D942C45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbizlink.MicroUserAuthAndManagement.xUnitTest", "UserAuthenticationAndRolesManagement\Zbizlink.MicroUserAuthAndManagement.xUnitTest\Zbizlink.MicroUserAuthAndManagement.xUnitTest.csproj", "{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Debug|x64.Build.0 = Debug|Any CPU
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Release|x64.ActiveCfg = Release|Any CPU
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0}.Release|x64.Build.0 = Release|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Debug|x64.Build.0 = Debug|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Release|x64.ActiveCfg = Release|Any CPU
+		{262FDAD6-45F1-404A-8730-B9E891905DFB}.Release|x64.Build.0 = Release|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Debug|x64.Build.0 = Debug|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Release|x64.ActiveCfg = Release|Any CPU
+		{5619EC43-B843-484B-8D6B-1447E4641464}.Release|x64.Build.0 = Release|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7}.Release|x64.Build.0 = Release|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Debug|x64.Build.0 = Debug|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Release|x64.ActiveCfg = Release|Any CPU
+		{6723B950-CA7D-469C-B321-9DB52FD692A4}.Release|x64.Build.0 = Release|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Debug|x64.Build.0 = Debug|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Release|x64.ActiveCfg = Release|Any CPU
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B}.Release|x64.Build.0 = Release|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Debug|x64.Build.0 = Debug|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Release|x64.ActiveCfg = Release|Any CPU
+		{DA8BD134-F7B0-467B-A173-37AC7E112713}.Release|x64.Build.0 = Release|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Debug|x64.Build.0 = Debug|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE3A698D-C9FA-4059-9955-64743D463968}.Release|x64.Build.0 = Release|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Debug|x64.Build.0 = Debug|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Release|x64.ActiveCfg = Release|Any CPU
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269}.Release|x64.Build.0 = Release|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Debug|x64.Build.0 = Debug|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Release|x64.ActiveCfg = Release|Any CPU
+		{27C3967A-305D-4186-B164-13530F1C7BD3}.Release|x64.Build.0 = Release|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Debug|x64.Build.0 = Debug|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Release|x64.ActiveCfg = Release|Any CPU
+		{789C085C-DB5F-461A-80E2-D526EE5361F4}.Release|x64.Build.0 = Release|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Debug|x64.Build.0 = Debug|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Release|x64.ActiveCfg = Release|Any CPU
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F}.Release|x64.Build.0 = Release|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Debug|x64.Build.0 = Debug|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Release|x64.ActiveCfg = Release|Any CPU
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F}.Release|x64.Build.0 = Release|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Debug|x64.Build.0 = Debug|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Release|x64.ActiveCfg = Release|Any CPU
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55}.Release|x64.Build.0 = Release|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Debug|x64.Build.0 = Debug|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Release|x64.ActiveCfg = Release|Any CPU
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645}.Release|x64.Build.0 = Release|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Debug|x64.Build.0 = Debug|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Release|x64.ActiveCfg = Release|Any CPU
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A}.Release|x64.Build.0 = Release|Any CPU
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Debug|x64.ActiveCfg = Debug|x64
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Debug|x64.Build.0 = Debug|x64
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Release|x64.ActiveCfg = Release|x64
+		{0AF75AA1-E452-4442-B20B-67741C27B493}.Release|x64.Build.0 = Release|x64
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Debug|x64.Build.0 = Debug|Any CPU
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Release|x64.ActiveCfg = Release|Any CPU
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E}.Release|x64.Build.0 = Release|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Debug|x64.Build.0 = Debug|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Release|x64.ActiveCfg = Release|Any CPU
+		{B27A469E-E8AB-48F9-A97F-843B4202369D}.Release|x64.Build.0 = Release|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Debug|x64.Build.0 = Debug|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616}.Release|x64.Build.0 = Release|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Debug|x64.Build.0 = Debug|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Release|x64.ActiveCfg = Release|Any CPU
+		{B062ECDF-3228-4802-9E3C-22622834D159}.Release|x64.Build.0 = Release|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Debug|x64.Build.0 = Debug|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Release|x64.ActiveCfg = Release|Any CPU
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28}.Release|x64.Build.0 = Release|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Debug|x64.Build.0 = Debug|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Release|x64.ActiveCfg = Release|Any CPU
+		{6D05E59E-2352-4FA5-A917-6FA21F626820}.Release|x64.Build.0 = Release|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Debug|x64.Build.0 = Debug|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Release|x64.ActiveCfg = Release|Any CPU
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC}.Release|x64.Build.0 = Release|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Debug|x64.Build.0 = Debug|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Release|x64.ActiveCfg = Release|Any CPU
+		{BB12801A-4B67-4286-9C15-69300EC52DC5}.Release|x64.Build.0 = Release|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Debug|x64.Build.0 = Debug|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Release|x64.ActiveCfg = Release|Any CPU
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0}.Release|x64.Build.0 = Release|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Debug|x64.Build.0 = Debug|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Release|x64.ActiveCfg = Release|Any CPU
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE}.Release|x64.Build.0 = Release|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Debug|x64.Build.0 = Debug|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Release|x64.ActiveCfg = Release|Any CPU
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF}.Release|x64.Build.0 = Release|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Debug|x64.Build.0 = Debug|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Release|x64.ActiveCfg = Release|Any CPU
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1}.Release|x64.Build.0 = Release|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Debug|x64.Build.0 = Debug|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Release|x64.ActiveCfg = Release|Any CPU
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A}.Release|x64.Build.0 = Release|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Debug|x64.Build.0 = Debug|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Release|x64.ActiveCfg = Release|Any CPU
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899}.Release|x64.Build.0 = Release|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Debug|x64.Build.0 = Debug|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Release|x64.ActiveCfg = Release|Any CPU
+		{D51B782B-E26D-410D-BC65-DEB420E5401C}.Release|x64.Build.0 = Release|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Debug|x64.Build.0 = Debug|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Release|x64.ActiveCfg = Release|Any CPU
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C}.Release|x64.Build.0 = Release|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Debug|x64.Build.0 = Debug|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Release|x64.ActiveCfg = Release|Any CPU
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5}.Release|x64.Build.0 = Release|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Debug|x64.Build.0 = Debug|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Release|x64.ActiveCfg = Release|Any CPU
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C}.Release|x64.Build.0 = Release|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Debug|x64.Build.0 = Debug|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Release|x64.ActiveCfg = Release|Any CPU
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3}.Release|x64.Build.0 = Release|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Debug|x64.Build.0 = Debug|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Release|x64.ActiveCfg = Release|Any CPU
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385}.Release|x64.Build.0 = Release|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Debug|x64.Build.0 = Debug|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Release|x64.ActiveCfg = Release|Any CPU
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2}.Release|x64.Build.0 = Release|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Debug|x64.Build.0 = Debug|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Release|x64.ActiveCfg = Release|Any CPU
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3}.Release|x64.Build.0 = Release|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Debug|x64.Build.0 = Debug|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Release|x64.ActiveCfg = Release|Any CPU
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89}.Release|x64.Build.0 = Release|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Debug|x64.Build.0 = Debug|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Release|x64.ActiveCfg = Release|Any CPU
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0}.Release|x64.Build.0 = Release|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Debug|x64.Build.0 = Debug|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Release|x64.ActiveCfg = Release|Any CPU
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1}.Release|x64.Build.0 = Release|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Debug|x64.Build.0 = Debug|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Release|x64.ActiveCfg = Release|Any CPU
+		{56DF2863-147B-4C07-B57D-334B70289D7C}.Release|x64.Build.0 = Release|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Debug|x64.Build.0 = Debug|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Release|x64.ActiveCfg = Release|Any CPU
+		{87D09BB5-3573-40F6-8E57-81FD85C52343}.Release|x64.Build.0 = Release|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Debug|x64.Build.0 = Debug|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Release|x64.ActiveCfg = Release|Any CPU
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9}.Release|x64.Build.0 = Release|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Debug|x64.Build.0 = Debug|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Release|x64.ActiveCfg = Release|Any CPU
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570}.Release|x64.Build.0 = Release|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Debug|x64.Build.0 = Debug|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Release|x64.ActiveCfg = Release|Any CPU
+		{0B10823D-4D4C-43F1-B56B-A955E708989C}.Release|x64.Build.0 = Release|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Debug|x64.Build.0 = Debug|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Release|x64.ActiveCfg = Release|Any CPU
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53}.Release|x64.Build.0 = Release|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Debug|x64.Build.0 = Debug|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Release|x64.ActiveCfg = Release|Any CPU
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768}.Release|x64.Build.0 = Release|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Debug|x64.Build.0 = Debug|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Release|x64.ActiveCfg = Release|Any CPU
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E}.Release|x64.Build.0 = Release|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Release|x64.ActiveCfg = Release|Any CPU
+		{5F039477-F304-45AD-8DA4-D6CB2B043719}.Release|x64.Build.0 = Release|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Debug|x64.Build.0 = Debug|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Release|x64.ActiveCfg = Release|Any CPU
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F}.Release|x64.Build.0 = Release|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Debug|x64.Build.0 = Debug|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Release|x64.ActiveCfg = Release|Any CPU
+		{163757F8-E2FE-46B9-81CA-E252D356E219}.Release|x64.Build.0 = Release|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Debug|x64.Build.0 = Debug|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Release|x64.ActiveCfg = Release|Any CPU
+		{9403FB2D-0E97-42C2-94F4-3C7620131536}.Release|x64.Build.0 = Release|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Debug|x64.Build.0 = Debug|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB3F144F-04CB-4958-8C30-69740275DE8A}.Release|x64.Build.0 = Release|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Debug|x64.Build.0 = Debug|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Release|x64.ActiveCfg = Release|Any CPU
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2}.Release|x64.Build.0 = Release|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Debug|x64.Build.0 = Debug|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Release|x64.ActiveCfg = Release|Any CPU
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D}.Release|x64.Build.0 = Release|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Debug|x64.Build.0 = Debug|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Release|x64.ActiveCfg = Release|Any CPU
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983}.Release|x64.Build.0 = Release|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Debug|x64.Build.0 = Debug|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Release|x64.ActiveCfg = Release|Any CPU
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518}.Release|x64.Build.0 = Release|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Debug|x64.Build.0 = Debug|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Release|x64.ActiveCfg = Release|Any CPU
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C}.Release|x64.Build.0 = Release|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Debug|x64.Build.0 = Debug|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Release|x64.ActiveCfg = Release|Any CPU
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1}.Release|x64.Build.0 = Release|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Debug|x64.Build.0 = Debug|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Release|x64.ActiveCfg = Release|Any CPU
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70BDEFD2-6F19-4B85-931C-8B3F872C5791} = {1427E694-C4B8-4351-BC37-11D72236F74E}
+		{3257CB4A-2AA1-4BBF-B378-210AE914B98F} = {70BDEFD2-6F19-4B85-931C-8B3F872C5791}
+		{262159B1-F019-4B66-8B9E-E7E9B4FB14D1} = {70BDEFD2-6F19-4B85-931C-8B3F872C5791}
+		{DB9D6233-3BE2-443C-9929-6D12FB721FEB} = {70BDEFD2-6F19-4B85-931C-8B3F872C5791}
+		{48032FF6-524A-44B2-B347-EFCD7E0B2839} = {70BDEFD2-6F19-4B85-931C-8B3F872C5791}
+		{94E6C8E9-E4B1-4668-A41E-E89AA7DE9167} = {70BDEFD2-6F19-4B85-931C-8B3F872C5791}
+		{8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E} = {1427E694-C4B8-4351-BC37-11D72236F74E}
+		{44EA61D5-122E-478B-ADD1-8C862B66FBAA} = {8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E}
+		{92A0383C-0B49-4645-9842-07975B8B2848} = {8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E}
+		{DC13083E-67AE-44A8-8E17-B7F6033D9282} = {8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E}
+		{5C8C7490-3A2A-4FB7-9BED-382CDA7B52F9} = {8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E}
+		{5B3D44A2-4A12-43DB-8DB1-9A280EC53E4F} = {8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E}
+		{49CFF42A-CEB4-4056-8496-F0A9D3BA9A98} = {71FB89C7-AD96-4DEA-8EF5-27570D9A1AC4}
+		{5969A3D1-F215-45D6-87FF-8AB73F6B5766} = {1427E694-C4B8-4351-BC37-11D72236F74E}
+		{20C38C93-85E3-4C43-9F0D-7AC56CA5D22B} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{B80D9E9D-BA56-4E2A-BDE6-EE3682B28434} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{AD35E210-F98B-409C-A231-D0775D739A24} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{71D8ABB0-72F7-42DD-A85C-D035935E02A8} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{98A56F85-ADEB-44F3-9884-CD87A22CEE76} = {1427E694-C4B8-4351-BC37-11D72236F74E}
+		{207547F0-0116-4B36-BE82-A531F8EE2EAB} = {98A56F85-ADEB-44F3-9884-CD87A22CEE76}
+		{BDDEECBA-6B78-4FFB-9348-F8CB8D37CE89} = {98A56F85-ADEB-44F3-9884-CD87A22CEE76}
+		{A3E0B701-A767-48BE-BEE5-DA42C502A4AA} = {98A56F85-ADEB-44F3-9884-CD87A22CEE76}
+		{6BA1C2F1-A5E2-458C-BFE2-E5EE0B61C140} = {98A56F85-ADEB-44F3-9884-CD87A22CEE76}
+		{095B973E-BF42-4431-B4EC-EA1652B464CE} = {98A56F85-ADEB-44F3-9884-CD87A22CEE76}
+		{331CD763-36B0-4863-9630-499AA4EC03B1} = {70BDEFD2-6F19-4B85-931C-8B3F872C5791}
+		{77367912-83E6-4EB4-913C-08E6B98B8868} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{2557C096-DCF3-4226-84D8-402E2298A2C2} = {77367912-83E6-4EB4-913C-08E6B98B8868}
+		{39DB0FC4-D1A8-43CC-A957-7E9F602B4ED0} = {2557C096-DCF3-4226-84D8-402E2298A2C2}
+		{262FDAD6-45F1-404A-8730-B9E891905DFB} = {77367912-83E6-4EB4-913C-08E6B98B8868}
+		{5619EC43-B843-484B-8D6B-1447E4641464} = {B80D9E9D-BA56-4E2A-BDE6-EE3682B28434}
+		{8C386084-BF20-4A7F-B80A-D64D03F621B7} = {B80D9E9D-BA56-4E2A-BDE6-EE3682B28434}
+		{5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{6723B950-CA7D-469C-B321-9DB52FD692A4} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{C6D2F5B5-FE34-49FB-AD8C-8E9BFA12A66B} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{DA8BD134-F7B0-467B-A173-37AC7E112713} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{CE3A698D-C9FA-4059-9955-64743D463968} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{0BAFDA7E-03AE-4281-8C7C-F8E21CC82269} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{27C3967A-305D-4186-B164-13530F1C7BD3} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{789C085C-DB5F-461A-80E2-D526EE5361F4} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{BAE5E1C0-7B42-4120-84EF-B4AF19A34A4F} = {5FA5FAD9-C86F-4DA7-98F7-FBB4984E2531}
+		{C9E740DA-E3B0-4E0C-A67D-BF81D71A3F8F} = {AD35E210-F98B-409C-A231-D0775D739A24}
+		{203947BC-52F7-48E1-A018-C7565727C219} = {77367912-83E6-4EB4-913C-08E6B98B8868}
+		{69EF1EA4-4E37-40D3-985A-7DEC587A0A55} = {203947BC-52F7-48E1-A018-C7565727C219}
+		{9383B4B5-DC8A-4117-A16C-7453205558BD} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{2BBFFD5F-BE29-49C9-ABAD-AFB766BDB645} = {9383B4B5-DC8A-4117-A16C-7453205558BD}
+		{3BCC2C6D-451C-4531-9BEC-1E5F6AEC131A} = {9383B4B5-DC8A-4117-A16C-7453205558BD}
+		{18C281BD-9F0F-4E9A-BC79-09B3D309CC85} = {5969A3D1-F215-45D6-87FF-8AB73F6B5766}
+		{0AF75AA1-E452-4442-B20B-67741C27B493} = {44EA61D5-122E-478B-ADD1-8C862B66FBAA}
+		{C9831CFF-9899-4C3C-8A7D-F20A774F523E} = {92A0383C-0B49-4645-9842-07975B8B2848}
+		{B27A469E-E8AB-48F9-A97F-843B4202369D} = {DC13083E-67AE-44A8-8E17-B7F6033D9282}
+		{EF650AA1-726E-4B6C-AED6-69DFE4130616} = {5C8C7490-3A2A-4FB7-9BED-382CDA7B52F9}
+		{B062ECDF-3228-4802-9E3C-22622834D159} = {5B3D44A2-4A12-43DB-8DB1-9A280EC53E4F}
+		{D9C5FAD7-DC11-4547-AA28-E1A059594B28} = {BDDEECBA-6B78-4FFB-9348-F8CB8D37CE89}
+		{6D05E59E-2352-4FA5-A917-6FA21F626820} = {207547F0-0116-4B36-BE82-A531F8EE2EAB}
+		{57DF7C14-18BD-406F-A4F9-AA77EBBB31EC} = {095B973E-BF42-4431-B4EC-EA1652B464CE}
+		{BB12801A-4B67-4286-9C15-69300EC52DC5} = {A3E0B701-A767-48BE-BEE5-DA42C502A4AA}
+		{9E963C14-BCBE-4B16-94EF-8A55816326B0} = {6BA1C2F1-A5E2-458C-BFE2-E5EE0B61C140}
+		{39E0A5F4-923C-42A0-BF99-8E8AF13694DE} = {48032FF6-524A-44B2-B347-EFCD7E0B2839}
+		{8E0E7BF8-FD71-4765-94F1-367DB3C795FF} = {331CD763-36B0-4863-9630-499AA4EC03B1}
+		{EBCA9F7F-A7DF-4113-9B82-A069B6A43BE1} = {3257CB4A-2AA1-4BBF-B378-210AE914B98F}
+		{498CE432-7915-41B2-AC56-19A5CFBFEC7A} = {262159B1-F019-4B66-8B9E-E7E9B4FB14D1}
+		{891EFFE8-9DE2-4647-B88C-374B58D2F899} = {DB9D6233-3BE2-443C-9929-6D12FB721FEB}
+		{D51B782B-E26D-410D-BC65-DEB420E5401C} = {94E6C8E9-E4B1-4668-A41E-E89AA7DE9167}
+		{347EDF5E-B307-4EEC-BEED-7C5359947A9C} = {27C02CA8-70FF-4CC7-9D4C-8EBEE8E02893}
+		{847671BF-C2A6-4522-87F5-A2B64C810AD5} = {49CFF42A-CEB4-4056-8496-F0A9D3BA9A98}
+		{F4F3436D-3EBF-4633-981D-B2F4A8C2614C} = {6EB5464C-836B-4B81-AA33-CF891DF889B1}
+		{5C14BFF1-FC34-460A-80ED-979FBB3CC2A3} = {CE1FE1D6-1470-4451-A81D-97BD68616105}
+		{E04B478A-1EBA-4EE7-8D8D-70D1696CE9A7} = {49CFF42A-CEB4-4056-8496-F0A9D3BA9A98}
+		{16BD5601-2750-4E52-B43E-E6FDB9C21385} = {E04B478A-1EBA-4EE7-8D8D-70D1696CE9A7}
+		{14A3F906-4CF8-422C-A58D-ED8CBAC254D2} = {1EE7DA0B-3D28-4709-9EE0-48D7F75F8AF0}
+		{344B8184-EE0F-4B33-8750-965098F73E42} = {8AACBDC9-06FA-412C-A6F8-0ABB9DDB8B8E}
+		{3DF0CF0E-0802-4D4A-8745-87FECB4EB9B3} = {344B8184-EE0F-4B33-8750-965098F73E42}
+		{AC8DA407-5050-4FD5-AE5C-CD932823EE89} = {92A0383C-0B49-4645-9842-07975B8B2848}
+		{08A017A9-9D2B-406A-8972-64CA5746C1B0} = {20C38C93-85E3-4C43-9F0D-7AC56CA5D22B}
+		{833C2F56-803D-4B8B-A7B7-7C71BB0CFBC1} = {71D8ABB0-72F7-42DD-A85C-D035935E02A8}
+		{34573478-BB09-491B-BA86-5C137B4E6FFF} = {1427E694-C4B8-4351-BC37-11D72236F74E}
+		{960C294F-A243-44FD-A941-0416A27220A2} = {34573478-BB09-491B-BA86-5C137B4E6FFF}
+		{3706AF35-3F56-45A1-83B8-C9A8059B9CE9} = {960C294F-A243-44FD-A941-0416A27220A2}
+		{56DF2863-147B-4C07-B57D-334B70289D7C} = {3706AF35-3F56-45A1-83B8-C9A8059B9CE9}
+		{C110938A-EB6F-471C-8797-2DACB3F0F938} = {960C294F-A243-44FD-A941-0416A27220A2}
+		{0B4BC629-B58D-498B-A02B-18EC968CFB24} = {34573478-BB09-491B-BA86-5C137B4E6FFF}
+		{D93C70E3-26C7-4408-852B-74E2D64357BE} = {34573478-BB09-491B-BA86-5C137B4E6FFF}
+		{CE4DA9B2-B46B-4BC3-9981-AA0A23466548} = {34573478-BB09-491B-BA86-5C137B4E6FFF}
+		{BC23E3EC-17AA-46CE-B309-46C773A8BD5B} = {34573478-BB09-491B-BA86-5C137B4E6FFF}
+		{C5AA9A39-9E16-444E-BD99-F5A96D45B621} = {34573478-BB09-491B-BA86-5C137B4E6FFF}
+		{87D09BB5-3573-40F6-8E57-81FD85C52343} = {0B4BC629-B58D-498B-A02B-18EC968CFB24}
+		{FACC52CD-E2FC-4FDA-A00A-7154847D0CF9} = {D93C70E3-26C7-4408-852B-74E2D64357BE}
+		{CFB08076-B71B-4260-BAD2-7F5AD9871570} = {CE4DA9B2-B46B-4BC3-9981-AA0A23466548}
+		{0B10823D-4D4C-43F1-B56B-A955E708989C} = {BC23E3EC-17AA-46CE-B309-46C773A8BD5B}
+		{DE78AE5B-A1ED-49DC-9029-38D159100F53} = {C5AA9A39-9E16-444E-BD99-F5A96D45B621}
+		{F0FFE546-84AF-44A7-B95B-8970FA3F2768} = {C110938A-EB6F-471C-8797-2DACB3F0F938}
+		{4CA8B3F3-1274-4055-A5BB-0F58AD759A9E} = {E7FFA76A-7D6F-4C60-9FCB-3B5970CFC932}
+		{BD9D0A9B-3FF5-4184-9657-0386D0C50E92} = {1427E694-C4B8-4351-BC37-11D72236F74E}
+		{C30C1BC6-0F88-4358-8540-F2B4CE5848DB} = {BD9D0A9B-3FF5-4184-9657-0386D0C50E92}
+		{7A93C98D-A783-4C74-9243-08FDC58666F7} = {BD9D0A9B-3FF5-4184-9657-0386D0C50E92}
+		{2E9EE36C-4C5E-49E1-A8FC-DB01EC9EEB42} = {BD9D0A9B-3FF5-4184-9657-0386D0C50E92}
+		{6A4DA2E2-3EB6-4BCA-8B54-CB3E66682698} = {BD9D0A9B-3FF5-4184-9657-0386D0C50E92}
+		{55C0D23C-E134-4708-A7BC-EE53C3950CD4} = {BD9D0A9B-3FF5-4184-9657-0386D0C50E92}
+		{5F039477-F304-45AD-8DA4-D6CB2B043719} = {55C0D23C-E134-4708-A7BC-EE53C3950CD4}
+		{D02D6DCF-C730-4B16-8B4A-8ECB81C7EB1F} = {6A4DA2E2-3EB6-4BCA-8B54-CB3E66682698}
+		{163757F8-E2FE-46B9-81CA-E252D356E219} = {2E9EE36C-4C5E-49E1-A8FC-DB01EC9EEB42}
+		{9403FB2D-0E97-42C2-94F4-3C7620131536} = {7A93C98D-A783-4C74-9243-08FDC58666F7}
+		{EB3F144F-04CB-4958-8C30-69740275DE8A} = {C30C1BC6-0F88-4358-8540-F2B4CE5848DB}
+		{6294767E-4C52-41BA-9E83-83574F1E05A9} = {71FB89C7-AD96-4DEA-8EF5-27570D9A1AC4}
+		{17E338EF-D2FC-432B-A3CF-6D52426166A2} = {6294767E-4C52-41BA-9E83-83574F1E05A9}
+		{DDDF6E62-7E04-490B-AC09-78AD2C1CD93E} = {1427E694-C4B8-4351-BC37-11D72236F74E}
+		{CA1959E2-FA60-47B8-AA00-EA91787C02AC} = {DDDF6E62-7E04-490B-AC09-78AD2C1CD93E}
+		{CEBF9040-2F8A-43F1-B46D-E334A44FE1E1} = {DDDF6E62-7E04-490B-AC09-78AD2C1CD93E}
+		{C592D385-3BE2-439F-8453-5269D8DE759E} = {DDDF6E62-7E04-490B-AC09-78AD2C1CD93E}
+		{EC51E92D-1EBA-4A33-92A1-39A54AD7B8C5} = {DDDF6E62-7E04-490B-AC09-78AD2C1CD93E}
+		{175B7736-8ACC-46B3-BFE2-7F81AB30BD59} = {DDDF6E62-7E04-490B-AC09-78AD2C1CD93E}
+		{7EACD67C-2BCE-4BBE-B8A1-DDBFD07EBC7D} = {CA1959E2-FA60-47B8-AA00-EA91787C02AC}
+		{11A04BE9-DC54-4FF4-90C6-41C7907B2983} = {CEBF9040-2F8A-43F1-B46D-E334A44FE1E1}
+		{DF393EE1-2EAC-4EB9-8FD5-5BDD3849C518} = {C592D385-3BE2-439F-8453-5269D8DE759E}
+		{AB2C5A0A-5CA3-43ED-A9D4-7DE2C428E01C} = {175B7736-8ACC-46B3-BFE2-7F81AB30BD59}
+		{D9CF3A48-80B3-4F7B-90FC-57B6F54BD4F1} = {EC51E92D-1EBA-4A33-92A1-39A54AD7B8C5}
+		{3D312996-2D19-4538-8062-EBFE4D942C45} = {BD9D0A9B-3FF5-4184-9657-0386D0C50E92}
+		{9BFEA165-5AB4-48F0-A37C-1EE20B70D574} = {3D312996-2D19-4538-8062-EBFE4D942C45}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5F72564-7505-4F95-B390-AD7D18AEB129}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 63
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://anagrah.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RFPParser\\Zbizlink.HttpClientSimulation\\Zbizlink.HttpClientSimulation.csproj
+		SccProjectTopLevelParentUniqueName1 = Zbizlink.Microservices.sln
+		SccProjectName1 = RFPParser/Zbizlink.HttpClientSimulation
+		SccLocalPath1 = RFPParser\\Zbizlink.HttpClientSimulation
+		SccProjectUniqueName2 = RFPParser\\Zbizlink.RFPWebAPI.IntegrationTest\\Zbizlink.RFPWebAPI.IntegrationTest.csproj
+		SccProjectTopLevelParentUniqueName2 = Zbizlink.Microservices.sln
+		SccProjectName2 = RFPParser/Zbizlink.RFPWebAPI.IntegrationTest
+		SccLocalPath2 = RFPParser\\Zbizlink.RFPWebAPI.IntegrationTest
+		SccProjectUniqueName3 = RFPParser\\Zbizlink.RFPCommon\\Zbizlink.RFPCommon.csproj
+		SccProjectTopLevelParentUniqueName3 = Zbizlink.Microservices.sln
+		SccProjectName3 = RFPParser/Zbizlink.RFPCommon
+		SccLocalPath3 = RFPParser\\Zbizlink.RFPCommon
+		SccProjectUniqueName4 = RFPParser\\Zbizlink.RFPConversion\\Zbizlink.RFPConversion.csproj
+		SccProjectTopLevelParentUniqueName4 = Zbizlink.Microservices.sln
+		SccProjectName4 = RFPParser/Zbizlink.RFPConversion
+		SccLocalPath4 = RFPParser\\Zbizlink.RFPConversion
+		SccProjectUniqueName5 = RFPParser\\Zbizlink.RFPLaborCategory\\Zbizlink.RFPLaborCategory.csproj
+		SccProjectTopLevelParentUniqueName5 = Zbizlink.Microservices.sln
+		SccProjectName5 = RFPParser/Zbizlink.RFPLaborCategory
+		SccLocalPath5 = RFPParser\\Zbizlink.RFPLaborCategory
+		SccProjectUniqueName6 = RFPParser\\Zbizlink.RFPManipulation\\Zbizlink.RFPManipulation.csproj
+		SccProjectTopLevelParentUniqueName6 = Zbizlink.Microservices.sln
+		SccProjectName6 = RFPParser/Zbizlink.RFPManipulation
+		SccLocalPath6 = RFPParser\\Zbizlink.RFPManipulation
+		SccProjectUniqueName7 = RFPParser\\Zbizlink.RFPNodeTree\\Zbizlink.RFPNodeTree.csproj
+		SccProjectTopLevelParentUniqueName7 = Zbizlink.Microservices.sln
+		SccProjectName7 = RFPParser/Zbizlink.RFPNodeTree
+		SccLocalPath7 = RFPParser\\Zbizlink.RFPNodeTree
+		SccProjectUniqueName8 = RFPParser\\Zbizlink.RFPSummary\\Zbizlink.RFPSummary.csproj
+		SccProjectTopLevelParentUniqueName8 = Zbizlink.Microservices.sln
+		SccProjectName8 = RFPParser/Zbizlink.RFPSummary
+		SccLocalPath8 = RFPParser\\Zbizlink.RFPSummary
+		SccProjectUniqueName9 = RFPParser\\Zbizlink.Zdaas.RFPNodeTree.UnitTest\\Zbizlink.Zdaas.RFPNodeTree.UnitTest.csproj
+		SccProjectTopLevelParentUniqueName9 = Zbizlink.Microservices.sln
+		SccProjectName9 = RFPParser/Zbizlink.Zdaas.RFPNodeTree.UnitTest
+		SccLocalPath9 = RFPParser\\Zbizlink.Zdaas.RFPNodeTree.UnitTest
+		SccProjectUniqueName10 = RFPParser\\Zbizlink.BusinessModel\\Zbizlink.RFPBusinessModel.csproj
+		SccProjectTopLevelParentUniqueName10 = Zbizlink.Microservices.sln
+		SccProjectName10 = RFPParser/Zbizlink.BusinessModel
+		SccLocalPath10 = RFPParser\\Zbizlink.BusinessModel
+		SccProjectUniqueName11 = RFPParser\\Zbizlink.OpportunityRFPNodeTree\\Zbizlink.RFPOpportunityRFPNodeTree.csproj
+		SccProjectTopLevelParentUniqueName11 = Zbizlink.Microservices.sln
+		SccProjectName11 = RFPParser/Zbizlink.OpportunityRFPNodeTree
+		SccLocalPath11 = RFPParser\\Zbizlink.OpportunityRFPNodeTree
+		SccProjectUniqueName12 = RFPParser\\Zbizlink.StoreProcedureModel\\Zbizlink.RFPStoreProcedureModel.csproj
+		SccProjectTopLevelParentUniqueName12 = Zbizlink.Microservices.sln
+		SccProjectName12 = RFPParser/Zbizlink.StoreProcedureModel
+		SccLocalPath12 = RFPParser\\Zbizlink.StoreProcedureModel
+		SccProjectUniqueName13 = RFPParser\\Zbizlink.LoggerContracts\\Zbizlink.RFPLoggerContracts.csproj
+		SccProjectTopLevelParentUniqueName13 = Zbizlink.Microservices.sln
+		SccProjectName13 = RFPParser/Zbizlink.LoggerContracts
+		SccLocalPath13 = RFPParser\\Zbizlink.LoggerContracts
+		SccProjectUniqueName14 = RFPParser\\Zbizlink.LoggerService\\Zbizlink.RFPLoggerService.csproj
+		SccProjectTopLevelParentUniqueName14 = Zbizlink.Microservices.sln
+		SccProjectName14 = RFPParser/Zbizlink.LoggerService
+		SccLocalPath14 = RFPParser\\Zbizlink.LoggerService
+		SccProjectUniqueName15 = RFPParser\\Zbizlink.ParserDataModel\\Zbizlink.RFPDataModel.csproj
+		SccProjectTopLevelParentUniqueName15 = Zbizlink.Microservices.sln
+		SccProjectName15 = RFPParser/Zbizlink.ParserDataModel
+		SccLocalPath15 = RFPParser\\Zbizlink.ParserDataModel
+		SccProjectUniqueName16 = RFPParser\\Zbizlink.DIResolver\\Zbizlink.RFPDIResolver.csproj
+		SccProjectTopLevelParentUniqueName16 = Zbizlink.Microservices.sln
+		SccProjectName16 = RFPParser/Zbizlink.DIResolver
+		SccLocalPath16 = RFPParser\\Zbizlink.DIResolver
+		SccProjectUniqueName17 = Campaign-Management\\Zbizlink.MicroCampaignManagement.WebServiceAPI\\Zbizlink.MicroCampaignManagement.WebServiceAPI.csproj
+		SccProjectTopLevelParentUniqueName17 = Zbizlink.Microservices.sln
+		SccProjectName17 = Campaign-Management/Zbizlink.MicroCampaignManagement.WebServiceAPI
+		SccLocalPath17 = Campaign-Management\\Zbizlink.MicroCampaignManagement.WebServiceAPI
+		SccProjectUniqueName18 = Campaign-Management\\Zbizlink.MicroCampaignManagement.DataModel\\Zbizlink.MicroCampaignManagement.DataModel.csproj
+		SccProjectTopLevelParentUniqueName18 = Zbizlink.Microservices.sln
+		SccProjectName18 = Campaign-Management/Zbizlink.MicroCampaignManagement.DataModel
+		SccLocalPath18 = Campaign-Management\\Zbizlink.MicroCampaignManagement.DataModel
+		SccProjectUniqueName19 = Campaign-Management\\Zbizlink.MicroCampaignManagement.LoggerService\\Zbizlink.MicroCampaignManagement.LoggerService.csproj
+		SccProjectTopLevelParentUniqueName19 = Zbizlink.Microservices.sln
+		SccProjectName19 = Campaign-Management/Zbizlink.MicroCampaignManagement.LoggerService
+		SccLocalPath19 = Campaign-Management\\Zbizlink.MicroCampaignManagement.LoggerService
+		SccProjectUniqueName20 = Campaign-Management\\Zbizlink.MicroCampaignManagement.Resolver\\Zbizlink.MicroCampaignManagement.Resolver.csproj
+		SccProjectTopLevelParentUniqueName20 = Zbizlink.Microservices.sln
+		SccProjectName20 = Campaign-Management/Zbizlink.MicroCampaignManagement.Resolver
+		SccLocalPath20 = Campaign-Management\\Zbizlink.MicroCampaignManagement.Resolver
+		SccProjectUniqueName21 = Campaign-Management\\Zbizlink.MicroCampaignManagement.WorkerService\\Zbizlink.MicroCampaignManagement.WorkerService.csproj
+		SccProjectTopLevelParentUniqueName21 = Zbizlink.Microservices.sln
+		SccProjectName21 = Campaign-Management/Zbizlink.MicroCampaignManagement.WorkerService
+		SccLocalPath21 = Campaign-Management\\Zbizlink.MicroCampaignManagement.WorkerService
+		SccProjectUniqueName22 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.WebServiceAPI\\Zbizlink.MicroEmailBroadCaster.WebServiceAPI.csproj
+		SccProjectTopLevelParentUniqueName22 = Zbizlink.Microservices.sln
+		SccProjectName22 = Email-BroadCaster/Zbizlink.MicroEmailBroadCaster.WebServiceAPI
+		SccLocalPath22 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.WebServiceAPI
+		SccProjectUniqueName23 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.DataModel\\Zbizlink.MicroEmailBroadCaster.DataModel.csproj
+		SccProjectTopLevelParentUniqueName23 = Zbizlink.Microservices.sln
+		SccProjectName23 = Email-BroadCaster/Zbizlink.MicroEmailBroadCaster.DataModel
+		SccLocalPath23 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.DataModel
+		SccProjectUniqueName24 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.LoggerService\\Zbizlink.MicroEmailBroadCaster.LoggerService.csproj
+		SccProjectTopLevelParentUniqueName24 = Zbizlink.Microservices.sln
+		SccProjectName24 = Email-BroadCaster/Zbizlink.MicroEmailBroadCaster.LoggerService
+		SccLocalPath24 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.LoggerService
+		SccProjectUniqueName25 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.Resolver\\Zbizlink.MicroEmailBroadCaster.Resolver.csproj
+		SccProjectTopLevelParentUniqueName25 = Zbizlink.Microservices.sln
+		SccProjectName25 = Email-BroadCaster/Zbizlink.MicroEmailBroadCaster.Resolver
+		SccLocalPath25 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.Resolver
+		SccProjectUniqueName26 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.WorkerService\\Zbizlink.MicroEmailBroadCaster.WorkerService.csproj
+		SccProjectTopLevelParentUniqueName26 = Zbizlink.Microservices.sln
+		SccProjectName26 = Email-BroadCaster/Zbizlink.MicroEmailBroadCaster.WorkerService
+		SccLocalPath26 = Email-BroadCaster\\Zbizlink.MicroEmailBroadCaster.WorkerService
+		SccProjectUniqueName27 = User-Management\\Zbizlink.MicroUserManagement.WebServiceAPI\\Zbizlink.MicroUserManagement.WebServiceAPI.csproj
+		SccProjectTopLevelParentUniqueName27 = Zbizlink.Microservices.sln
+		SccProjectName27 = User-Management/Zbizlink.MicroUserManagement.WebServiceAPI
+		SccLocalPath27 = User-Management\\Zbizlink.MicroUserManagement.WebServiceAPI
+		SccProjectUniqueName28 = User-Management\\Zbizlink.MicroUserManagement.DataModel\\Zbizlink.MicroUserManagement.DataModel.csproj
+		SccProjectTopLevelParentUniqueName28 = Zbizlink.Microservices.sln
+		SccProjectName28 = User-Management/Zbizlink.MicroUserManagement.DataModel
+		SccLocalPath28 = User-Management\\Zbizlink.MicroUserManagement.DataModel
+		SccProjectUniqueName29 = User-Management\\Zbizlink.MicroUserManagement.Enum\\Zbizlink.MicroUserManagement.Enum.csproj
+		SccProjectTopLevelParentUniqueName29 = Zbizlink.Microservices.sln
+		SccProjectName29 = User-Management/Zbizlink.MicroUserManagement.Enum
+		SccLocalPath29 = User-Management\\Zbizlink.MicroUserManagement.Enum
+		SccProjectUniqueName30 = User-Management\\Zbizlink.MicroUserManagement.LoggerService\\Zbizlink.MicroUserManagement.LoggerService.csproj
+		SccProjectTopLevelParentUniqueName30 = Zbizlink.Microservices.sln
+		SccProjectName30 = User-Management/Zbizlink.MicroUserManagement.LoggerService
+		SccLocalPath30 = User-Management\\Zbizlink.MicroUserManagement.LoggerService
+		SccProjectUniqueName31 = User-Management\\Zbizlink.MicroUserManagement.Resolver\\Zbizlink.MicroUserManagement.Resolver.csproj
+		SccProjectTopLevelParentUniqueName31 = Zbizlink.Microservices.sln
+		SccProjectName31 = User-Management/Zbizlink.MicroUserManagement.Resolver
+		SccLocalPath31 = User-Management\\Zbizlink.MicroUserManagement.Resolver
+		SccProjectUniqueName32 = User-Management\\Zbizlink.MicroUserManagement.WorkerService\\Zbizlink.MicroUserManagement.WorkerService.csproj
+		SccProjectTopLevelParentUniqueName32 = Zbizlink.Microservices.sln
+		SccProjectName32 = User-Management/Zbizlink.MicroUserManagement.WorkerService
+		SccLocalPath32 = User-Management\\Zbizlink.MicroUserManagement.WorkerService
+		SccProjectUniqueName33 = Presentation\\Zbizlink.MicroServices.CampaignManagement.Client\\Zbizlink.MicroServices.CampaignManagement.Client.csproj
+		SccProjectTopLevelParentUniqueName33 = Zbizlink.Microservices.sln
+		SccProjectName33 = Presentation/Zbizlink.MicroServices.CampaignManagement.Client
+		SccLocalPath33 = Presentation\\Zbizlink.MicroServices.CampaignManagement.Client
+		SccProjectUniqueName34 = Enum\\Zbizlink.Micro.Enum\\Zbizlink.Micro.Enum.csproj
+		SccProjectTopLevelParentUniqueName34 = Zbizlink.Microservices.sln
+		SccProjectName34 = Enum/Zbizlink.Micro.Enum
+		SccLocalPath34 = Enum\\Zbizlink.Micro.Enum
+		SccProjectUniqueName35 = APIGateway\\Zbizlink.MicroOcelotAPI.Gateway\\Zbizlink.MicroOcelotAPI.Gateway.csproj
+		SccProjectTopLevelParentUniqueName35 = Zbizlink.Microservices.sln
+		SccProjectName35 = APIGateway/Zbizlink.MicroOcelotAPI.Gateway
+		SccLocalPath35 = APIGateway\\Zbizlink.MicroOcelotAPI.Gateway
+		SccProjectUniqueName36 = Bus\\Zbizlink.MicroService.Bus\\Zbizlink.Micro.RabbitMessageQueueBus.csproj
+		SccProjectTopLevelParentUniqueName36 = Zbizlink.Microservices.sln
+		SccProjectName36 = Bus/Zbizlink.MicroService.Bus
+		SccLocalPath36 = Bus\\Zbizlink.MicroService.Bus
+		SccProjectUniqueName37 = Presentation\\Zbizlink.ParserClient\\Zbizlink.ParserClient.csproj
+		SccProjectTopLevelParentUniqueName37 = Zbizlink.Microservices.sln
+		SccProjectName37 = Presentation/Zbizlink.ParserClient
+		SccLocalPath37 = Presentation\\Zbizlink.ParserClient
+		SccProjectUniqueName38 = Polly\\Zbizlink.PollyResilience.csproj
+		SccProjectTopLevelParentUniqueName38 = Zbizlink.Microservices.sln
+		SccProjectName38 = Polly
+		SccLocalPath38 = Polly
+		SccProjectUniqueName39 = Campaign-Management\\Zbizlink.CMCommon\\Zbizlink.CMCommon.csproj
+		SccProjectTopLevelParentUniqueName39 = Zbizlink.Microservices.sln
+		SccProjectName39 = Campaign-Management/Zbizlink.CMCommon
+		SccLocalPath39 = Campaign-Management\\Zbizlink.CMCommon
+		SccProjectUniqueName40 = Campaign-Management\\Zbizlink.CampaignManagementStoreProcedureModel\\Zbizlink.CampaignManagementStoreProcedureModel.csproj
+		SccProjectTopLevelParentUniqueName40 = Zbizlink.Microservices.sln
+		SccProjectName40 = Campaign-Management/Zbizlink.CampaignManagementStoreProcedureModel
+		SccLocalPath40 = Campaign-Management\\Zbizlink.CampaignManagementStoreProcedureModel
+		SccProjectUniqueName41 = RFPParser\\Zbizlink.RFPWebAPI\\Zbizlink.RFPWebAPI.csproj
+		SccProjectTopLevelParentUniqueName41 = Zbizlink.Microservices.sln
+		SccProjectName41 = RFPParser/Zbizlink.RFPWebAPI
+		SccLocalPath41 = RFPParser\\Zbizlink.RFPWebAPI
+		SccProjectUniqueName42 = RFPParser\\Zbizlink.RFPServices\\Zbizlink.RFPServices.csproj
+		SccProjectTopLevelParentUniqueName42 = Zbizlink.Microservices.sln
+		SccProjectName42 = RFPParser/Zbizlink.RFPServices
+		SccLocalPath42 = RFPParser\\Zbizlink.RFPServices
+		SccProjectUniqueName43 = CrmDataImportUtility\\SupportingProject\\CRMToolkitApi\\CRMToolkitApi.csproj
+		SccProjectTopLevelParentUniqueName43 = Zbizlink.Microservices.sln
+		SccProjectName43 = CrmDataImportUtility/SupportingProject/CRMToolkitApi
+		SccLocalPath43 = CrmDataImportUtility\\SupportingProject\\CRMToolkitApi
+		SccProjectUniqueName44 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.DataModel\\Zbizlink.MicroCRMDataImport.DataModel.csproj
+		SccProjectTopLevelParentUniqueName44 = Zbizlink.Microservices.sln
+		SccProjectName44 = CrmDataImportUtility/Zbizlink.MicroCRMDataImport.DataModel
+		SccLocalPath44 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.DataModel
+		SccProjectUniqueName45 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.LoggerService\\Zbizlink.MicroCRMDataImport.LoggerService.csproj
+		SccProjectTopLevelParentUniqueName45 = Zbizlink.Microservices.sln
+		SccProjectName45 = CrmDataImportUtility/Zbizlink.MicroCRMDataImport.LoggerService
+		SccLocalPath45 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.LoggerService
+		SccProjectUniqueName46 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.Resolver\\Zbizlink.MicroCRMDataImport.Resolver.csproj
+		SccProjectTopLevelParentUniqueName46 = Zbizlink.Microservices.sln
+		SccProjectName46 = CrmDataImportUtility/Zbizlink.MicroCRMDataImport.Resolver
+		SccLocalPath46 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.Resolver
+		SccProjectUniqueName47 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.WebServiceAPI\\Zbizlink.MicroCRMDataImport.WebServiceAPI.csproj
+		SccProjectTopLevelParentUniqueName47 = Zbizlink.Microservices.sln
+		SccProjectName47 = CrmDataImportUtility/Zbizlink.MicroCRMDataImport.WebServiceAPI
+		SccLocalPath47 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.WebServiceAPI
+		SccProjectUniqueName48 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.WorkerService\\Zbizlink.MicroCRMDataImport.WorkerService.csproj
+		SccProjectTopLevelParentUniqueName48 = Zbizlink.Microservices.sln
+		SccProjectName48 = CrmDataImportUtility/Zbizlink.MicroCRMDataImport.WorkerService
+		SccLocalPath48 = CrmDataImportUtility\\Zbizlink.MicroCRMDataImport.WorkerService
+		SccProjectUniqueName49 = CrmDataImportUtility\\SupportingProject\\SalesforceToolkit\\SalesforceToolkit.csproj
+		SccProjectTopLevelParentUniqueName49 = Zbizlink.Microservices.sln
+		SccProjectName49 = CrmDataImportUtility/SupportingProject/SalesforceToolkit
+		SccLocalPath49 = CrmDataImportUtility\\SupportingProject\\SalesforceToolkit
+		SccProjectUniqueName50 = SagaOrchestration\\Zbizlink.Micro.SagaOrchestration\\Zbizlink.Micro.SagaOrchestration.csproj
+		SccProjectTopLevelParentUniqueName50 = Zbizlink.Microservices.sln
+		SccProjectName50 = SagaOrchestration/Zbizlink.Micro.SagaOrchestration
+		SccLocalPath50 = SagaOrchestration\\Zbizlink.Micro.SagaOrchestration
+		SccProjectUniqueName51 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.WorkerService\\Zbizlink.MicroUserAuthAndRolesManagement.WorkerService.csproj
+		SccProjectTopLevelParentUniqueName51 = Zbizlink.Microservices.sln
+		SccProjectName51 = UserAuthenticationAndRolesManagement/Zbizlink.MicroUserAuthAndRolesManagement.WorkerService
+		SccLocalPath51 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.WorkerService
+		SccProjectUniqueName52 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.Resolver\\Zbizlink.MicroUserAuthAndRolesManagement.Resolver.csproj
+		SccProjectTopLevelParentUniqueName52 = Zbizlink.Microservices.sln
+		SccProjectName52 = UserAuthenticationAndRolesManagement/Zbizlink.MicroUserAuthAndRolesManagement.Resolver
+		SccLocalPath52 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.Resolver
+		SccProjectUniqueName53 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.LoggerService\\Zbizlink.MicroUserAuthAndRolesManagement.LoggerService.csproj
+		SccProjectTopLevelParentUniqueName53 = Zbizlink.Microservices.sln
+		SccProjectName53 = UserAuthenticationAndRolesManagement/Zbizlink.MicroUserAuthAndRolesManagement.LoggerService
+		SccLocalPath53 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.LoggerService
+		SccProjectUniqueName54 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.DataModel\\Zbizlink.MicroUserAuthAndRolesManagement.DataModel.csproj
+		SccProjectTopLevelParentUniqueName54 = Zbizlink.Microservices.sln
+		SccProjectName54 = UserAuthenticationAndRolesManagement/Zbizlink.MicroUserAuthAndRolesManagement.DataModel
+		SccLocalPath54 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.DataModel
+		SccProjectUniqueName55 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.WebServiceApi\\Zbizlink.MicroUserAuthAndRolesManagement.WebServiceApi.csproj
+		SccProjectTopLevelParentUniqueName55 = Zbizlink.Microservices.sln
+		SccProjectName55 = UserAuthenticationAndRolesManagement/Zbizlink.MicroUserAuthAndRolesManagement.WebServiceApi
+		SccLocalPath55 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndRolesManagement.WebServiceApi
+		SccProjectUniqueName56 = Presentation\\Zbizlink.Client\\Zbizlink.Client\\Zbizlink.Client.csproj
+		SccProjectTopLevelParentUniqueName56 = Zbizlink.Microservices.sln
+		SccProjectName56 = Presentation/Zbizlink.Client/Zbizlink.Client
+		SccLocalPath56 = Presentation\\Zbizlink.Client\\Zbizlink.Client
+		SccProjectUniqueName57 = Company\\Zbizlink.MicroCompany.API\\Zbizlink.MicroCompany.WebServiceAPI.csproj
+		SccProjectTopLevelParentUniqueName57 = Zbizlink.Microservices.sln
+		SccProjectName57 = Company/Zbizlink.MicroCompany.API
+		SccLocalPath57 = Company\\Zbizlink.MicroCompany.API
+		SccProjectUniqueName58 = Company\\Zbizlink.MicroCompany.DataModel\\Zbizlink.MicroCompany.DataModel.csproj
+		SccProjectTopLevelParentUniqueName58 = Zbizlink.Microservices.sln
+		SccProjectName58 = Company/Zbizlink.MicroCompany.DataModel
+		SccLocalPath58 = Company\\Zbizlink.MicroCompany.DataModel
+		SccProjectUniqueName59 = Company\\Zbizlink.MicroCompany.LoggerService\\Zbizlink.MicroCompany.LoggerService.csproj
+		SccProjectTopLevelParentUniqueName59 = Zbizlink.Microservices.sln
+		SccProjectName59 = Company/Zbizlink.MicroCompany.LoggerService
+		SccLocalPath59 = Company\\Zbizlink.MicroCompany.LoggerService
+		SccProjectUniqueName60 = Company\\Zbizlink.MicroCompany.Resolver\\Zbizlink.MicroCompany.Resolver.csproj
+		SccProjectTopLevelParentUniqueName60 = Zbizlink.Microservices.sln
+		SccProjectName60 = Company/Zbizlink.MicroCompany.Resolver
+		SccLocalPath60 = Company\\Zbizlink.MicroCompany.Resolver
+		SccProjectUniqueName61 = Company\\Zbizlink.MicroCompany.WorkerService\\Zbizlink.MicroCompany.WorkerService.csproj
+		SccProjectTopLevelParentUniqueName61 = Zbizlink.Microservices.sln
+		SccProjectName61 = Company/Zbizlink.MicroCompany.WorkerService
+		SccLocalPath61 = Company\\Zbizlink.MicroCompany.WorkerService
+		SccProjectUniqueName62 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndManagement.xUnitTest\\Zbizlink.MicroUserAuthAndManagement.xUnitTest.csproj
+		SccProjectTopLevelParentUniqueName62 = Zbizlink.Microservices.sln
+		SccProjectName62 = UserAuthenticationAndRolesManagement/Zbizlink.MicroUserAuthAndManagement.xUnitTest
+		SccLocalPath62 = UserAuthenticationAndRolesManagement\\Zbizlink.MicroUserAuthAndManagement.xUnitTest
+	EndGlobalSection
+EndGlobal

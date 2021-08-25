@@ -1,0 +1,34 @@
+.dialog_inputbox{
+
+    width: 100%;
+    height: 42px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    margin-top:15px;
+}
+.dialog_inputbox:focus{ outline: none;}
+
+.dialog_selectbox{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.dialog_selectbox:focus{ outline: none; box-shadow: none;}
+
+.canecl_btn{ border-radius: 4px; background: #007bff; box-shadow:none; color:#fff;}
+.done_btn{ border-radius: 4px; background: #ed3304; box-shadow:none; color:#fff;}
+.dailog_h1{
+font-weight:800;
+font-size: 18px;
+
+}
+
+.mat-form-field{ width: 100%;}

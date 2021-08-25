@@ -1,0 +1,53 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div> 
+<div class="maindivbox">
+  <mat-card class="example-card" style="width: 96%;">
+    
+    
+    <div >
+       
+      <h2 class="campaign_management_h2">All Users</h2>
+            
+    </div>
+
+
+
+    <mat-card-content>
+      <form class="example-form">
+        <table table mat-table [dataSource]="dataSource">
+          <ng-container matColumnDef="FirstName">
+            <th mat-header-cell *matHeaderCellDef class="table_th">First Name</th>
+            <td mat-cell *matCellDef="let element"> {{element.FirstName}} </td>
+          </ng-container> 
+          <ng-container matColumnDef="LastName">
+            <th mat-header-cell *matHeaderCellDef class="table_th">Last Name</th>
+            <td mat-cell *matCellDef="let element"> {{element.LastName}} </td>
+          </ng-container> 
+              <ng-container matColumnDef="Email">
+                <th mat-header-cell *matHeaderCellDef class="table_th">Email</th>
+                <td mat-cell *matCellDef="let element"> {{element.Email}} </td>
+              </ng-container>  
+              <ng-container matColumnDef="Active">
+                <th mat-header-cell *matHeaderCellDef class="table_th">Active</th>
+                <td mat-cell *matCellDef="let element">
+                  <mat-checkbox [disabled]="disabled"  [(checked)]="element.IsActiveID" name="IsActiveID"> </mat-checkbox>
+                 </td>
+              </ng-container> 
+          
+              <ng-container matColumnDef="Action">
+                <th mat-header-cell *matHeaderCellDef class="table_th">Action </th>
+                <td mat-cell *matCellDef="let element" >  
+                   <button mat-raised-button class="button" color="warn" (click)="updateUser(element)">Edit</button>   
+                   <!-- <button mat-raised-button  class="button" color="warn">Delete</button>   </td> -->
+              </ng-container>  
+           
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="tr.mat-header-row"></tr> 
+        </table>
+        <div style="text-align: center;" *ngIf="dataSource.data.length === 0">No records found</div>
+        <mat-paginator [pageSizeOptions]="[5, 10,20,30,50]" showFirstLastButtons></mat-paginator>
+      </form> 
+    </mat-card-content>
+     
+  </mat-card>

@@ -1,0 +1,52 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div> 
+   <div class="main-div"style="margin-top: 0%;">
+      <form [formGroup]="groupForm" style="width: 100%;" >
+      <mat-toolbar style="background-color: #ed3305;"> 
+          <div style="float:left; width:95%;color: #ffffff;">{{BtnAddEdit}} Category Synonym</div> 
+          <span class="fill-remaining-space"></span> 
+          <div>
+              <button mat-icon-button (click)="closeDialogOpp($event)">
+                  <mat-icon>cancel</mat-icon>
+              </button>
+          </div>
+        
+        </mat-toolbar> 
+     
+     <mat-card class=""> 
+            <mat-form-field class="example-full-width" style="display:none;">
+                    <mat-label>Id</mat-label>
+                    <input matInput formControlName="SynonymId" [(ngModel)]="SynonymId">
+                  </mat-form-field>
+
+
+                  <mat-form-field class="example-full-width">        
+                    <mat-label>Category Type<span style="color: red;">*</span></mat-label>        
+                    <mat-select formControlName="CategoryId" [(ngModel)]="CategoryId">        
+                      <mat-option *ngFor="let category of categories" [value]="category.CategoryId" (selectionChange)="onChangeDropdownItem($event)" >         
+                        {{category.Name}}        
+                      </mat-option>        
+                    </mat-select>     
+                    <mat-error *ngIf="groupForm.get('CategoryId').invalid">{{getCategoryId()}}</mat-error>   
+                  </mat-form-field>  
+
+            <mat-form-field class="example-full-width"> 
+                    <mat-label>Synonym <span style="color: red;">*</span></mat-label>
+                    <input matInput #inputSynonym maxlength="100" style="font-size: small;"  placeholder="Enter category synonym"
+                    formControlName="Synonym" (focus)="onFocus()" [(ngModel)]="Synonym">
+                   
+                    <mat-error *ngIf="groupForm.get('Synonym').invalid">{{getSynonym()}}</mat-error>
+                    <mat-hint align="end">{{inputSynonym.value?.length || 0}}/100</mat-hint>
+
+                  </mat-form-field>  
+                  <mat-error *ngIf="errorMessage">{{errorMessage}}</mat-error>
+     <button mat-flat-button class="authentication-button-view zbizlink_btn " color="warn"  (click)="SaveCategorySynonyms(groupForm)">{{BtnSave}}</button> 
+     </mat-card>
+    
+  </form>
+   </div> 
+      
+    
+   
+

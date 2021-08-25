@@ -1,0 +1,49 @@
+
+<div class="dialog_section">
+<div class="dialog_heading"> Add New Group</div>
+
+
+<div class="dialog_contentbox">
+<div class="form_input_section">
+  <mat-label class="form_inputlabel">Group Name <span>*</span></mat-label>
+  <input class="form_input" type="text"  placeholder="Please enter group name">
+</div>
+
+<div class="form_input_section">
+  <mat-label class="form_inputlabel">Description<span>*</span></mat-label>
+  <textarea class="form_textarea" type="text"  placeholder="Please enter description"></textarea>
+</div>
+
+<div class="form_input_section">
+   <mat-label class="form_inputlabel">Add Users <span>*</span></mat-label>
+  <mat-form-field appearance="fill"   class="select_box">
+   <mat-select [(ngModel)]="selectedValue" multiple name="user" [placeholder]="'Please select users'">
+      <mat-option *ngFor="let user of users" [value]="user.value">  {{user.viewValue}} </mat-option>
+    </mat-select>
+  </mat-form-field>
+ <div><p class="form_input_section"> {{selectedValue}} </p></div>
+
+</div>
+
+
+<div class="form_input_section">
+  <mat-label class="form_inputlabel">Add Roles <span>*</span></mat-label>
+ <mat-form-field appearance="fill"   class="select_box">
+  <mat-select [(ngModel)]="selectedRole" multiple name="role" [placeholder]="'Please select user roles'">
+     <mat-option *ngFor="let role of roles" [value]="role.value">  {{role.viewValue}} </mat-option>
+   </mat-select>
+ </mat-form-field>
+<div><p class="form_input_section"> {{selectedRole}} </p></div>
+
+</div>
+
+<div class="popup_btnbox">
+<button mat-flat-button class="form_input_btn_black" mat-dialog-close> Cancel</button>
+<button mat-flat-button class="form_input_btn" > Save</button>
+</div>
+
+</div>
+
+</div>
+
+

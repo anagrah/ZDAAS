@@ -1,0 +1,36 @@
+
+.popup_formlist{ max-width: 100%;}
+
+.popup_formlist .mat-card{ background: #f6f6f6;}
+
+.mat-chip.mat-standard-chip {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 12px;
+    font-family: 'Open Sans';
+}
+
+.mat-chip.mat-standard-chip .mat-chip-remove {
+    color: #6ab83b;
+    opacity: 1;
+}
+
+.mat-chip-list-wrapper input.mat-input-element, .mat-chip-list-wrapper .mat-standard-chip {
+    margin: 5px;
+}
+.mat-standard-chip.mat-chip-with-trailing-icon{ padding: 5px !important;}
+
+.mat-standard-chip {
+    min-height: 22px;
+}
+
+.mat-standard-chip .mat-chip-remove.mat-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.mat-chip .mat-chip-trailing-icon.mat-icon, .mat-chip .mat-chip-remove.mat-icon{ font-size: 12px;}
+
+.matcard_listbox{ height: 500px; overflow-y: scroll;}
+
+ 

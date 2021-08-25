@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="main_sectionbox">
+                <div class="row align_item">
+                    <div class="col-sm-12">
+                        <h1 class="heading_text">Select Tables Names</h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <section class="tablename_sections">
+                            <div class="checkbox_block" *ngFor="let table of tables; let i=index;">
+                                <label class="tablenamechekbox">
+                                    {{table.crmTableName}}
+                                    <input type="checkbox" value="{{table.crmTableName}}"
+                                        (change)="onCheckboxChange(i,$event)" [checked]="table.status">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="nextbtn_box">
+                <input type="button" value="Save And Next" class="next_btn" (click)="onSave($event)">
+                <input type="button" value="Next" class="next_btn" (click)="onNext($event)">
+                <input type="button" value="Cancel" class="cancel_btn" (click)="onCancel($event)">
+            </div>
+        </div>
+    </div>
+</div>

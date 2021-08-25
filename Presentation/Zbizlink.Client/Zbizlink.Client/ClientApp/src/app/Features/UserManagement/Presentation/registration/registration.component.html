@@ -1,0 +1,158 @@
+
+
+<div class="mainwrap_section">
+  <h2>Sign up</h2>
+
+
+<div class="maincontent_section">
+<form class="registration_form">
+
+  <div fxLayout="row wrap " fxLayoutGap="30px grid"  >
+    <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%" class="fxLayout_padding">
+
+    <div class="form_input_section">
+      <mat-label class="form_inputlabel">First Name <span>*</span></mat-label>
+      <input class="form_input input_color greencolor redcolor" type="text"  [formControl]="firstName" placeholder="Enter your first name" required>
+      <div class="error_textbox"> {{ firstNameValidation() }}</div>
+    </div>
+
+<!--
+
+    <div class="form_input_section">
+      <mat-label class="form_inputlabel">Middle Name </mat-label>
+      <input class="form_input" [ngClass]="{
+        'form_input_red':signup_formGroup.get('middleName').touched && signup_formGroup.get('middleName').invalid ,
+        'form_input_green':signup_formGroup.get('middleName').touched && signup_formGroup.get('middleName').valid}" type="text"  [formControl]="middleName" placeholder="Enter your middle name">
+        <div class="error_textbox">{{ middleNameValidation() }}</div>
+    </div> -->
+
+
+    <div class="form_input_section">
+      <mat-label class="form_inputlabel">Middle Name </mat-label>
+      <input class="form_input input_color confirm " [ngClass]="{
+        'form_input_red':signup_formGroup.get('middleName').touched && signup_formGroup.get('middleName').invalid ,
+        'form_input_green':signup_formGroup.get('middleName').touched && signup_formGroup.get('middleName').valid && signup_formGroup.get('middleName').dirty}" type="text"  [formControl]="middleName" placeholder="Enter your middle name">
+        <div class="error_textbox">{{ middleNameValidation() }}</div>
+    </div>
+
+
+
+
+    <div class="form_input_section">
+      <mat-label class="form_inputlabel">Last Name <span>*</span></mat-label>
+      <input class="form_input input_color greencolor redcolor" type="text"  [formControl]="lastName" placeholder="Enter your last name" required>
+      <div class="error_textbox">{{ lastNameValidation() }}</div>
+    </div>
+    <div class="form_input_section">
+      <mat-label class="form_inputlabel">Email  <span>*</span></mat-label>
+      <input class="form_input input_color greencolor redcolor" type="email"  [formControl]="email" placeholder="Enter your email address" required>
+      <div class="error_textbox">{{ emailValidation() }}</div>
+    </div>
+    <div class="form_input_section">
+      <mat-label class="form_inputlabel">UserName  <span>*</span></mat-label>
+      <input class="form_input input_color greencolor redcolor" type="text"  [formControl]="userName" placeholder="Enter your UserName" required>
+      <mat-error>{{ userNameValidation() }}</mat-error>
+    </div>
+
+
+    <div class="form_input_section" id="phone_input">
+      <mat-label class="form_inputlabel">Phone <span>*</span></mat-label>
+      <mat-form-field floatLabel='never' class="regis_phoneinput input_color greencolor redcolor" >
+        <mat-label class="phone_lable">Enter your phone number</mat-label>
+
+     <ngx-mat-intl-tel-input
+      [preferredCountries]="['us', 'gb', 'pk' ]"
+      [enablePlaceholder]="false"
+
+      [enableSearch]="true"
+      name="phone"
+      [formControl]="phoneNumber" #phone></ngx-mat-intl-tel-input>
+
+
+
+  </mat-form-field>
+  <div class="phone_hint">e.g. {{phone.selectedCountry.placeHolder}}</div>
+
+  <div class="error_textbox" *ngIf="signup_formGroup.get('phoneNumber')?.errors?.validatePhoneNumber">Invalid Number! Select all to edit again</div>
+  <div class="error_textbox">{{phoneNumberValidation()}}</div>
+
+  </div>
+
+    </div>
+    <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="50%" class="fxLayout_padding">
+
+      <div class="form_input_section">
+        <mat-label class="form_inputlabel">Business Name <span>*</span></mat-label>
+        <input class="form_input input_color greencolor redcolor" type="text"  [formControl]="businessName" placeholder="Enter your business name" required>
+        <mat-error>{{ businessNameValidation() }}</mat-error>
+      </div>
+      <div class="form_input_section">
+        <mat-label class="form_inputlabel">Password <span>*</span></mat-label>
+        <input class="form_input greencolor redcolor" type="password"  [formControl]="password" placeholder="Enter your password" required>
+        <mat-error>{{ passwordValidation() }}</mat-error>
+      </div>
+      <div class="form_input_section">
+        <mat-label class="form_inputlabel">Confirm Password <span>*</span></mat-label>
+        <input [ngClass]="{
+          'form_input_red':signup_formGroup.get('confirmPassword').touched && signup_formGroup.get('password').value !== signup_formGroup.get('confirmPassword').value || signup_formGroup.get('confirmPassword').touched && signup_formGroup.get('confirmPassword').invalid ,
+          'form_input_green':signup_formGroup.get('confirmPassword').touched && signup_formGroup.get('confirmPassword').valid && signup_formGroup.get('password').value === signup_formGroup.get('confirmPassword').value}" type="password"  [formControl]="confirmPassword" class="form_input" placeholder="Confirm password" required>
+
+        <mat-error>{{ confirmPasswordValidation() }}</mat-error>
+      </div>
+
+  <!-- reCaptcha -->
+<div fxLayout="row wrap" fxLayoutGap="grid"  fxLayoutAlign = "start center">
+<div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%">
+<div class="captcha_box">
+  <ngx-recaptcha2 #captchaElem
+  [siteKey]="siteKey"
+  [formControl]="recaptcha">
+</ngx-recaptcha2>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div fxLayout="row wrap" fxLayoutGap="grid"  fxLayoutAlign = "space-evenly center">
+<div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="50%">
+
+
+  <div class="signup_box">
+    <button mat-stroked-button class="form_input_btn signupColor"
+
+    (click)="onSignupSubmit()" [disabled]="!signup_formGroup.valid">
+    <mat-button matTooltip="Please fill all the required fields to Signup!">Signup</mat-button>
+  </button>
+  </div>
+
+
+
+
+</div>
+
+
+
+<div fxFlex="70%" fxFlex.xs="100%" fxFlex.sm="50%">
+  Have a Zbizlink Account?
+<a _ngcontent-tbw-c44="" [routerLink]="['/user/authentication']"
+tabindex="0" aria-disabled="false" href="./user/authentication">
+Sign In<span matripple=""
+class="mat-ripple mat-button-ripple"></span>
+</a>
+</div>
+
+
+
+</div>
+<div class="termsofservices_text">By Joining, you agree to our <a href="#">Terms of Service</a>  and <a href="#">Privacy Policy.</a> </div>
+
+
+    </div>
+  </div>
+</form>
+
+</div>
+</div>

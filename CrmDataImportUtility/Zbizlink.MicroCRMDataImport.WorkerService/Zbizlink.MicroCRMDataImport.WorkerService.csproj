@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CData.Salesforce" Version="20.0.7654" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Enum\Zbizlink.Micro.Enum\Zbizlink.Micro.Enum.csproj" />
+    <ProjectReference Include="..\Zbizlink.MicroCRMDataImport.DataModel\Zbizlink.MicroCRMDataImport.DataModel.csproj" />
+    <ProjectReference Include="..\Zbizlink.MicroCRMDataImport.LoggerService\Zbizlink.MicroCRMDataImport.LoggerService.csproj" />
+  </ItemGroup>
+
+</Project>

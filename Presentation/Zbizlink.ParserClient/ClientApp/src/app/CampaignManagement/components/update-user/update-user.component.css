@@ -1,0 +1,23 @@
+.checkbox-h2 {
+    margin: 10px;
+  }
+  
+  .checkbox-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .checkbox-margin {
+    margin: 0 10px;
+  }
+  .update-margin-top{
+    margin-top: 0%;
+  }
+
+  .popupbox_form .material-icons{ color: #007bff; font-size: 18px; position: relative;
+     top: -7px; margin-right: 10px;}
+
+  
+ 

@@ -1,0 +1,221 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+<div class="main-div form-margin">
+  <form [formGroup]="groupForm" class="authentication-form container">
+    <mat-card>
+
+      <div class="row mat-columns-margin">
+        <div class="col-sm-12">
+
+          <div class="CategorySynonym_lable">Summary Field Name</div>
+
+          <mat-select #summarySelect formControlName="SummaryFieldId" class="authentication-full-width synonym_selectbox" [placeholder]="'Please select summary field name'"
+            (selectionChange)="selectSummaryFieldId($event)" [(ngModel)]="SelectedSummaryFieldId">
+            <mat-select-filter *ngIf="summarySelect.focused" [placeholder]="'Search...'" [displayMember]="'FieldName'" [array]="summaryFieldAndSynonyms"
+              (filteredReturn)="filterableSummaryArray =$event"></mat-select-filter>
+
+            <mat-option *ngFor="let summary of filterableSummaryArray" [value]="summary.SummaryFieldId">
+              {{summary.FieldName}}
+            </mat-option>
+
+          </mat-select>
+
+        </div>
+
+      </div>
+
+
+<div class="Synonym_typesection" *ngIf='synonymSectionShow'>
+
+
+      <div  class="row mat-columns-margin">
+        <div class="col-sm-12 ">
+          <mat-radio-group aria-label="Select an option" style="text-indent: 5px;" (change)="onSelectionChange($event)">
+            <mat-radio-button value="1" [checked]="isSelected == true ? true : false">All</mat-radio-button>
+            <mat-radio-button value="2">Assigned</mat-radio-button>
+            <mat-radio-button value="3">Unassigned</mat-radio-button>
+          </mat-radio-group>
+
+        </div>
+      </div>
+
+      <div class="row mat-columns-margin">
+        <div class="col-sm-12">
+
+          <div class="CategorySynonym_lable">Synonym</div>
+
+
+          <mat-select #Synonym formControlName="SynonymId" class="authentication-full-width synonym_selectbox2" [placeholder]="'Please select synonym'"
+            (selectionChange)="selectSynonym($event)" [(ngModel)]="SelectedSynonymId">
+
+            <mat-select-filter *ngIf="Synonym.focused" [placeholder]="'Search...'" [displayMember]="'Synonym'" [array]="FilteredSynonymList"
+              (filteredReturn)="tempSynonymList =$event"></mat-select-filter>
+            <mat-option *ngFor="let synonym of tempSynonymList" [value]="synonym.SynonymId">{{synonym.Synonym}}</mat-option>
+          </mat-select>
+          <div class="synonym_iconplus" *ngIf='showSynonymAddBtn' (click)="onAddProperty(1)">+</div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="mat-columns-margin state_divbox" *ngIf='opportunityTypeSectionShow'>
+
+
+
+        <div class="CategorySynonym_lable">Opportunity Type</div>
+
+        <section class="checkbox-section ">
+
+          <mat-checkbox [disabled]="isDisabled" (change)="onChange(1, $event)" class="checkbox-section synonym_checkbox" [(ngModel)]="federalCheck"
+            formControlName="FederalOpportunityTypeCode">Federal</mat-checkbox>
+          <mat-checkbox [disabled]="isDisabled" (change)="onChange(2, $event)" class="checkbox-section synonym_checkbox" [(ngModel)]="stateCheck"
+            formControlName="StateOpportunityTypeCode">State</mat-checkbox>
+          <mat-checkbox [disabled]="isDisabled" (change)="onChange(3, $event)" class="checkbox-section synonym_checkbox" [(ngModel)]="commercialCheck"
+            formControlName="CommercialOpportunityTypeCode">Commercial</mat-checkbox>
+
+        </section>
+        <span class="error_box">{{ShowErrorMessage}}</span>
+      </div>
+
+<div *ngIf='multiSelectDropdownSectionShow'>
+      <div class="row mat-columns-margin">
+        <div class="col-sm-12 ">
+
+
+          <div class="CategorySynonym_lable">State</div>
+
+
+          <ng-multiselect-dropdown class="authentication-full-width synonym_multiselect" formControlName="State" [settings]="statesDropdownSettings"
+            [placeholder]="'Please select state'" [data]="states" [disabled]="isDisabled" [(ngModel)]="selectedStateItems"
+            (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event,'State')" (onDeSelect)="onItemDeSelect($event)"
+            (onDeSelectAll)="onDeSelectAll(states)">
+
+          </ng-multiselect-dropdown>
+
+          <div style="clear: both;"></div>
+          <div class="synonym_viewallbtn" *ngIf='viewAllStates' (click)="viewAll(selectedStateItems,'State')">View All</div>
+
+        </div>
+
+      </div>
+
+      <div class="row mat-columns-margin">
+        <div class="col-sm-12 ">
+
+          <div class="CategorySynonym_lable">Agency</div>
+
+          <ng-multiselect-dropdown class="authentication-full-width" formControlName="Agency" [settings]="agenciesDropDownSettings"
+            [placeholder]="'Please select agency'" [data]="agenciesDropDown" [disabled]="isDisabled" [(ngModel)]="selectedAgencyItems"
+            (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event,'Agency')" (onDeSelect)="onItemDeSelect($event)"
+            (onDeSelectAll)="onDeSelectAll(agenciesDropDown)">
+          </ng-multiselect-dropdown>
+
+
+          <div class="synonym_iconplus" *ngIf='showAddBtn' (click)="onAddProperty(2)">+</div>
+
+          <div style="clear: both;"></div>
+          <div class="synonym_viewallbtn" *ngIf='viewAllAgencies' (click)="viewAll(selectedAgencyItems,'Agency')">View All</div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="row mat-columns-margin">
+        <div class="col-sm-12 ">
+
+          <div class="CategorySynonym_lable">Industry</div>
+
+          <ng-multiselect-dropdown class="authentication-full-width" formControlName="Industry" [settings]="industryDropdownSettings"
+            [placeholder]="'Please select industry'" [data]="industry" [disabled]="isDisabled" [(ngModel)]="selectedIndustryItems"
+            (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event,'Industry')" (onDeSelect)="onItemDeSelect($event)"
+            (onDeSelectAll)="onDeSelectAll(industry)">
+
+          </ng-multiselect-dropdown>
+
+          <div class="synonym_iconplus" *ngIf='showAddBtn' (click)="onAddProperty(3)">+</div>
+
+          <div style="clear: both;"></div>
+          <div class="synonym_viewallbtn" *ngIf='viewAllIndustries' (click)="viewAll(selectedIndustryItems,'Industry')">View All</div>
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="row mat-columns-margin">
+        <div class="col-sm-12">
+
+          <div class="CategorySynonym_lable">Contract Vehicle</div>
+
+          <ng-multiselect-dropdown class="authentication-full-width" formControlName="Vehicle" [settings]="contractVehicleDropdownSettings"
+            [placeholder]="'Please select contract vehicle'" [data]="contractVehicle" [disabled]="isDisabled" [(ngModel)]="selectedContractVehicleItems"
+            (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event,'Vehicle')" (onDeSelect)="onItemDeSelect($event)"
+            (onDeSelectAll)="onDeSelectAll(contractVehicle)">
+
+          </ng-multiselect-dropdown>
+
+          <div class="synonym_iconplus" *ngIf='showAddBtn' (click)="onAddProperty(4)">+</div>
+
+
+
+          <div style="clear: both;"></div>
+          <div class="synonym_viewallbtn" *ngIf='viewAllVehicles' (click)="viewAll(selectedContractVehicleItems,'ContractVehicle')">View All</div>
+
+
+
+
+        </div>
+
+      </div>
+
+      <mat-error *ngIf='errorMessage'>{{errorMessage}}</mat-error>
+
+      <div class="row">
+        <div class="col-sm-6">
+<div class="btn_section">
+
+          <button [disabled]="disAbleSaveButton" mat-raised-button color="primary" class=" btn_summarysave"
+            (click)="saveSynonymBridges(groupForm)">Save</button>
+            <button [disabled]="disableDeleteButton" mat-raised-button color="primary" class=""
+            (click)="deleteSummarySynonymBridges()">Delete</button>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    </mat-card>
+  </form>
+</div>

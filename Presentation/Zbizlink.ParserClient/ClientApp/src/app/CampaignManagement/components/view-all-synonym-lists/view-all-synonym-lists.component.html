@@ -1,0 +1,92 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div> 
+   <div class="main-div"style="margin-top: 0%; width: 100%;">
+      <form class="authentication-form popup_formlist" >
+      <mat-toolbar style="background-color: #ed3305;"> 
+          <div style="float:left; width:95%;color: #ffffff;">View {{labelName}}</div> 
+          <span class="fill-remaining-space"></span> 
+          <div>
+              <button mat-icon-button (click)="closeDialogOpp()">
+                  <mat-icon>cancel</mat-icon>
+              </button>
+          </div>
+        
+        </mat-toolbar>
+         <!-- State Container  -->
+        <mat-card class="" *ngIf='isState'>
+          
+            <mat-form-field  style="width:100%" > 
+                <mat-chip-list #chipList aria-label="state selection">
+                  <mat-chip *ngFor="let state of statesList" [selectable]="statesList"
+                           [removable]="removable" (removed)="remove(state,'state')"
+                           > 
+                           {{state.StateName}}
+                    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                  </mat-chip>
+                 
+                </mat-chip-list>
+              </mat-form-field>
+           
+          </mat-card>
+         <!-- End -->
+
+      <!-- Agency Container  -->
+
+      <mat-card class="" *ngIf='isAgency'>
+          
+        <mat-form-field  style="width:100%" > 
+            <mat-chip-list #chipList aria-label="agency selection">
+              <mat-chip *ngFor="let agency of agencyList" [selectable]="agencyList"
+                       [removable]="removable" (removed)="remove(agency,'agency')"
+                       > 
+                       {{agency.AgencyName}}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+             
+            </mat-chip-list>
+          </mat-form-field>
+       
+      </mat-card>
+      <!-- End -->
+
+<!-- Industry -->
+      <mat-card class="matcard_listbox" *ngIf='isIndustry'>
+          
+        <mat-form-field  style="width:100%" > 
+            <mat-chip-list #chipList aria-label="Industry selection">
+              <mat-chip  *ngFor="let industry of industryList" [selectable]="industryList"
+                       [removable]="removable" (removed)="remove(industry,'industry')"
+                       > 
+                       {{industry.IndustryName}}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+             
+            </mat-chip-list>
+          </mat-form-field>
+       
+      </mat-card>
+    <!-- End -->
+
+    <!-- Contract vehicle -->
+    <mat-card class="" *ngIf='isContractVehicle'>
+          
+        <mat-form-field  style="width:100%" > 
+            <mat-chip-list #chipList aria-label="Contractvehicle selection">
+              <mat-chip *ngFor="let contractVehicle of contractVehicleList" [selectable]="contractVehicleList"
+                       [removable]="removable" (removed)="remove(contractVehicle,'contractVehicle')"
+                       > 
+                       {{contractVehicle.ContractVehicleName}}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+              
+            </mat-chip-list>
+          </mat-form-field>
+       
+      </mat-card>
+    <!-- End -->
+  </form>
+   </div> 
+      
+    
+   

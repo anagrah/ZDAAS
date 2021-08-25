@@ -1,0 +1,51 @@
+
+
+
+<div class="mainwrap_section_fullwidth">
+  <h2>Manage Group
+   <span class="addnewgroup_btnalighn"> <button mat-flat-button class="form_input_btn" (click)="openDialog()">Add New Group</button></span>
+  <div class="clearboth"></div>
+  </h2>
+
+
+
+
+<div class="maincontent_section">
+
+
+  <table mat-table [dataSource]="dataSource" class="mat_table">
+
+
+
+    <!-- Gropup Name Column -->
+    <ng-container matColumnDef="groupname">
+      <th mat-header-cell *matHeaderCellDef> Gropup Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.groupname}} </td>
+    </ng-container>
+
+    <!-- Description Column -->
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> Description </th>
+      <td mat-cell *matCellDef="let element"> {{element.description}}
+
+        <span class="table_btnspan">
+          <button mat-flat-button class="table_editbtn" (click)="openDialog()">Edit</button>
+          <button mat-flat-button class="table_deletebtn">Delete</button>
+        </span>
+
+      </td>
+     </ng-container>
+  <!-- Description Column -->
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+
+
+
+
+
+</div>

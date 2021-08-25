@@ -1,0 +1,105 @@
+<div class="mat-elevation-z8">
+
+  <mat-toolbar>
+    <mat-icon>list</mat-icon>
+    <div style="float:left; width:95%">Opportunity List</div>
+    <span class="fill-remaining-space"></span>
+    <div *ngIf="popUpHeaderFlag">
+      <button mat-icon-button (click)="closeDialogOpp()">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+
+  </mat-toolbar>
+
+  <mat-form-field class="search-form-field" floatLabel="never">
+    <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+    <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="searchKey" (click)="onSearchClear()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <div style="padding: 10px;">
+
+    <mat-table [dataSource]="oppertunityList" class="data-table" matSort>
+
+      <ng-container matColumnDef="OpportunityName">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Opportunity </mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let e"> {{e.OpportunityName}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="solicitationNo">
+        <mat-header-cell *matHeaderCellDef> Solicitation No </mat-header-cell>
+        <mat-cell *matCellDef="let e"> {{e.solicitationNo}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="startDate">
+        <mat-header-cell *matHeaderCellDef> Start Date </mat-header-cell>
+      </ng-container>
+      <ng-container matColumnDef="DueDate">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Due Date </mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let e"> {{e.DueDate}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="RemainingDays">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Remaining Days </mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let e">{{e.RemainingDays}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="Agency">
+        <mat-header-cell *matHeaderCellDef> Agency </mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let e"> {{e.Agency}} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+        <mat-cell *matCellDef="let e">
+  
+          <div *ngIf="!popUpHeaderFlag">
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="actionHandler(e.id, 'download')">
+                <mat-icon>cloud_download</mat-icon>
+                <span>Download</span>
+              </button>
+              <button mat-menu-item (click)="actionHandler(e.RfpdocumentId, 'export')">
+                <mat-icon>import_export</mat-icon>
+                <span>Export</span>
+              </button>
+            </mat-menu>
+          </div>
+  
+          <div *ngIf="popUpHeaderFlag">
+            <button class="oppertunity_loadbtn" mat-raised-button (click)="loadOppertunity(e.opportunityId)">
+              <mat-icon class="loadbtn_icon">settings_backup_restore</mat-icon>
+              Load
+            </button>
+          </div>
+  
+        </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="loading">
+        <mat-footer-cell *matFooterCellDef colspan="4">
+          Loading data...
+        </mat-footer-cell>
+      </ng-container>
+      <ng-container matColumnDef="noData">
+        <mat-footer-cell *matFooterCellDef colspan="6">
+          No pending document.
+        </mat-footer-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+      <mat-row *matRowDef="let Row; columns: columnsToDisplay"></mat-row>
+  
+      <mat-footer-row *matFooterRowDef="['loading']" [ngClass]=" {'hide':oppertunityList!=null}"> </mat-footer-row>
+      <mat-footer-row *matFooterRowDef="['noData']"
+        [ngClass]="{'hide':!(oppertunityList!=null && this.oppertunityList.data.length==0)}"></mat-footer-row>
+  
+    </mat-table>
+  </div>
+
+ 
+
+  <mat-paginator [pageSize]="5" [pageSizeOptions]="[5,10,25,100]" showFirstLastButtons>
+  </mat-paginator>
+</div>

@@ -1,0 +1,3 @@
+﻿Add-Migration InitialApplicationConfigration -c Zbizlink.MicroUserAuthAndRolesManagement.DataModel.Database.Context.ApplicationDbContext -o Migrations/Identity
+Add-Migration  InitialIdentityServerPersistedGrantDbMigration -c PersistedGrantDbContext -o Migrations/IdentityServer/PersistedGrantDb
+Add-Migration  InitialIdentityServerConfigurationDbMigration -c ConfigurationDbContext -o Migrations/IdentityServer/ConfigurationDb

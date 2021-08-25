@@ -1,0 +1,60 @@
+
+
+<section class="topheader_bg">
+
+  <a href="#" class="logo_zbizlink"><img src="https://help.zbizlink.com/wp-content/themes/helpzbizlink/images/logo.svg"></a>
+
+
+<nav *ngIf="nav.visible">
+  <ul class="nav">
+    <li><a style="cursor: pointer;">Look Up Data</a>
+
+      <ul>
+        <li><a routerLink="/agency" routerLinkActive="activelink_menu">Agency</a></li>
+        <!-- <li><a routerLink="/state" routerLinkActive="activelink_menu">State</a></li>  -->
+        <li><a routerLink="/industry" routerLinkActive="activelink_menu">Industry</a></li>
+        <li><a routerLink="/contract-vehicle" routerLinkActive="activelink_menu">Contract Vehicle</a></li>
+        <li><a routerLink="/synonyms" routerLinkActive="activelink_menu">Category Synonym</a></li>
+        <li><a routerLink="/summary" routerLinkActive="activelink_menu">Summary Field</a></li>
+        <li><a routerLink="/summary-synonym-list" routerLinkActive="activelink_menu">Summary Synonym </a></li>
+
+      </ul>
+
+
+    </li>
+    <li><a style="cursor: pointer;">Synonym</a>
+      <ul>
+
+        <li><a routerLink="/summary-synonym" routerLinkActive="activelink_menu">Summary Synonym Assignment</a></li>
+        <li><a routerLink="/category-synonym" routerLinkActive="activelink_menu">Category Synonym Assignment</a></li>
+        <li><a routerLink="/summary-synonym-move" routerLinkActive="activelink_menu">Summary Synonym Move</a></li>
+        <li><a routerLink="/category-synonym-move" routerLinkActive="activelink_menu">Category Synonym Move</a></li>
+
+
+
+      </ul>
+    </li>
+
+    <li><a routerLink="/campaign" routerLinkActive="activelink_menu">Shreded Document</a></li>
+
+    <li><a routerLink="/marketing-campaign" routerLinkActive="activelink_menu">Marketing campaign</a></li>
+    <li><a style="cursor: pointer;" (click)="logout()">logout</a></li>
+  </ul>
+</nav>
+
+
+
+<div class="spacer"> </div>
+<div class="spacer"> </div>
+
+<div>
+  <ul class="navbar-nav">
+  </ul>
+</div>
+
+<div style="clear: both;"></div>
+
+
+
+</section>
+

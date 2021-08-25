@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Server=110.39.197.13\MSSQLServer2019;Database=CrmDataImport_DB;user id=sa;password=Admin12345;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force

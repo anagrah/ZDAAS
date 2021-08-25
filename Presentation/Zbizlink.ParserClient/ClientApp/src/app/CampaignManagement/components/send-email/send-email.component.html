@@ -1,0 +1,310 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div> 
+
+
+<section class="checkbox-section "> 
+  
+  <!-- <mat-checkbox (change)="onChange($event)" class="checkbox-section synonym_checkbox" >Search By Company</mat-checkbox>  -->
+
+  </section> 
+
+<div class="main">
+ 
+    <mat-toolbar style="background-color: #f44336;">
+      <!-- <div style=" width:100%; color:#fff ;">Send Opportunity: -->
+        
+        <div style=" width:100%; color:#fff ;">Opportunity Name:
+        <mat-label>{{OpportunityName}}</mat-label> 
+      </div>
+      
+        
+
+
+      <span class="fill-remaining-space"></span>
+      <div>
+        <button mat-icon-button (click)="closeDialogOpp()">
+          <mat-icon style="color: #fff;">cancel</mat-icon>
+        </button>
+      </div>
+      <br>
+    </mat-toolbar>
+    <!-- showdiv -->
+<div *ngIf="showDiv">
+    <form [formGroup]="groupForm" class="authentication-form container SendOpportunity_formbox" >
+    <p>
+      <mat-form-field [hidden]="true" >
+        <mat-label></mat-label>
+        <input  matInput placeholder="opportunity name" [(ngModel)]="OpportunityName"  formControlName="OpportunityName" readonly> 
+      </mat-form-field>
+    </p>
+    <br>
+    <mat-card class="uploadfilebox" >
+      <div style="font-size: small">
+      </div>
+   
+      <div style="color: crimson; font-size:  small;"></div>
+      <div>
+        <div class="col-sm-12">
+          <mat-label class="CategorySynonym_lable">Campaign</mat-label>  
+          <mat-select formControlName="CampaignId" (focus)="onFocus()"
+           class="authentication-full-width synonym_selectbox"
+            [placeholder]="'Please select campaign'" 
+            (selectionChange)="selectCategory($event)">   
+                                 
+              <mat-option *ngFor="let campaign of campaigns" 
+              [value]="campaign._id">         
+                {{campaign.name}}        
+              </mat-option>        
+            </mat-select> 
+            <span style="color:red">{{ShowErrorMessage}}</span>
+      </div>
+         
+        <input type="file" #fileImportInput style="display: none;" id="csvFileUpload"
+          (change)="fileChangeListener($event)" accept=".csv" multiple="multiple" />
+          
+          
+        <!-- <button  type="button" name="fileImportInput" (click)="fileImportInput.click()" mat-raised-button
+          color="warn"> Click to upload  </button> -->
+          
+          <mat-hint>Please upload your recipient's emails using csv/excel file format.</mat-hint><b><a style="cursor: pointer;" name="fileImportInput" (click)="fileImportInput.click()"> Click to upload</a></b>
+           
+         <div><b>OR</b> </div> 
+
+          <mat-hint>
+          Type email addresses in the below textbox.  
+          </mat-hint>
+         
+   
+      </div>
+    </mat-card>
+  
+   
+     <textarea class="sendEmailCard popuptextarea2" (focus)="onFocus()" matInput  [value]="EmailIds" (input)="EmailIds = $event.target.value" placeholder="Load email address here...">{{EmailIds}}</textarea> 
+
+     <!-- <textarea class="sendEmailCard popuptextarea2" (focus)="onFocus()" matInput  [value]="temp" (input)="temp = $event.target.value" placeholder="Load email address here...">{{temp}}</textarea> ) -->
+     
+    <mat-error *ngIf='EmailErrorMessage'> {{EmailErrorMessage}}</mat-error>
+    
+
+    
+   
+  
+    
+
+    <!-- <div class="message_lable">Message</div> -->
+    
+    <!-- <editor style="height:200px;" class="message-box " [(ngModel)]="Message" formControlName="Message" 
+    [init]="{ 
+      plugins: 'link table | fullscreen | lists',
+      toolbar: 'formatselect | bold italic strikethrough forecolor backcolor permanentpen formatpainter | link image media pageembed | alignleft aligncenter alignright alignjustify  | outdent indent | removeformat | addcomment | fullscreen | fontsizeselect | numlist bullist',
+      resize: false
+          }"></editor> -->
+    <!-- <textarea class="message-box popuptextarea" [(ngModel)]="Message" formControlName="Message" matInput></textarea> -->
+     <div style="clear: both;"></div>
+    
+    <button mat-flat-button color="warn" style=" margin-top: 10px; margin-bottom: 10px;" (click)="SendEmail(groupForm)">Push Leads</button>
+    <mat-error *ngIf='emailSuccessFailureMessage'>{{emailSuccessFailureMessage}}</mat-error>
+  </form>
+</div>
+  </div>
+
+
+
+  <div *ngIf="isHidden"> 
+    <form [formGroup]="groupForm" class="authentication-form container SendOpportunity_formbox" >
+      <p>
+        <mat-form-field [hidden]="true" >
+          <mat-label></mat-label>
+          <input  matInput placeholder="opportunity name" [(ngModel)]="OpportunityName"  formControlName="OpportunityName" readonly> 
+        </mat-form-field>
+      </p>
+      <br>
+      <mat-card class="uploadfilebox" >
+        <div style="font-size: small">
+        </div>
+     
+        <div style="color: crimson; font-size:  small;"></div>
+        <div>
+          <div class="col-sm-12">
+            <mat-label class="CategorySynonym_lable">Campaign</mat-label>  
+            <mat-select formControlName="CampaignId"
+             class="authentication-full-width synonym_selectbox"
+              [placeholder]="'Please select campaign'" 
+              (selectionChange)="selectCategory($event)">   
+                                   
+                <mat-option *ngFor="let campaign of campaigns" 
+                [value]="campaign._id">         
+                  {{campaign.name}}        
+                </mat-option>        
+              </mat-select> 
+              
+        </div>
+           
+          <!-- <input type="file" #fileImportInput style="display: none;" id="csvFileUpload"
+            (change)="fileChangeListener($event)" accept=".csv" multiple="multiple" />
+            
+            
+          <button  type="button" name="fileImportInput" (click)="fileImportInput.click()" mat-raised-button
+            color="warn"> Click to upload  </button>
+            
+            <mat-hint>Please upload your recipient's emails using csv/excel file format.</mat-hint><b><a style="cursor: pointer;" name="fileImportInput" (click)="fileImportInput.click()"> Click to upload</a></b>
+             
+           <div><b>OR</b> </div> 
+  
+            <mat-hint>
+            Type email addresses in the below textbox.  
+            </mat-hint> -->
+           
+     
+        </div>
+      </mat-card>
+    
+     
+       <textarea class="sendEmailCard popuptextarea2" (focus)="onFocus()" matInput  [value]="EmailIds" (input)="EmailIds = $event.target.value" placeholder="Load email address here..." disabled>{{EmailIds}}</textarea> 
+  
+       <!-- <textarea class="sendEmailCard popuptextarea2" (focus)="onFocus()" matInput  [value]="temp" (input)="temp = $event.target.value" placeholder="Load email address here...">{{temp}}</textarea> ) -->
+       
+      <mat-error *ngIf='EmailErrorMessage'> {{EmailErrorMessage}}</mat-error>
+     
+       <div style="clear: both;"></div>
+      
+    
+  
+    <!-- <form class="example-form"> -->
+
+      <div class="row">
+        <div class="col-sm-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Skills</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+          </mat-form-field>
+    
+        </div>
+        <div class="col-sm-4">
+          <mat-label class="CategorySynonym_lable">Annual Revenue</mat-label>  
+          <mat-select formControlName="CampaignId"
+           class="authentication-full-width synonym_selectbox"
+            [placeholder]="'Please select campaign'" 
+            (selectionChange)="selectCategory($event)">   
+                                 
+              <mat-option *ngFor="let campaign of AnnualRevenue" 
+              [value]="campaign._id">         
+                {{campaign.name}}        
+              </mat-option>        
+            </mat-select> 
+        </div>
+        <div class="col-sm-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Projects</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+          </mat-form-field>
+    
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-sm-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Project Client</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4">
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Business Type</mat-label>
+            <!-- <input matInput placeholder="Ex. Pizza" value="Sushi"> -->
+          </mat-form-field>
+
+          <ng-multiselect-dropdown class="authentication-full-width" formControlName="Agency" 
+              [settings]="agenciesDropDownSettings"
+              [placeholder]="'Please select agency'" 
+              [data]="cities"  
+              [(ngModel)]="selectedItems" 
+              (onSelect)="onItemSelect($event)"
+              (onSelectAll)="onSelectAll($event)" 
+              
+              (onDeSelectAll)="onDeSelectAll(cities)"
+              >
+            </ng-multiselect-dropdown>
+          <!-- <ng-multiselect-dropdown #multiSelect 
+          [placeholder]="'Select City'" 
+          [data]="data" 
+          [formControl]="name" 
+          [settings]="settings"
+          [disabled]="false"
+          (onFilterChange)="onFilterChange($event)"
+          (onDropDownClose)="onDropDownClose($event)"
+          (onSelect)="onItemSelect($event)" 
+          (onDeSelect)="onDeSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+          (onDeSelectAll)="onDeSelectAll($event)">
+        </ng-multiselect-dropdown>   -->
+        </div>
+        <div class="col-sm-4">
+          
+          <mat-label class="CategorySynonym_lable">Entity Structure</mat-label>  
+          <mat-select formControlName="CampaignId"
+           class="authentication-full-width synonym_selectbox"
+            [placeholder]="'Please select campaign'" 
+            (selectionChange)="selectCategory($event)">   
+                                 
+              <mat-option *ngFor="let campaign of EntityStructure" 
+              [value]="campaign._id">         
+                {{campaign.name}}        
+              </mat-option>        
+            </mat-select> 
+            </div>
+      </div>
+
+       
+    
+      <div class="row">
+        <div class="col-sm-4">
+          <mat-label class="CategorySynonym_lable">Employees Range</mat-label>  
+          <mat-select formControlName="CampaignId"
+           class="authentication-full-width synonym_selectbox"
+            [placeholder]="'Please select campaign'" 
+            (selectionChange)="selectCategory($event)">   
+                                 
+              <mat-option *ngFor="let campaign of EmployeesRange" 
+              [value]="campaign._id">         
+                {{campaign.name}}        
+              </mat-option>        
+            </mat-select> 
+        </div>
+        <div class="col-sm-4">
+          <mat-label class="CategorySynonym_lable">Experiance</mat-label>  
+          <mat-select formControlName="CampaignId"
+           class="authentication-full-width synonym_selectbox"
+            [placeholder]="'Please select campaign'" 
+            (selectionChange)="selectCategory($event)">   
+                                 
+              <mat-option *ngFor="let campaign of Experience" 
+              [value]="campaign._id">         
+                {{campaign.name}}        
+              </mat-option>        
+            </mat-select> 
+        </div>
+        <div class="col-sm-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Registered NAICS Code</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+          </mat-form-field>
+
+        </div>
+      </div>
+ 
+      <div class="row">
+        <button mat-flat-button color="warn" style=" margin-top: 10px; margin-bottom: 10px;" (click)="SendEmail(groupForm)">Push Leads</button>
+      </div>
+ 
+
+      
+      <mat-error *ngIf='emailSuccessFailureMessage'>{{emailSuccessFailureMessage}}</mat-error>
+     
+
+  </form>
+  </div>

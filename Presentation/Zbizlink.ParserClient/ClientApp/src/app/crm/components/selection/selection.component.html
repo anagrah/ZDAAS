@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="main_sectionbox2">
+                <div class="row align_item">
+                    <select class="dropdown_listbox" (change)="OnChange($event)">
+                        <option>Please Select CRM </option>
+                        <option *ngFor="let category of categoryTypes" [ngValue]="category.value">{{category.type}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

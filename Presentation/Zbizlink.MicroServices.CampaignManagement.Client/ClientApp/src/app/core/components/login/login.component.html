@@ -1,0 +1,58 @@
+<!-- <div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+   -->
+  <div class="main-div"> 
+      <form [formGroup]="groupForm" class="authentication-form container">
+          <mat-card> 
+            <h2>Login</h2>
+          <mat-form-field class="authentication-full-width">
+              <div style="margin-bottom:-30px;">
+                  <mat-icon style="margin-top:-2px" matPrefix></mat-icon>
+                </div>
+                <span matPrefix>
+                  <span class="material-icons">email</span>
+                </span> 
+                
+            <mat-label style="margin-right:-20px;">Email</mat-label>
+            <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                   placeholder="zd@login.com">
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="" class="authentication-full-width">
+              <div style="margin-bottom:-30px;">
+                  <mat-icon style="margin-top:-2px" matPrefix></mat-icon>
+                </div>
+              <span matPrefix>
+              <span class="material-icons">
+                  lock
+                  </span> </span>
+              <mat-label>Password</mat-label>
+              <input matInput [type]="hide? 'password' : 'text'" placeholder="Password" [formControl]="groupForm.get('password')" required [(ngModel)]="password" (focus)="onFocus()">
+              <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button> -->
+              <mat-error *ngIf="groupForm.hasError('required', 'password')">
+                {{getPassword()}}
+              </mat-error>  
+            </mat-form-field> 
+            <mat-error *ngIf='errorMessage'>{{errorMessage}}</mat-error>
+         <!-- <p> Forgot your password?<a mat-flat-button routerLink="../forgot-password">Click here</a> </p>    -->
+          <mat-divider></mat-divider>
+          <button mat-raised-button class="authentication-button-view" color="primary" (click)="logInForm(groupForm)"  cdkFocusInitial>Log in</button>   
+      <!-- <p style="text-align: left;">By Login, you agree to our Terms of Service and Privacy Policy.
+        <a mat-flat-button routerLink=".">Terms of Service</a>and<a mat-flat-button routerLink=".">Privacy Policy</a>.
+          If you don’t already have an account click the button below to create your account.</p>
+          <a mat-flat-button class="authentication-button-view" color="warn" routerLink="../register-user">Sign up</a>    -->
+            <router-outlet></router-outlet>
+          </mat-card>
+        </form>
+  </div>
+   
+  

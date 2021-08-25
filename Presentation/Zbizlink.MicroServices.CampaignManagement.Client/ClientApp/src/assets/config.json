@@ -1,0 +1,7 @@
+{
+    "apiBaseUrl": "http://localhost:63976",
+    "sharepointapiUrl": "https://tzbl.zbizlink.com",
+    "userManagementApiUrl": "http://localhost:44302",  
+    "emailSenderApiUrl": "http://localhost:53643",
+    "crmApiUrl": "https://tcrmapi.zbizlink.com"
+}

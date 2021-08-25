@@ -1,0 +1,131 @@
+<div class="parser_mainwrap_box">
+
+  <div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+
+  <app-document-upload #fileUploadComponent [summary]="documentSummaryComponent"
+    [opportunityData]="filteredOpportunityDataArray" (receivedRFPDocumentName)="onRfpDocumentNameReceived($event)"
+    (ClearOpportunityForm)="ClearForm()" (SelectedFile)="fileDropDownSelectedValue($event)"
+    (PopulateCategoryNameList)="onPopulateCategoryNameList($event)" (showRFPDocument)="onShowRFPDocument()"
+    (opportunityDataOnCreationTransfer)="onOpportunityDataOnCreationTransfer()"
+    (opportunityDataTransfer)="onOpportunityDataTransfer($event)" (parsingDataTransfer)="onParsingDataTransfer($event)"
+    (CleanDocumentParserFormControls)="onCleanFormControls()"
+    (DeleteFileDataTransfer)="onDeleteFileDataTransfer($event)" (MoveWholeDocument)="onMoveWholeDocument($event)"
+    (SaveCategorySummaryData)="onsaveBeforeOtherEvent($event)"
+    (ChangeOpportunityName)="onChangeOpportunityName($event)">
+  </app-document-upload>
+  &nbsp;
+  <div class='row'>
+
+    <div class='col-sm-5'>
+
+      <div class="card">
+        <div class="card-header">
+          <div class='row'>
+            <div style="font-size: small;">
+              <span style="font-weight: bold;">Document Name:</span> {{documentName}}
+            </div>
+          </div>
+        </div>
+
+        <div class="card-block ">
+          <div id="notepad">
+
+            <div *ngIf="isSummary==true">
+              <cdk-virtual-scroll-viewport [itemSize]="50" autosize>
+                <div class='container'>
+                  <div style="cursor:text !important;" *cdkVirtualFor="let line of RfpDataArray;"
+                    [innerHTML]="line.outerHTML| escapeHtml: 'html'">
+                  </div>
+                </div>
+              </cdk-virtual-scroll-viewport>
+            </div>
+
+            <div *ngIf="isSummary==false" style="cursor:move !important;">
+              <cdk-virtual-scroll-viewport [itemSize]="50" autosize>
+                <div class='container' dragula="Copy" id="left" [(dragulaModel)]="RfpDataArray">
+                  <div *cdkVirtualFor="let line of RfpDataArray;" [innerHTML]="line.outerHTML| escapeHtml: 'html'">
+                  </div>
+                </div>
+              </cdk-virtual-scroll-viewport>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-7'>
+      <div class="card">
+        <div class="card-header">
+          <div style="font-size: small;">
+            <span style="font-weight: bold;">Opportunity Name:</span> {{opportunityName}}
+          </div>
+          <div *ngIf="fileUploadComponent.isLoadingSmall" [ngStyle]="{'display': 'inline-block'}">
+            <mat-progress-spinner [ngStyle]="{'display': 'inline-block'}" color="Primary" [diameter]="20"
+              mode="indeterminate">
+
+            </mat-progress-spinner>
+            &nbsp;&nbsp;
+            <span style="font-style:italic; color:indigo">Saving data...</span>
+          </div>
+
+          <button class="save_btn" mat-mini-fab color="primary" matTooltip="Save opportunity" (click)="onSave()"
+            style="font-size:small;" title="Save" [disabled]="documentUploadService.SaveButtonDisable">
+
+            <mat-icon class="save_btn_icon">save</mat-icon>
+          </button>
+
+          <button class="download_btn" mat-mini-fab color="primary" matTooltip="Download Category Data"
+            (click)="downloadCategoryData()" style="cursor: pointer;font-size:small; right:60px;"
+            title="Download Category Data" [disabled]="documentUploadService.SaveButtonDisable">
+
+            <mat-icon class="download_btn_icon">cloud_download</mat-icon>
+          </button>
+        </div>
+        <div class="card-block" style="padding:0px;"></div>
+        <div class="row no-gutter">
+          <div class="col-sm-3 col-md-3 px-0">
+            <div class="list-group" style="font-size: small;">
+              <a *ngIf="categoryArray !== undefined && categoryArray.length > 0 " routerLink="/{{redirectURL}}"
+                [queryParams]="{ category: 'summary' }" class="list-group-item list-group-item-action"
+                [class.active]="categoryName == 'summary'" (click)="fileUploadComponent.Save(false)">
+                Summary
+              </a>
+              <a *ngFor="let cat of categoryArray;let i=index;" routerLink="/{{redirectURL}}"
+                [queryParams]="{category: cat.CategoryId}" class="list-group-item list-group-item-action"
+                [class.active]="categoryName == cat.CategoryId" (click)="fileUploadComponent.Save(false)">
+                {{cat.Name}}
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-9 col-md-9 px-0">
+            <div id="notepadExtracted">
+
+              <cdk-virtual-scroll-viewport [itemSize]="50" autosize>
+                <app-document-summary [hidden]="!isSummary">
+                </app-document-summary>
+                <div class='container' dragula="Copy" id="right" [(dragulaModel)]="filteredOpportunityDataArray">
+                  <!--        "escapeHtml1(line.outerHTML) "-->
+                  <div (dblclick)="OpenEditor([$event, i])"
+                    *cdkVirtualFor="let line of filteredOpportunityDataArray; let i = index"
+                    [innerHTML]="line.outerHTML | escapeHtml: 'html'" [contextMenu]="basicMenu"
+                    [contextMenuSubject]="[filteredOpportunityDataArray, i]">
+                  </div>
+                </div>
+              </cdk-virtual-scroll-viewport>
+              <context-menu>
+                <ng-template contextMenuItem (execute)="DeleteOpportunityText($event.item)">
+                  Delete
+                </ng-template>
+              </context-menu>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div #divID >Put your content above this line </div> -->

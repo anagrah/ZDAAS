@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zbizlink.LoggerService\Zbizlink.RFPLoggerService.csproj" />
+    <ProjectReference Include="..\Zbizlink.OpportunityRFPNodeTree\Zbizlink.RFPOpportunityRFPNodeTree.csproj" />
+    <ProjectReference Include="..\Zbizlink.ParserDataModel\Zbizlink.RFPDataModel.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPCommon\Zbizlink.RFPCommon.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPLaborCategory\Zbizlink.RFPLaborCategory.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPManipulation\Zbizlink.RFPManipulation.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPNodeTree\Zbizlink.RFPNodeTree.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPServices\Zbizlink.RFPServices.csproj" />
+    <ProjectReference Include="..\Zbizlink.RFPSummary\Zbizlink.RFPSummary.csproj" />
+  </ItemGroup>
+</Project>

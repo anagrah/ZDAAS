@@ -1,0 +1,33 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div> 
+ <!-- if user confirmation is successful ,show this block of view  -->
+  <div class="authentication-full-width" *ngIf='!progressSpinnerService.isLoading && isSuccess'> 
+    <form class="authentication-form container containerMarginTop">
+        <mat-card> 
+          <h3>Thank you for registration</h3>
+       <mat-divider></mat-divider> 
+        <mat-error *ngIf='userConfirmationMessage'><p style="text-align: left;">{{userConfirmationMessage}}</p></mat-error> 
+         <a mat-flat-button class="authentication-button-view " color="warn" routerLink="../login-user">Login</a>  
+         
+        </mat-card>
+      </form>
+</div>
+
+ <!-- if user confirmation is failed or link is expired ,use this part  -->
+
+
+ <div class="authentication-full-width" *ngIf='!progressSpinnerService.isLoading && !isSuccess'> 
+    <form class="authentication-form container containerMarginTop">
+        <mat-card> 
+          <h3>Sorry for inconvenience</h3>
+       <mat-divider></mat-divider>
+       <p style="text-align: left;">Link expired, your confirmation can not be done, please click resend email button to get email to complete sign up process.</p>
+        
+        <button mat-raised-button class="authentication-button-view" color="primary" (click)="resendEmailLink()"  cdkFocusInitial>Resend Email</button>   
+        <mat-error *ngIf='emailSuccessFailureMessage'>{{emailSuccessFailureMessage}}</mat-error>
+       
+        </mat-card>
+      </form>
+</div>
+ 

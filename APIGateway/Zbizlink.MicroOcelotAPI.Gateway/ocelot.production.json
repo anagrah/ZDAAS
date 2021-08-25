@@ -1,0 +1,64 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/User/Authenticate",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44343
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/User/Authenticate",
+      "UpstreamScheme": "https",
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44344
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/User",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44343
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/User",
+      "UpstreamScheme": "https",
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44344
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/User/GetById",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44343
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/User/GetById",
+      "UpstreamScheme": "https",
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44344
+        }
+      ],
+      "GlobalConfigurations": {
+        "BaseUrl": "https://tzbl.zbizlink.com"
+      }
+    }
+  ]
+}

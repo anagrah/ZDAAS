@@ -1,0 +1,48 @@
+
+ <div class="main-div form-margin"> 
+    <!-- [formGroup]="groupForm" -->
+    <form  class="authentication-form container">
+        <mat-card> 
+        <div class="row" style="padding-left: 2%;">
+            <h2>User Rights</h2>  
+        </div> 
+        &nbsp;&nbsp;
+        <mat-divider></mat-divider>
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-sm-6">
+                <mat-form-field appearance="fill">
+                    <mat-label>Select user group</mat-label>
+                    
+                    <mat-select>
+                      <mat-option>None</mat-option>
+                      <mat-option *ngFor="let group of userGroups" [value]="group">{{group}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div class="col-sm-6"><button mat-raised-button color="primary" style="margin-top: 6px;">Add User Group</button></div>
+        </div> 
+        <mat-divider></mat-divider>
+
+        <!-- <mat-grid-list cols="6" rowHeight="50px">
+            <mat-grid-tile
+                *ngFor="let tile of tiles"
+                [colspan]="tile.cols"
+                [rowspan]="tile.rows"
+                [style.background]="tile.color">
+              {{tile.text}}
+            </mat-grid-tile>
+          </mat-grid-list> -->
+
+        <mat-selection-list #view>
+            <mat-list-option *ngFor="let view of ViewName">
+              {{view}}
+            </mat-list-option>
+          </mat-selection-list>
+          <mat-divider></mat-divider>
+          &nbsp;&nbsp;
+        <button mat-raised-button class="authentication-button-view" color="primary">Add User Group</button>
+          <!-- <mat-error *ngIf='errorMessage'>{{errorMessage}}</mat-error> -->  
+          <router-outlet></router-outlet>
+        </mat-card>
+      </form>
+</div>

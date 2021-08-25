@@ -1,0 +1,96 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="main_wrapp">
+                <div class="row align_item">
+                    <div class="col-sm-8">
+                        <h1 class="heading_text">Opportunity</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <select class="dropdown_listbox" (change)="OnChange($event)">
+                            <option *ngFor="let option of filterOptions" [value]="option">{{option}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="table_main_box" *ngIf="!isSettings">
+                            <table width="100%" cellpadding="0" cellspacing="0" class="tablename_box">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div id="select_allcheckbox">
+                                                <label class="tablenamechekbox">
+                                                    <input type="checkbox" [(ngModel)]="masterSelected"
+                                                        (change)="checkUncheckAll()">
+                                                    <span class="checkmark"></span> </label>
+                                            </div>
+                                        </th>
+                                        <th *ngFor="let field of tableFields">
+                                            <span>
+                                                {{field}}
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let row of checklist let i=index">
+                                        <td>
+                                            <label class="tablenamechekbox"> {{i+1}}
+                                                <input type="checkbox" (change)="isAllSelected()"
+                                                    [(ngModel)]="row.isSelected" name="list_name">
+                                                <span class="checkmark"></span> </label>
+                                        </td>
+                                        <td *ngFor="let field of tableFields">
+                                            <span>
+                                                <p>
+                                                    {{row | CDataFilter:field}}
+
+                                                </p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span *ngIf="checklist==0" style="text-align: center;"><strong>Data not found.</strong></span>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="warningMessage_box" *ngIf="isSettings">
+                                Settings for your company are uncompleted,so visit the "Settings".
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="nextbtn_box">
+                <input type="button" value="Settings" class="next_btn" (click)="goToSettings($event)">
+                <input type="button" value="Save And Import To ZBizlink" class="next_btn" (click)="SaveData()">
+                <input type="button" value="Exit" class="next_btn" (click)="onExit($event)">
+                <input type="button" value="Cancel" class="cancel_btn" (click)="onCancel($event)">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" #DialogModal tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirm Exit!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure,You want to exit and back to "zBizlink" opportunities list?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="cancel_btn" data-dismiss="modal">No</button>
+                <button type="button" class="next_btn" (click)="CloseCRMDialog()">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>

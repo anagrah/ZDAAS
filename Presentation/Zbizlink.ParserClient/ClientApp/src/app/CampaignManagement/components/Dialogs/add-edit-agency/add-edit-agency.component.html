@@ -1,0 +1,53 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+   <div class="main-div"style="margin-top: 0%;">
+      <form [formGroup]="groupForm" style="width: 100%;" >
+      <mat-toolbar style="background-color: #ed3305;">
+          <div style="float:left; width:95%;color: #ffffff;">{{BtnAddEdit}} Agency</div>
+          <span class="fill-remaining-space"></span>
+          <div>
+              <button mat-icon-button (click)="closeDialogOpp($event)">
+                  <mat-icon>cancel</mat-icon>
+              </button>
+          </div>
+
+        </mat-toolbar>
+
+     <mat-card class="">
+            <mat-form-field class="example-full-width" style="display:none;">
+                    <mat-label>Id</mat-label>
+                    <input matInput formControlName="AgencyID" [(ngModel)]="AgencyID">
+                  </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                    <mat-label>Agency<span style="color: red;">*</span></mat-label>
+                    <input matInput #inputAgencyName maxlength="100" style="font-size: small;"  placeholder="Enter Agency"
+                    formControlName="AgencyName"  [(ngModel)]="AgencyName"
+                    (focus)="onFocus()"
+                    >
+
+                    <mat-error *ngIf="groupForm.get('AgencyName').invalid">{{getAgencyName()}}</mat-error>
+                    <mat-hint align="end">{{inputAgencyName.value?.length || 0}}/100</mat-hint>
+
+                  </mat-form-field>
+                  <mat-error *ngIf="errorMessage">{{errorMessage}}</mat-error>
+
+                  <mat-form-field class="description-full-width-height">
+                        <mat-label>Description</mat-label>
+                        <textarea class="addEditCard"
+                         matInput   #inputDescription
+                        formControlName="Description" maxlength="200"
+                        [(ngModel)]="Description"
+                        placeholder="Add your description...">
+                    </textarea>
+                    <mat-hint align="end">{{inputDescription.value?.length || 0}}/200</mat-hint>
+                 </mat-form-field>
+     <button mat-flat-button class="authentication-button-view zbizlink_btn " color="warn"  (click)="SaveAgency(groupForm)">{{BtnSave}}</button>
+     </mat-card>
+
+  </form>
+   </div>
+
+
+

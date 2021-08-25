@@ -1,0 +1,29 @@
+.authentication-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }  
+  
+  .authentication-full-width {
+    width: 100%;
+  } 
+  .mat-card-cvr{
+    width: 100%;
+    text-align:center;
+  }
+  
+  .authentication-button-view {
+  width: 100%;
+  }
+  
+  .btn-log-out-hide{
+    display: none;
+    }
+.authentication-button-row button,
+.authentication-button-row a {        
+    width: 100%;
+    }
+  
+ 
+
+  

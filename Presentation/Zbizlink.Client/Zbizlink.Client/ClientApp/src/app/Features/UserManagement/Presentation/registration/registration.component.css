@@ -1,0 +1,102 @@
+.ng-valid[required].greencolor, .ng-valid.required.greencolor  {
+  border: 1px solid #04b600;
+  background: url(/assets/images/validgreen_icon.svg) #fff;
+  background-repeat: no-repeat;
+ background-position: top right;
+}
+
+input.ng-invalid.ng-touched.redcolor {
+  border: 1px solid #ff0000;
+  background: url(/assets/images/valid_red.svg) #fff;
+  background-repeat: no-repeat;
+ background-position: top right;
+}
+
+.error_textbox{color: #ff0000; position: relative; top: 10px; font-size: 11px;}
+
+.ng-untouched.ng-dirty.confirm{
+  border: 1px solid transparent;
+}
+
+.phone_lable{ margin-left: 90px; color: #a2a2a2; line-height: 29px;}
+.phone_hint{ float: right; font-size: 11px; color: #a2a2a2; margin-top: 2px;}
+.captcha_box{ margin-bottom: 15px;}
+
+#phone_input .ng-touched{ border: 1px solid #ff0000; background: url(/assets/images/valid_red.svg) #fff;
+  background-repeat: no-repeat;background-position: top right;
+}
+#phone_input .ng-valid{ border: 1px solid #04b600;  background: url(/assets/images/validgreen_icon.svg) #fff; background-repeat: no-repeat; background-position: top right; }
+
+
+.mat-button-disabled.signupColor{
+color: rgb(248 244 244 / 82%);
+}
+
+
+.museebGreen{
+  border: 2px solid #42A948;
+}
+.museebRadius{
+  border-radius: 4px;
+}
+
+.museebTransparent{
+  border: 2px solid transparent;
+}
+
+.museebRed{
+  border: 2px solid red;
+}
+
+
+/* .ng-touched.ng-dirty.ng-valid.required.confirm{
+  border: 2px solid red;
+} */
+
+/* .country-selector{
+  opacity:1 !important;
+  bottom:8px !important;
+}
+
+input:not(.country-search){
+  bottom: 3px;
+  left: 10px;
+}
+
+.mat-menu-content:not(:empty){
+  max-height:250px;
+}
+
+
+.country-list-button{
+  font-size: 0.8rem!important;
+} */
+
+.tel_input{
+  width: 100%;
+  background: #F6F6F6;
+  height: 40px;
+}
+
+.mat-input-element.input_color{
+  background: #F6F6F6;
+
+}
+
+
+
+.form_input_green{
+    border: 1px solid #04b600;
+    background: url(/assets/images/validgreen_icon.svg) #fff;
+    background-repeat: no-repeat;
+   background-position: top right;
+  }
+
+ .form_input_red {
+    border: 1px solid #ff0000;
+    background: url(/assets/images/valid_red.svg) #fff;
+    background-repeat: no-repeat;
+   background-position: top right;
+  }
+
+  .mat-form-field-infix{ width: 100%;}

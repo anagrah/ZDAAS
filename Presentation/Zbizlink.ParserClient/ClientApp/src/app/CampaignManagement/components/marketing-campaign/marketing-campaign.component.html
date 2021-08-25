@@ -1,0 +1,76 @@
+ 
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div> 
+
+<div class="maindivbox">
+    <mat-card class="example-card" style="width: 96%;">
+      
+      <div >
+       
+        <h2 class="campaign_management_h2">Campaign Management</h2>
+              
+      </div>
+  
+  
+      <mat-card-content>
+          <mat-form-field>
+              <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+            </mat-form-field>
+        <form class="example-form">
+          <table table mat-table [dataSource]="dataSource" style="width: 100%;">
+           
+            <ng-container matColumnDef="opportunityId"  style="display: none;">
+              <th mat-header-cell *matHeaderCellDef class="table_th">Opportunity Id</th>
+              <td mat-cell *matCellDef="let element"> {{element.opportunityId}} </td>
+            </ng-container> 
+            <ng-container matColumnDef="campaignOpportunityID"  style="display: none;">
+              <th mat-header-cell *matHeaderCellDef class="table_th">Campaign Opportunity Id</th>
+              <td mat-cell *matCellDef="let element" style="width: 15%;"> {{element.campaignOpportunityID}} </td>
+            </ng-container> 
+                <ng-container matColumnDef="OpportunityName">
+                  <th mat-header-cell *matHeaderCellDef class="table_th">Opportunity Name</th>
+                  <td mat-cell *matCellDef="let element" style="width: 15%;"> {{element.opportunityName}} </td>
+                </ng-container> 
+                <ng-container matColumnDef="OpportunityCreatedDate">
+                    <th mat-header-cell *matHeaderCellDef class="table_th">Created Date</th>
+                    <td mat-cell *matCellDef="let element" style="width: 15%;"> {{element.createdDate | date}} </td>
+                  </ng-container> 
+                  <ng-container matColumnDef="SentUserList" >
+                    <th mat-header-cell *matHeaderCellDef class="table_th">Send To User List</th>
+                    <td mat-cell *matCellDef="let element" style="width: 30%;"> {{element.sentUserList}} </td>
+                  </ng-container>  
+
+                  <ng-container matColumnDef="CampaignSent" >
+                    <th mat-header-cell *matHeaderCellDef class="table_th">Campaign Sent</th>
+                    <td mat-cell *matCellDef="let element" style="width: 15%;">
+                      {{element.campaignSent}}
+                      <!-- <mat-checkbox [disabled]="disabled"  [(indeterminate)]="element.campaignSent" name="CampaignSent"> </mat-checkbox> -->
+                     </td>
+                  </ng-container>  
+                <ng-container matColumnDef="CampaignSentDate" >
+                  <th mat-header-cell *matHeaderCellDef class="table_th">Campaign Sent Date </th>
+                  <td mat-cell *matCellDef="let element" style="width: 15%;"> {{element.campaignSentDate | date }} </td>
+                </ng-container> 
+            
+                <ng-container matColumnDef="ShowUrl">
+                  <th mat-header-cell *matHeaderCellDef class="table_th">ShowUrl </th>
+                  <td mat-cell *matCellDef="let element" style="width: 15%; cursor: pointer;">   
+                   <button mat-raised-button  class="button" color="warn" (click)="sendURL(element.opportunityId)">View URL</button>
+                </ng-container>   
+                   
+                <ng-container matColumnDef="Send">
+                  <th mat-header-cell *matHeaderCellDef class="table_th">Import CSV</th>
+                  <td mat-cell *matCellDef="let element" style="width: 15%;">   
+                     <button mat-raised-button  class="button" color="warn" (click)="sendEmail(element.opportunityId,element.opportunityName,element.campaignOpportunityID)" >Import</button></td>
+                </ng-container>                 
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="tr.mat-header-row"></tr>  
+          </table> 
+          <div style="text-align: center;" *ngIf="dataSource.data.length === 0">No records found</div>
+          <mat-paginator [pageSizeOptions]="[5, 10,20,30,50]" showFirstLastButtons></mat-paginator>
+        </form> 
+      </mat-card-content>
+       
+    </mat-card>

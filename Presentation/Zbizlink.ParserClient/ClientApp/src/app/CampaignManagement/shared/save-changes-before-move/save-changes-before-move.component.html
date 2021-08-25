@@ -1,0 +1,35 @@
+<div>
+    <mat-toolbar style="height: 50px;">
+      <div style="float:left; width:95%; font-size:medium;">Save Changes</div>
+      <span class="fill-remaining-space"></span>
+      
+    </mat-toolbar>
+  </div>
+  
+  <div style="padding: 20px;">
+  
+    <div mat-dialog-content>
+      <div class="Confirmation_pupopbox">
+        <span class="content-span full-width">Do you want to save your changes?</span>
+      </div>
+    </div>
+    
+    <div class="confirm-dialog-container">
+  
+      <div class="row">
+        <div class="col-sm-4">
+          <button mat-raised-button color="primary" id="no-button" (click)="closeDialogOpp('Save')">Save</button>
+        </div>
+        <div class="col-sm-4">
+            <button mat-raised-button color="primary" id="no-button" (click)="closeDialogOpp('DontSave')">Don't Save</button>
+          </div>
+        <div class="col-sm-4">
+          <button mat-raised-button color="primary" id="yes-button" (click)="closeDialogOpp('Cancel')">Cancel</button>
+    
+        </div>
+  
+      </div> 
+     
+    </div>
+  
+  </div>

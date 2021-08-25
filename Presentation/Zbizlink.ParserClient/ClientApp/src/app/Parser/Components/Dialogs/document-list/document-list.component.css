@@ -1,0 +1,114 @@
+.hide{
+    display:none;
+  }
+  .data-table {
+    overflow-y: scroll;
+    height: 400px;
+    overflow-x: hidden !important;
+    border: solid 1px #e8e8e8;
+  
+  }
+  mat-footer-row mat-footer-cell{
+    justify-content: center;
+    font-style:italic;
+  }
+  mat-header-row mat-header-cell{
+    font-size: 14px;
+    color:#fff;
+    width: 350px;
+    padding-top: 10px; padding-bottom: 10px;
+    background: #6ab83b;
+  }
+  mat-form-field {
+    width: 100%;
+  }
+  .mat-column-DocName {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 32% !important;
+    width: 32% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .mat-column-DueDate
+  {
+    padding-left: 10px;
+  }
+  .mat-column-RemainingDays
+  {
+    padding-left: 25px;
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 18% !important;
+    width: 18% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .mat-column-Agency
+  {
+    padding-left: 25px;
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 25% !important;
+    width: 25% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .mat-column-action
+  {
+    padding-left: 10px;
+  }
+  .search-div{
+    margin: 10px;
+  }
+  
+  .search-form-field{
+    width: 50%;
+    padding: 5px 10px; 
+    border-radius: 5px;
+     }
+  .search-form-field div.mat-form-field-underline {
+    display: none;
+  }
+  .search-form-field div.mat-form-field-infix{
+    border-top: 0px;
+  }
+  .search-form-field div.mat-form-field-wrapper{
+    padding-bottom: 0px;
+  }
+  .search-form-field div.mat-form-field-suffix button{
+    height: 32px;
+    width: 32px;
+  }
+  
+.mat-header-row{ height: auto !important; min-height: auto;}
+
+.oppertunity_loadbtn{ 
+  box-shadow: none;
+  background: #ed3305;
+  border-radius: 0px;
+  color: #ffff;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.loadbtn_icon{ font-size: 18px; position: relative; top: 2px;}
+
+mat-row:nth-child(even) {background-color: #f6f6f6;}
+.mat-cell, .mat-footer-cell{ color: #000;}
+ 

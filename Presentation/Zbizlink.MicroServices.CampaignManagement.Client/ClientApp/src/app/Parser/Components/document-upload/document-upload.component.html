@@ -1,0 +1,72 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+
+<div class="row" style="padding-bottom:10px;padding-top:10px; margin-left: 0; margin-right: 0;">
+  <div class="col-md-12">
+    <div style="text-align:left;">
+      <button mat-mini-fab color="primary" (click)="fileInput.click()" title="attach file"
+        matBadge="{{documentUploadService.NumberOfAttachedfile}}" matBadgePosition="before" matBadgeColor="accent">
+        <mat-icon>attach_file</mat-icon>
+        <input #fileInput type="file" name="upload" multiple="multiple"
+          (change)="onAttachedFile($event)" style="display:none;" />
+      </button>
+      &nbsp;
+
+      <mat-form-field style="width: 540px;">
+        <mat-select [(ngModel)]="documentUploadService.SelectedFileName" style="font-size: small;"  [placeholder]="documentUploadService.DropDownMessage"
+          (selectionChange)="onSelectionChangeFileDropDown($event.value)" [(value)]="fileDropdownSelectedValue">
+          <mat-option style="width:540px; font-size: small;" *ngFor="let rfpFile of documentUploadService.RFPOpportunity.RfpFileList"
+            [value]="rfpFile.FileName" [ngStyle]="{'color' : rfpFile.FileNameColor}" style="font-size:small;">
+            {{rfpFile.FileName}}</mat-option>
+        </mat-select>
+        <mat-hint>
+           <a [routerLink]="" (click)="onGoToPage2()" [ngStyle]="{'color' : documentUploadService.SavefileMessageColor}">{{documentUploadService.NumberOfSavedfile}}</a>
+          <span [style.visibility]="documentUploadService.NumberOfSavedfile != '' ? 'visible' : 'hidden'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <a [routerLink]="" (click)="onGoToPage2()">{{documentUploadService.NumberOfParssedfile}}</a>
+        </mat-hint>
+      </mat-form-field>
+
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- <button mat-raised-button color="primary" [disabled]="documentUploadService.SaveButtonDisable" (click)="OpenEmptyOpportunityDialog(false)">
+        Save File
+      </button>
+      &nbsp;
+      <button mat-raised-button color="primary" [disabled]="documentUploadService.SaveAllButtonDisable" (click)="OpenEmptyOpportunityDialog(true)">
+        Save All Files
+      </button>
+      &nbsp; -->
+      <button mat-raised-button color="primary" [disabled]="documentUploadService.DeleteButtonDisable" (click)="onDeleteFile()" style="font-size:small;">
+        Delete File
+      </button>
+      &nbsp;
+      
+      <button mat-raised-button color="primary" [disabled]="documentUploadService.ViewButtonDisable" (click)="onPreviewDocument()" style="font-size:small;">
+        Preview File
+      </button>
+      &nbsp;
+      <button mat-raised-button color="primary" [disabled]="documentUploadService.ParseButtonDisable" (click)="onParse()" style="font-size:small;">
+        Parse File
+      </button>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <button mat-raised-button color="primary" (click)="onOpportunityListShow()" style="font-size:small;">
+        Opportunity List
+      </button>
+      &nbsp;
+      <button mat-raised-button color="accent" (click)="doPublish(true)" style="font-size:small;" [disabled]="documentUploadService.PublishButtonDisable">
+        Publish
+      </button>
+      &nbsp;
+      <button mat-raised-button color="warn"  (click)="openDialog()" style="font-size:small;">
+        Share
+      </button>
+    </div>
+  </div>
+
+
+</div>
+
+<mat-divider></mat-divider>

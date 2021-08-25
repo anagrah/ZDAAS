@@ -1,0 +1,24 @@
+.margin-top{
+    margin-top: 2%;
+}
+
+
+.form-margin{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.material-icons{ color: #007bff; font-size: 18px; position: relative; top: -7px; margin-right: 10px;}
+
+  
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color:#000 !important;
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+
+.mat-form-field-label{  color:#000 !important;}
+ 
+
+
+ 

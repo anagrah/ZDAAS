@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="main_sectionbox">
+                <div class="row align_item">
+                    <div class="col-sm-12">
+                        <div class="main_sectionbox3">
+                            <div class="row align_item">
+                                <select class="dropdown_listbox" (change)="OnChange($event)">
+                                    <option>Please Select Table Name </option>
+                                    <option *ngFor="let table of tables" [value]="table.id">{{table.crmTableName}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12">
+                    <section class="tablename_sections">
+                        <div class="checkbox_block" *ngFor="let field of tablefields;let i=index;" >
+                            <label class="tablenamechekbox">
+                                {{field.tableFieldName}}
+                                <input type="checkbox" value="{{field.tableFieldName}}"
+                                    (change)="onCheckboxChange(i,$event)" [checked]="field.status" [disabled]="field.tableFieldName=='Id' || field.tableFieldName=='CreatedDate' || field.tableFieldName=='CloseDate'">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="nextbtn_box">
+                <input type="button" value="Back" class="next_btn" (click)="onBack($event)">
+                <input type="button" value="Save And Next" class="next_btn" (click)="Save($event)">
+                <input type="button" value="Next" class="next_btn" (click)="NextPage($event)">
+
+            </div>
+        </div>
+    </div>
+</div>

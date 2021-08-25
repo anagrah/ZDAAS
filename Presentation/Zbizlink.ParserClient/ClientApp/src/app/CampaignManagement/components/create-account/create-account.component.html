@@ -1,0 +1,109 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div> 
+
+<div class="main-div form-margin">    
+  <form [formGroup]="groupForm" class="authentication-form container" (ngSubmit)="createAccount(groupForm)" >
+      <mat-card class=""> 
+<h2 class="login_h2">Create account</h2> 
+<mat-form-field class="authentication-full-width" hintLabel="Max 10 characters">
+  <div style="margin-bottom:-30px;">
+      <mat-icon style="margin-top:-2px" matPrefix></mat-icon>
+    </div>
+    <span matPrefix>
+      <span class="material-icons">
+          person
+          </span>
+    </span> 
+ 
+  <mat-label>First name <span style="color: red;">*</span></mat-label>
+  <input matInput #inputFirstName maxlength="10" style="font-size: small;" matInput placeholder="First name"
+  [formControl]="groupForm.get('firstName')"  [(ngModel)]="firstName">
+
+  <mat-error *ngIf="groupForm.get('firstName').invalid">{{getFirstName()}}</mat-error>
+  <mat-hint align="end">{{inputFirstName.value?.length || 0}}/10</mat-hint>
+</mat-form-field>
+
+
+<mat-form-field class="authentication-full-width" hintLabel="Max 10 characters"> 
+  <div style="margin-bottom:-30px;">
+      <mat-icon style="margin-top:-2px" matPrefix></mat-icon>
+    </div>
+  
+      <span matPrefix>
+          <span class="material-icons">
+              person
+              </span>
+        </span> 
+  <mat-label>Last Name  <span style="color: red;">*</span></mat-label>
+  <input matInput #inputLastName maxlength="10" style="font-size: small;" placeholder="Last name"
+  [formControl]="groupForm.get('lastName')"  [(ngModel)]="lastName">
+
+  <mat-error *ngIf="groupForm.get('lastName').invalid">{{getLastName()}}</mat-error>
+  <mat-hint align="end">{{inputLastName.value?.length || 0}}/10</mat-hint>
+ 
+</mat-form-field>
+      <mat-form-field class="authentication-full-width">
+          <div style="margin-bottom:-30px;">
+              <mat-icon style="margin-top:-2px" matPrefix></mat-icon>
+            </div>
+            <span matPrefix>
+              <span class="material-icons">email</span>
+            </span> 
+            
+        <mat-label style="margin-right:-20px;">Email  <span style="color: red;">*</span></mat-label>  
+        
+        <input matInput style="font-size: small;" [formControl]="emailFormControl"  placeholder="zd@register.com" [errorStateMatcher]="matcher1" (focus)="onFocus()">
+      
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is required
+      </mat-error> 
+      
+      </mat-form-field>
+      <mat-error *ngIf='emailExists'>{{emailExists}}</mat-error>
+      <mat-form-field class="authentication-full-width">        
+        <mat-label>User Type</mat-label>        
+        <mat-select formControlName="RoleId">        
+          <mat-option *ngFor="let userType of userTypes" [value]="userType.AdminRoleId" (change)='onSelection' >         
+            {{userType.RoleName}}        
+          </mat-option>        
+        </mat-select>        
+      </mat-form-field>  
+        <mat-form-field class="authentication-full-width" hintLabel="Min. 8,Max. 20 characters">
+          <div style="margin-bottom:-30px;">
+            <mat-icon style="margin-top:-2px" matPrefix></mat-icon>
+          </div>
+          <span matPrefix>
+            <span class="material-icons">
+              lock
+              </span>
+          </span> 
+          <mat-label >Password  <span style="color: red;">*</span></mat-label>
+          <input matInput #inputPassword  maxlength="20"style="font-size: small;" [type]="hide ? 'password' : 'text'" placeholder="Password" formControlName="password" >
+          <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button> -->
+          <mat-error *ngIf="groupForm.hasError('required', 'password')">
+            {{getPassword()}}
+          </mat-error>
+          <mat-hint align="end">{{inputPassword.value?.length || 0}}/20</mat-hint>
+        </mat-form-field>
+        <mat-error *ngIf='errorMessage'>{{errorMessage}}</mat-error>
+        
+        <mat-error *ngIf='successMessage' (focus)="onFocus()">{{successMessage}}</mat-error>
+        <!-- <mat-error *ngIf='registerError'>{{registerError}}</mat-error>
+        <div style="margin-top: 5px;"></div>  -->
+        
+       <!-- <p> By Join us, you agree to our Terms of Service and Privacy Policy.</p>     -->
+        <button mat-raised-button color="primary" class="authentication-button-view zbizlink_btn"  >Create Account</button>  
+        
+       <!-- <p style="margin-top: 15px;  text-align: center;">Already have an account? <a  routerLink="../login">Login here</a>  </p> 
+         
+        <router-outlet></router-outlet> -->
+      </mat-card>
+    </form>
+
+</div>

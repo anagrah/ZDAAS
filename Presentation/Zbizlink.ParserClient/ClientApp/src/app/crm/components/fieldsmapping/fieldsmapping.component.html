@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="main_wrapp">
+        <div class="row align_item">
+          <div class="col-sm-12">
+            <h1 class="heading_text">Data Table and Fields Mapping</h1>
+          </div>
+          <div class="col-sm-12">
+            <div class="fields_mapping_note"><span class="mapping_notespan">Note:</span> Please map your data columns
+              from your source table to the Zbizlink data table on the right side of the panel.</div>
+            <table class="mapping_table" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><strong>Salesforce CRM Fields (Source)</strong></td>
+                <td></td>
+                <td><strong>Zbizlink Fields (Destination) </strong></td>
+              </tr>
+              <tr *ngFor="let field of bizlinkfields">
+                <td>
+                  <select class="dropdown_listbox2" (change)="OnChange($event,field.id)" [ngModel]="field.mappedId">
+                    <option [value]="null">Select</option>
+                    <option *ngFor="let crmField of crmfields" [value]="crmField.id">{{crmField.tableFieldName}}
+                    </option>
+                  </select>
+                </td>
+                <td class="mapping_icontd">
+                  <div class="mapping_iconbox"></div>
+                </td>
+                <td>
+                  <input type="text" class="input_mapping" value="{{field.bizlinkTableFieldName}}" readonly>
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="nextbtn_box">
+
+        <input type="button" value="Back" class="next_btn" (click)="onBack($event)">
+        <input type="submit" value="Save And Next" class="next_btn" (click)="SaveMappedFields($event)">
+        <input type="button" value="Next" class="next_btn" (click)="onNext($event)">
+        
+      </div>
+    </div>
+  </div>
+</div>

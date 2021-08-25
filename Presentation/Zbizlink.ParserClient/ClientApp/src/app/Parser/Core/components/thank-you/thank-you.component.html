@@ -1,0 +1,18 @@
+<div *ngIf="progressSpinnerService.isLoading" class="loading-indicator">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+  
+  <div class="authentication-full-width"> 
+      <form [formGroup]="groupForm" class="authentication-form container containerMarginTop">
+          <mat-card> 
+            <h3>Thank you for registration</h3>
+         <mat-divider></mat-divider>
+         <p style="text-align: left;">A confirmation email is sent to you, please click on provided link to confirm your registration. If you did not receive email, please click on resend email button.</p>
+          <button mat-raised-button class="authentication-button-view" color="primary" (click)="resendLink(groupForm)"  cdkFocusInitial>Resend Email</button>   
+          <mat-error *ngIf='emailSendingMessage'>{{emailSendingMessage}}</mat-error>
+           
+          </mat-card>
+        </form>
+  </div>
+   
+  

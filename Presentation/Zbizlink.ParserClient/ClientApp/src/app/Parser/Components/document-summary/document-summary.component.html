@@ -1,0 +1,85 @@
+<mat-card class="zdass-mat-card">
+    <!--<mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title> summary </mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>-->
+    <!--<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">-->
+    <mat-card-content>
+      <form [formGroup]="groupForm" class="zdass-container">
+       
+        <div *ngFor="let field of summarArray; let i=index" class="zdass-container input_box">
+            <mat-error *ngIf="groupForm.get(field.FieldDisplayName).errors?.required">{{field.FieldDisplayName}} is required </mat-error>
+            <mat-error *ngIf="groupForm.get(field.FieldDisplayName).errors?.maxlength"> {{MaxlengthErrorMessage(field.FieldDisplayName)}}</mat-error>
+            <mat-error *ngIf="groupForm.get(field.FieldDisplayName).errors?.pattern"> {{InvalidDateErrorMessage(field.FieldDisplayName)}}</mat-error>    
+          
+          
+            <!-- <div formGroupName="selectedSourceDetails"> 
+            <mat-form-field *ngIf="field.FieldDisplayName == 'Agency' ">
+              <mat-select placeholder="Select agency" formControlName="agencyId" [(ngModel)]="selectedAgency">
+                  <mat-option style="width:300px; font-size: small;" *ngFor="let option of agencyList"
+                      [value]="option.AgencyId">
+                      {{option.AgencyShortDesc}}</mat-option>
+              </mat-select>
+          </mat-form-field>
+          
+             <mat-form-field *ngIf="field.ControlType =='dropdown' " style="display:none;">   
+              <mat-select [formControlName]="field.FieldDisplayName">        
+                <mat-option  [value]="field.FieldText">         
+                  {{field.FieldDisplayName}}       
+                </mat-option>        
+              </mat-select>        
+            </mat-form-field>  
+
+         
+          <mat-form-field *ngIf="field.FieldDisplayName == 'State' ">
+              <mat-select placeholder="Select state" formControlName ="stateId">
+                  <mat-option style="width:300px; font-size: small;" *ngFor="let option of stateList"
+                      [value]="option.StateId">
+                      {{option.StateName}}</mat-option>
+              </mat-select>
+          </mat-form-field>
+          <mat-form-field *ngIf="field.FieldDisplayName == 'ContractVehicle' ">
+              <mat-select placeholder="Select contract vehicle"  formControlName ="contractVehicleId">
+                  <mat-option style="width:300px; font-size: small;"
+                      *ngFor="let option of contractVehicleList" [value]="option.ContractVehicleId">
+                      {{option.ContractVehicleShortDesc}}</mat-option>
+              </mat-select>
+          </mat-form-field>
+          <mat-form-field *ngIf="field.FieldDisplayName == 'Industry' ">
+              <mat-select placeholder="Select industry/proposal classification" formControlName ="industryId"
+                  required>
+                  <mat-option *ngFor="let option of industryList" [value]="option.IndustryId">
+                      {{option.IndustryName}}</mat-option>
+              </mat-select>
+          </mat-form-field>  
+</div> -->
+          <mat-form-field *ngIf="field.ControlType=='text' || field.ControlType=='textarea'" >
+              
+            <input [formControlName]="field.FieldDisplayName" matInput placeholder={{field.FieldDisplayName}} class="form-control" [id]= "field.FieldDisplayName" > 
+           
+            <button  (click)="openDialog($event,i);" class="plusbtn">+</button>
+            <!-- <button  class="plusbtn2" *ngIf="field.FieldDisplayName!='Solicitation Title' && field.FieldDisplayName!='Requesting Agency' && field.FieldDisplayName!='Solicitation Number'" (click)="deleteField(i);">-</button> -->
+            <button  class="plusbtn2" *ngIf="field.Mandatory!=true" (click)="deleteField(i);">-</button>
+          </mat-form-field>
+           
+          <!-- <mat-form-field *ngIf="field.ControlType=='date'">
+            <input matInput [matDatepicker]="i" placeholder={{field.FieldDisplayName}}
+              [formControlName]="field.FieldDisplayName">
+            <mat-datepicker-toggle matSuffix [for]="i"></mat-datepicker-toggle>
+            <mat-datepicker #i></mat-datepicker>
+          </mat-form-field> -->
+  
+          <mat-form-field *ngIf="field.ControlType=='date'">
+            <input [formControlName]="field.FieldDisplayName"
+            matInput placeholder={{field.FieldDisplayName}}
+              class="form-control"> 
+               <button  (click)="openDialog($event,i);" class="plusbtn">+</button><button *ngIf="field.FieldDisplayName!='Original Posted Date' && field.FieldDisplayName!='Question Due Date' && field.FieldDisplayName!='Pre-bid Date' && field.FieldDisplayName!='Closing Date and Time'" class="plusbtn2" (click)="deleteField(i);">-</button>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  
+  <!-- <pre>{{groupForm.value | json}}</pre> -->
+  

@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "Zbizlink.MicroEmailBroadCaster.WebServiceAPI": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": "true",
+      "launchUrl": "https://localhost:5001"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "launchBrowser": true,
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}

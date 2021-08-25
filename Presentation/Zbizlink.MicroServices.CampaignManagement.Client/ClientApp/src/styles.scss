@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */ 
+  @import "~bootstrap/dist/css/bootstrap.css"; 
+@import "~assets/css/responsive.css";
+@import "~assets/css/style.css";
+
+ @import "~@angular/material/prebuilt-themes/indigo-pink.css"; 
+@import "./app/core/core-module.css"; 
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+html, body { height: 100%; margin: 0;}
+body { 	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
+  font-weight: 400;
+  background: #f6f6f6; }
+ 
+/* notification */
+snack-bar-container.success {
+    background-color: #5cb85c;
+    color : #fff;
+  }
+snack-bar-container.error {
+    
+    background-color:#cc3300;
+    color : #fff;
+  }
+snack-bar-container.warning {
+    background-color:#ffcc00;
+    color :black;
+  }
+snack-bar-container.notification simple-snack-bar{
+    font-size: 14px !important;
+    font-weight: normal;
+  }
+
+
+  .confirm-dialog-container .mat-dialog-container {
+    border-radius: .25em .25em .4em .4em;
+    padding: 0px;
+}
+.confirm-dialog-container .content-container{
+    margin: 5px 5px 15px 5px;
+    color: #8f9cb5;
+    display: flex;
+}
+.confirm-dialog-container #close-icon{
+    margin-left: auto;
+    order: 2;
+    font-weight: bolder;
+}
+.confirm-dialog-container #close-icon:hover{
+cursor: pointer;
+}
+
+.confirm-dialog-container #no-button{
+height: 40px;
+width: 50%;
+background-color: #fc7169;
+color:white;
+border-radius: 0px;
+}
+
+.confirm-dialog-container #yes-button{
+    height: 40px;
+    width: 50%;
+    background-color: #b6bece;
+    color:white;
+    border-radius: 0px;
+}
+
+.confirm-dialog-container span.content-span{
+    padding:  35px 16px;
+    text-align: center;
+    font-size: 15px;
+}
+ 
+.loading-indicator {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  }
+  

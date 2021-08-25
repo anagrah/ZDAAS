@@ -1,0 +1,48 @@
+<mat-dialog-content>
+    <h1 class="dailog_h1">Add Custom Field </h1>
+
+    <div>	&nbsp;</div>
+       <form [formGroup]="groupForm" style="font-size: small;">
+
+           <mat-form-field hintLabel="Max 15 characters">
+            <mat-label>Enter label name</mat-label>
+            <input matInput  #input maxlength="15" style="font-size: small;" matInput placeholder="Label name"
+            [formControl]="groupForm.get('labelfield')" required [(ngModel)]="fieldLabel">
+            <mat-error *ngIf="groupForm.get('labelfield').invalid">{{getErrorMessage()}}</mat-error>
+            <mat-hint align="end">{{input.value?.length || 0}}/15</mat-hint>
+          </mat-form-field>
+
+       <!-- <input class="dialog_inputbox"  formControlName= "labelfield" type="text" [(ngModel)]="fieldLabel" 
+       placeholder="Please enter the label name" /> -->
+       <div>	&nbsp;</div>
+       
+       <mat-form-field>
+        <mat-label>Choose field type</mat-label>
+        <mat-select #fieldtype  [formControl]="groupForm.get('typefield')" (selectionChange)="ChangeFieldType($event)" required>
+          <mat-option>--</mat-option>
+          <mat-option  *ngFor="let fields of fieldtypes" [value]="fields" >
+            {{fields}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="groupForm.get('typefield').hasError('required')">Please choose a field type</mat-error>  
+      </mat-form-field>
+
+       <!-- <select  formControlName= "typefield" class="custom-select dialog_selectbox" (change)="ChangeFieldType($event)" >
+           <option value="" disabled>Choose Field Type</option> 
+           <option *ngFor="let fields of fieldtypes" [ngValue]="fields">{{fields}}</option>
+        </select> -->
+
+
+        <div>	&nbsp;</div>
+
+       </form>
+
+
+       </mat-dialog-content>
+
+
+       
+       <div class="confirm-dialog-container">
+              <button mat-raised-button color="primary" id="no-button"  (click)="Cancel()">Cancel</button>
+              <button mat-raised-button color="primary" id="yes-button"  (click)="Done()">Done</button>
+       </div>

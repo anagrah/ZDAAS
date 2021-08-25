@@ -1,0 +1,67 @@
+<div>
+    <mat-toolbar>
+        <div style="float:left;  font-size: small;">Parsing Options</div>
+        <span class="fill-remaining-space"></span>
+    </mat-toolbar>
+</div>
+
+<div>
+    <mat-card>
+        
+        <div style="font-size: small">
+            <mat-radio-group>
+                <mat-radio-button style="padding-right: 20px;" value="auto"  (change)='onChange($event)' checked>Auto parsing</mat-radio-button>
+                <mat-radio-button value="manual"  (change)='onChange($event)' >Selective parsing</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <mat-divider></mat-divider>
+        &nbsp;
+        &nbsp;
+        <div *ngIf="requiredYesNo" style="color: crimson; font-size:  small;">{{requiredYesNoMessage}}</div>
+        <div style="font-size: small"> Do you move whole document content?<br>
+            <mat-radio-group [disabled]="yesOrNoRadioGroupDisable()">
+                <mat-radio-button style="padding-right: 20px;" value="yes" (change)='onChange($event)' >Yes</mat-radio-button> 
+                <mat-radio-button value="no" (change)='onChange($event)' >No</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <mat-divider></mat-divider>
+        &nbsp;
+        &nbsp;
+        <div *ngIf="requiredCategory" style="color: crimson; font-size:  small;">{{requiredCategoryMessage}}</div>
+        <div >
+            <mat-form-field *ngIf='multiSelectionDropdown' > 
+            <mat-select   placeholder="Select category" [(value)]="categoryMultiDropdownSelectedValue" 
+            (selectionChange)="onMultiDropdownValueChange($event)" 
+             multiple 
+             [disabled]="yesOrNoRadioGroupDisable()">
+                <mat-option style="width:300px; font-size: small;" *ngFor="let categoryName of categoryNameList" [value]="categoryName.CategoryId" >
+                    {{categoryName.Name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+            <mat-form-field class="categoryName"  *ngIf='singleSelectionDropdown'>          
+                <mat-select  placeholder="Select category" [(value)]="categorySingleDropdownSelectedValue" 
+                (selectionChange)="onMultiDropdownValueChange($event)" 
+                [disabled]="yesOrNoRadioGroupDisable()">
+                    <mat-option style="width:300px; font-size: small;" *ngFor="let categoryName of categoryNameList" [value]="categoryName.CategoryId" >
+                        {{categoryName.Name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="confirm-dialog-container">
+
+            <div class="row">
+                <div class="col-sm-6"> <button mat-raised-button color="primary" id="no-button" (click)="closeDialogOpp()">Cancel</button></div>
+                <div class="col-sm-6">  <button mat-raised-button color="primary" id="yes-button" (click)="ok()" cdkFocusInitial>Ok</button></div>
+            
+            </div>
+            
+               
+            
+              
+            </div>
+
+
+    </mat-card>
+</div>
+
+ 

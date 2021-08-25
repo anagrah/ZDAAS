@@ -1,0 +1,33 @@
+<div>
+  <mat-toolbar>
+
+    <div style="float:left; width:95%">Message Dialog</div>
+    <span class="fill-remaining-space"></span>
+    <div>
+      <button mat-icon-button (click)="closeDialog()">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
+
+
+<div class="confirm-dialog-container">
+  <mat-card>
+
+    <span class="content-span full-width" >{{message}}</span>
+    <mat-divider></mat-divider>
+    &nbsp;
+    &nbsp;
+    <mat-list>
+      <mat-list-item style="font-size: small;" *ngFor="let duplicateFile of duplicateFileList"> {{duplicateFile.Name}}</mat-list-item>
+      
+    </mat-list>
+
+  </mat-card>
+</div>
+&nbsp;
+<div>
+  &nbsp;
+  <button mat-flat-button id="yes-button" (click)="ok()">Ok</button>
+</div>

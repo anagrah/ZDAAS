@@ -1,0 +1,21 @@
+.sourceProposal-radio-group {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+  }
+  
+  .sourceProposal-radio-button {
+    margin: 5px;
+  }
+  .topMargin{
+      margin-top: 10px;
+  }
+  .formFieldWidth{
+    width: 300px;
+}
+.invalid{
+  color:#f44336;
+}
+
+
+.formFieldWidth{ width: 100% !important;}
